@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
-export const MainWrapperStyled = styled.footer`
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-`;
+export const MainWrapperStyled = styled.footer``;
 
 export const ListItemsStyled = styled.ul`
   display: flex;
@@ -18,6 +13,7 @@ export const ItemStyled = styled.li`
   font-size: 1.2rem;
   font-weight: 500;
   color: ${props => props.theme.colors.text.light};
+
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 1rem;
   }
