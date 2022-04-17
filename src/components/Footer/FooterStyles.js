@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const MainWrapperStyled = styled.footer``;
+export const MainWrapperStyled = styled.footer`
+  margin-top: 5rem;
+`;
 
 export const ListItemsStyled = styled.ul`
   display: flex;
