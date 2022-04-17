@@ -59,3 +59,9 @@ export const Text = props => {
     </TextStyled>
   );
 };
+
+export const LineBreakStyled = styled.hr`
+  height: 0.1rem;
+  background-color: ${props => props.theme.colors.secondary.main};
+  border: none;
+`;

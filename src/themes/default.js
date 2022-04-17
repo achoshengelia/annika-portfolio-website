@@ -16,12 +16,17 @@ const defaultTheme = {
     background: {
       light: '#FFFFFF',
       main: '#E5E5E5',
-      dark: '#000000'
+      dark: '#000000',
+      transparent: 'rgba(0, 0, 0, .6)'
     },
     text: {
       light: '#999999',
       main: '#000000',
       dark: ''
+    },
+    other: {
+      white: '#fff',
+      black: '#000'
     }
   },
   breakpoints: {

@@ -6,7 +6,7 @@ export const ListItemsStyled = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 5rem;
+  padding-top: 2rem;
 `;
 
 export const ItemStyled = styled.li`
