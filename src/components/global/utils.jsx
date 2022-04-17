@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const CenterWrapperStyled = styled.div`
   width: 100%;
   padding: 0 2rem;
-  max-width: 112.4rem;
+  margin: 0 auto;
+  max-width: 145rem;
 `;
 
 export const HeadingStyled = styled.span`
