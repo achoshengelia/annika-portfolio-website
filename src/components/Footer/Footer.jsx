@@ -19,17 +19,29 @@ const Footer = () => {
           </ItemStyled>
           <ListItemsStyled>
             <ItemSocialsStyled>
-              <a href="https://twitter.com/AnnikaTerwey" target="_blank">
+              <a
+                href="https://twitter.com/AnnikaTerwey"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Twitter
               </a>
             </ItemSocialsStyled>
             <ItemSocialsStyled>
-              <a href="https://vimeo.com/annikaterwey" target="_blank">
+              <a
+                href="https://vimeo.com/annikaterwey"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Vimeo
               </a>
             </ItemSocialsStyled>
             <ItemSocialsStyled>
-              <a href="https://www.instagram.com/dunkleecken/" target="_blank">
+              <a
+                href="https://www.instagram.com/dunkleecken/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Instagram
               </a>
             </ItemSocialsStyled>

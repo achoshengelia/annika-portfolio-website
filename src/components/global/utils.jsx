@@ -29,6 +29,48 @@ export const HeadingStyled = styled.span`
       : null};
   text-transform: ${({ isUppercase }) =>
     isUppercase ? 'uppercase' : 'capitalize'};
+
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: ${({ size, as }) =>
+      size
+        ? size
+        : as === 'h1'
+        ? '5.5rem'
+        : as === 'h2'
+        ? '7rem'
+        : as === 'h3'
+        ? '6rem'
+        : as === 'h4'
+        ? '4rem'
+        : as === 'h5'
+        ? '2.4rem'
+        : as === 'h6'
+        ? '1.6rem'
+        : null};
+    text-transform: ${({ isUppercase }) =>
+      isUppercase ? 'uppercase' : 'capitalize'};
+  }
+
+  /* @media ${props => props.theme.breakpoints.xs} {
+    font-size: ${({ size, as }) =>
+    size
+      ? size
+      : as === 'h1'
+      ? '4.5rem'
+      : as === 'h2'
+      ? '7rem'
+      : as === 'h3'
+      ? '6rem'
+      : as === 'h4'
+      ? '4rem'
+      : as === 'h5'
+      ? '2.4rem'
+      : as === 'h6'
+      ? '1.6rem'
+      : null};
+    text-transform: ${({ isUppercase }) =>
+    isUppercase ? 'uppercase' : 'capitalize'};
+  } */
 `;
 
 export const Heading = props => {
