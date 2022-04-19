@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CurationsPage = () => {
-  return;
+  return <div>CurationsPage</div>;
 };
 
 export default CurationsPage;

@@ -1,51 +1,25 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { menuItems } from '../../constants/menu';
+import { GlobalContext } from '../../context/globalContext';
 import { CenterWrapperStyled } from '../global/utils';
-import {
-  MainWrapperStyled,
-  MenuListStyled,
-  MenuStyled,
-  LanguageListStyled,
-  LanguageStyled
-} from './MenuStyles';
+import { MainWrapperStyled, MenuListStyled, MenuStyled } from './MenuStyles';
 
-const Menu = ({ handleToggleShowMenu }) => {
+const Menu = () => {
+  const { handleToggleShowMenu } = useContext(GlobalContext);
+
   return (
-    <CenterWrapperStyled as="nav">
-      <MainWrapperStyled>
+    <MainWrapperStyled>
+      <CenterWrapperStyled as="nav">
         <MenuListStyled>
-          <MenuStyled>
-            <Link to="/design-artworks" onClick={handleToggleShowMenu}>
-              DESIGN & ARTWORKS
-            </Link>
-          </MenuStyled>
-          <MenuStyled>
-            <Link to="/curation" onClick={handleToggleShowMenu}>
-              CURATION
-            </Link>
-          </MenuStyled>
-          <MenuStyled>
-            <Link to="/index" onClick={handleToggleShowMenu}>
-              INDEX
-            </Link>
-          </MenuStyled>
-          <MenuStyled>
-            <Link to="/about" onClick={handleToggleShowMenu}>
-              ABOUT
-            </Link>
-          </MenuStyled>
-          {/* <LanguageListStyled>
-            <LanguageStyled onClick={handleToggleShowMenu}>
-              ENGLISH
-            </LanguageStyled>
-            <LanguageStyled> / </LanguageStyled>
-            <LanguageStyled onClick={handleToggleShowMenu}>
-              DEUTSCH
-            </LanguageStyled>
-          </LanguageListStyled> */}
+          {menuItems.map(({ id, value, link }) => (
+            <MenuStyled key={id} onClick={handleToggleShowMenu}>
+              <Link to={link}>{value}</Link>
+            </MenuStyled>
+          ))}
         </MenuListStyled>
-      </MainWrapperStyled>
-    </CenterWrapperStyled>
+      </CenterWrapperStyled>
+    </MainWrapperStyled>
   );
 };
 

@@ -12,13 +12,14 @@ import {
 
 const Items = () => {
   const [renderItems, setRenderItems] = useState(artworkItems);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   const getFilteredItems = filters => {
     const filteredItems = artworkItems.filter(item => {
       if (item.tags.some(tag => filters.includes(tag))) {
         return item;
       }
+      return null;
     });
     return filteredItems;
   };
