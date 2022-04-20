@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { footerItems } from '../../constants/footer';
 import { CenterWrapperStyled } from '../global/utils';
 import {
   ItemStyled,
@@ -18,33 +19,13 @@ const Footer = () => {
             <Link to="/imprint"> Imprint</Link>
           </ItemStyled>
           <ListItemsStyled>
-            <ItemSocialsStyled>
-              <a
-                href="https://twitter.com/AnnikaTerwey"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Twitter
-              </a>
-            </ItemSocialsStyled>
-            <ItemSocialsStyled>
-              <a
-                href="https://vimeo.com/annikaterwey"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Vimeo
-              </a>
-            </ItemSocialsStyled>
-            <ItemSocialsStyled>
-              <a
-                href="https://www.instagram.com/dunkleecken/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
-              </a>
-            </ItemSocialsStyled>
+            {footerItems.map(({ id, value, link }) => (
+              <ItemSocialsStyled key={id}>
+                <a href={link} target="_blank" rel="noreferrer">
+                  {value}
+                </a>
+              </ItemSocialsStyled>
+            ))}
           </ListItemsStyled>
         </ListItemsStyled>
       </CenterWrapperStyled>
