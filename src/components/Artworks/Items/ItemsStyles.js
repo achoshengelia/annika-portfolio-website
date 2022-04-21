@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import { CenterWrapperStyled } from '../../global/utils';
+import {
+  CenterWrapperStyled,
+  HeadingStyled as Heading
+} from '../../global/utils';
 
 export const CardTitleStyled = styled.figcaption`
   margin: auto;
@@ -46,6 +49,14 @@ export const CardStyled = styled.figure`
       transform: scale(1.1);
     }
   }
+
+  @media ${props => props.theme.breakpoints.md} {
+    height: 60rem;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    height: 70rem;
+  }
 `;
 
 export const ContainerStyled = styled.section`
@@ -54,5 +65,25 @@ export const ContainerStyled = styled.section`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+
+    @media ${props => props.theme.breakpoints.lg} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media ${props => props.theme.breakpoints.md} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media ${props => props.theme.breakpoints.sm} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  ${Heading} {
+    width: 100%;
+    min-height: 30rem;
+    text-transform: none;
+    display: grid;
+    place-content: center;
   }
 `;
