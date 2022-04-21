@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { artworkItems, searchParam } from '../../../constants/main';
-import { CenterWrapperStyled } from '../../global/utils';
+import { CenterWrapperStyled, Heading } from '../../global/utils';
 import {
   CardImageStyled,
   CardStyled,
@@ -35,16 +35,22 @@ const Items = () => {
 
   return (
     <ContainerStyled>
-      <CenterWrapperStyled>
-        {renderItems.map(({ id, imageSrc, caption }) => (
-          <CardStyled key={id}>
-            <CardImageStyled src={imageSrc} alt="" />
-            <CardTitleContainerStyled>
-              <CardTitleStyled>{caption}</CardTitleStyled>
-            </CardTitleContainerStyled>
-          </CardStyled>
-        ))}
-      </CenterWrapperStyled>
+      {!renderItems.length ? (
+        <Heading size="8rem" as="h1">
+          No item matches your filters :(
+        </Heading>
+      ) : (
+        <CenterWrapperStyled>
+          {renderItems.map(({ id, imageSrc, caption }) => (
+            <CardStyled key={id}>
+              <CardImageStyled src={imageSrc} alt="" />
+              <CardTitleContainerStyled>
+                <CardTitleStyled>{caption}</CardTitleStyled>
+              </CardTitleContainerStyled>
+            </CardStyled>
+          ))}
+        </CenterWrapperStyled>
+      )}
     </ContainerStyled>
   );
 };
