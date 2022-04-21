@@ -8,7 +8,15 @@ export const GlobalContext = createContext({
 export const GlobalContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const handleToggleShowMenu = () => setShowMenu(prevState => !prevState);
+  const handleToggleShowMenu = () => {
+    setShowMenu(prevState => !prevState);
+
+    if (!showMenu) {
+      return (document.body.style.overflow = 'hidden');
+    }
+
+    document.body.style = null;
+  };
 
   const contextValue = {
     showMenu,
