@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { PopIn } from '../../../animations';
-import {
-  CenterWrapperStyled,
-  HeadingStyled as Heading
-} from '../../global/utils';
+import { HeadingStyled as Heading } from '../../global/utils';
 
 export const CardTitleStyled = styled.figcaption`
   margin: auto;
@@ -41,24 +38,22 @@ export const CardStyled = styled.figure`
 `;
 
 export const ContainerStyled = styled.section`
-  ${CenterWrapperStyled} {
-    padding-top: 3rem;
-    display: grid;
-    grid-template-columns: ${props =>
-      props.isCurationsPage ? 'repeat(3, 1fr)' : 'repeat(4, 1fr)'};
-    gap: 2rem;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: ${props =>
+    props.isCurationsPage ? 'repeat(3, 1fr)' : 'repeat(4, 1fr)'};
+  gap: 2rem;
 
-    @media ${props => props.theme.breakpoints.lg} {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  @media ${props => props.theme.breakpoints.lg} {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    @media ${props => props.theme.breakpoints.md} {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  @media ${props => props.theme.breakpoints.md} {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    @media ${props => props.theme.breakpoints.sm} {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  @media ${props => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   ${Heading} {

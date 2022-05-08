@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { GlobalContext } from '../../../context/globalContext';
 import { artworkItems, searchParam } from '../../../constants/artworks';
 import { curationItems } from '../../../constants/curations';
-import { CenterWrapperStyled, Heading } from '../../global/utils';
+import { Heading } from '../../global/utils';
 import {
   CardImageStyled,
   CardStyled,
@@ -47,27 +47,25 @@ const Items = () => {
     setRenderItems(items);
   }, [searchParams]);
 
-  return (
+  return !renderItems.length ? (
+    <Heading size="8rem" as="h1">
+      No item matches your filters :(
+    </Heading>
+  ) : (
     <ContainerStyled
       isCurationsPage={isCurationsPage}
       pageIsLoaded={pageIsLoaded}
     >
-      {!renderItems.length ? (
-        <Heading size="8rem" as="h1">
-          No item matches your filters :(
-        </Heading>
-      ) : (
-        <CenterWrapperStyled>
-          {renderItems.map(({ id, imageSrc, caption }) => (
-            <CardStyled key={id}>
-              <CardImageStyled src={imageSrc} />
-              <CardTitleContainerStyled>
-                <CardTitleStyled>{caption}</CardTitleStyled>
-              </CardTitleContainerStyled>
-            </CardStyled>
-          ))}
-        </CenterWrapperStyled>
-      )}
+      {renderItems.map(({ id, imageSrc, caption }) => (
+        <Link to={`${caption}`} key={id}>
+          <CardStyled>
+            <CardImageStyled src={imageSrc} alt="" />
+            <CardTitleContainerStyled>
+              <CardTitleStyled>{caption}</CardTitleStyled>
+            </CardTitleContainerStyled>
+          </CardStyled>
+        </Link>
+      ))}
     </ContainerStyled>
   );
 };

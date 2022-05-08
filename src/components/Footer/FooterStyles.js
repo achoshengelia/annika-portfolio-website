@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const MainWrapperStyled = styled.footer`
-  margin-top: 5rem;
+  margin-top: auto;
+  padding-top: 5rem;
 `;
 
 export const ListItemsStyled = styled.ul`

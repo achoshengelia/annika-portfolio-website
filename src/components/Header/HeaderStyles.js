@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const MainWrapperStyled = styled.header`
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0),

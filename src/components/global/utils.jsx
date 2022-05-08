@@ -7,6 +7,11 @@ export const CenterWrapperStyled = styled.div`
   padding: 0 2rem;
   margin: 0 auto;
   max-width: 145rem;
+  height: 100%;
+
+  @media ${props => props.theme.breakpoints.md} {
+    padding: 0 1rem;
+  }
 `;
 
 export const HeadingStyled = styled.span`
