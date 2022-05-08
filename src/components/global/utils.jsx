@@ -7,6 +7,7 @@ export const CenterWrapperStyled = styled.div`
   padding: 0 2rem;
   margin: 0 auto;
   max-width: 145rem;
+  height: 100%;
 `;
 
 export const HeadingStyled = styled.span`

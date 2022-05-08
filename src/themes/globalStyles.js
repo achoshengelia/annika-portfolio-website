@@ -12,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.primary.main};
   }
 
+  html, body, #root {
+    height: 100%;
+  }
+
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -26,9 +30,11 @@ const GlobalStyles = createGlobalStyle`
     cursor: default;
     text-rendering: optimizeSpeed;
 
-    & #root {
-      min-height: 100vh;
-    }
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
   }
 
   a {

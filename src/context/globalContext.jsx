@@ -2,12 +2,15 @@ import { createContext, useState } from 'react';
 
 export const GlobalContext = createContext({
   showMenu: false,
-  toggleShowMenu: () => {},
-  isCurationsPage: false
+  isCurationsPage: false,
+  showFooter: true,
+  handleToggleShowMenu: () => {},
+  handleSetShowFooter: () => {}
 });
 
 export const GlobalContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showFooter, setShowFooter] = useState(true);
   const isCurationsPage = window.location.pathname
     .split('/')
     .includes('curation');
@@ -21,11 +24,14 @@ export const GlobalContextProvider = ({ children }) => {
 
     document.body.style = null;
   };
+  const handleSetShowFooter = value => setShowFooter(value);
 
   const contextValue = {
     showMenu,
+    showFooter,
+    isCurationsPage,
     handleToggleShowMenu,
-    isCurationsPage
+    handleSetShowFooter
   };
 
   return (

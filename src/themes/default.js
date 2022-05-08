@@ -9,19 +9,19 @@ const defaultTheme = {
       dark: '#C7C7C7'
     },
     secondary: {
-      light: '#999999',
-      main: '#000000',
+      light: '#999',
+      main: '#000',
       dark: '#F29B45'
     },
     background: {
-      light: '#FFFFFF',
+      light: '#FFF',
       main: '#E5E5E5',
-      dark: '#000000',
+      dark: '#000',
       transparent: 'rgba(0, 0, 0, .6)'
     },
     text: {
-      light: '#999999',
-      main: '#000000',
+      light: '#999',
+      main: '#000',
       dark: ''
     },
     other: {
