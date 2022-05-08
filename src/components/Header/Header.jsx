@@ -17,7 +17,10 @@ const Header = () => {
             <ItemStyled>
               {!showMenu ? <Link to="/">ANNIKA TERWEY</Link> : null}
             </ItemStyled>
-            <ItemStyled onClick={handleToggleShowMenu}>
+            <ItemStyled
+              onClick={handleToggleShowMenu}
+              variant={showMenu ? 'back' : ''}
+            >
               {showMenu ? 'BACK' : 'MENU'}
             </ItemStyled>
           </ListItemsStyled>

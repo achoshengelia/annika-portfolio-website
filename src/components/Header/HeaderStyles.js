@@ -19,14 +19,18 @@ export const ListItemsStyled = styled.ul`
   padding-top: 2rem;
   min-height: 5rem;
   padding-top: 2rem;
-  color: ${props => props.theme.colors.other.purple};
 `;
 
 export const ItemStyled = styled.li`
   font-size: 2rem;
   font-weight: 500;
   cursor: pointer;
-  color: ${props => (props.variant === 'back' ? '#999999' : '#000000')};
+  opacity: ${props => (props.variant === 'back' ? '0.50' : '1')};
+  transition: all 115ms ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
 
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 1.7rem;

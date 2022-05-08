@@ -6,7 +6,8 @@ import {
   ItemStyled,
   ListItemsStyled,
   ItemSocialsStyled,
-  MainWrapperStyled
+  MainWrapperStyled,
+  LinkStyled
 } from './FooterStyles';
 
 const Footer = () => {
@@ -16,7 +17,7 @@ const Footer = () => {
         <ListItemsStyled>
           <ItemStyled>
             © Annika Terwey.
-            <Link to="/imprint"> Imprint</Link>
+            <LinkStyled to="/imprint"> Imprint</LinkStyled>
           </ItemStyled>
           <ListItemsStyled>
             {footerItems.map(({ id, value, link }) => (
