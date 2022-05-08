@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Text } from '../../global/utils';
-import {
-  ContainerStyled,
-  MoreButtonStyled
-} from './ArtworkDetailsFooterStyles';
+import { ContainerStyled, MoreButtonStyled } from './ItemDetailsFooterStyles';
 import MoreInfo from './MoreInfo/MoreInfo';
 
-const ArtworkDetailsFooter = ({ itemDetails }) => {
+const ItemDetailsFooter = ({ itemDetails }) => {
   const [showMore, setShowMore] = useState(false);
 
   const handleToggleShowMore = () => setShowMore(prevState => !prevState);
@@ -23,6 +20,7 @@ const ArtworkDetailsFooter = ({ itemDetails }) => {
           {showMore ? 'Back' : 'More'}
         </MoreButtonStyled>
       </ContainerStyled>
+
       {showMore
         ? createPortal(
             <MoreInfo moreInfo={itemDetails.moreInfo} />,
@@ -33,4 +31,4 @@ const ArtworkDetailsFooter = ({ itemDetails }) => {
   );
 };
 
-export default ArtworkDetailsFooter;
+export default ItemDetailsFooter;
