@@ -34,36 +34,14 @@ export const CardImageStyled = styled.img`
   transition: transform 0.2s ease-in;
 `;
 
-export const CardStyled = styled.figure`
-  height: 48rem;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-
-  &:hover {
-    ${CardTitleContainerStyled} {
-      opacity: 1;
-    }
-
-    ${CardImageStyled} {
-      transform: scale(1.1);
-    }
-  }
-
-  @media ${props => props.theme.breakpoints.md} {
-    height: 60rem;
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    height: 70rem;
-  }
-`;
+export const CardStyled = styled.figure``;
 
 export const ContainerStyled = styled.section`
   ${CenterWrapperStyled} {
     padding-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: ${props =>
+      props.isCurationsPage ? 'repeat(3, 1fr)' : 'repeat(4, 1fr)'};
     gap: 2rem;
 
     @media ${props => props.theme.breakpoints.lg} {
@@ -85,5 +63,31 @@ export const ContainerStyled = styled.section`
     text-transform: none;
     display: grid;
     place-content: center;
+  }
+
+  ${CardStyled} {
+    min-height: ${props => (props.isCurationsPage ? '30rem' : '48rem')};
+    /* width: ${props => (props.isCurationsPage ? '45rem' : 'max-content')}; */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      ${CardTitleContainerStyled} {
+        opacity: 1;
+      }
+
+      ${CardImageStyled} {
+        transform: scale(1.1);
+      }
+    }
+
+    @media ${props => props.theme.breakpoints.md} {
+      height: 60rem;
+    }
+
+    @media ${props => props.theme.breakpoints.sm} {
+      height: 70rem;
+    }
   }
 `;

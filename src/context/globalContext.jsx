@@ -2,11 +2,15 @@ import { createContext, useState } from 'react';
 
 export const GlobalContext = createContext({
   showMenu: false,
-  toggleShowMenu: () => {}
+  toggleShowMenu: () => {},
+  isCurationsPage: false
 });
 
 export const GlobalContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const isCurationsPage = window.location.pathname
+    .split('/')
+    .includes('curation');
 
   const handleToggleShowMenu = () => {
     setShowMenu(prevState => !prevState);
@@ -20,7 +24,8 @@ export const GlobalContextProvider = ({ children }) => {
 
   const contextValue = {
     showMenu,
-    handleToggleShowMenu
+    handleToggleShowMenu,
+    isCurationsPage
   };
 
   return (

@@ -1,13 +1,11 @@
 import React from 'react';
-import Header from '../../components/Artworks/Header/Header';
-import Items from '../../components/Artworks/Items/Items';
+import FilterGallery from '../../components/FilterGallery';
 import { ContainerStyled } from './ArtworksPageStyles';
 
 const ArtworksPage = () => {
   return (
     <ContainerStyled>
-      <Header />
-      <Items />
+      <FilterGallery />
     </ContainerStyled>
   );
 };

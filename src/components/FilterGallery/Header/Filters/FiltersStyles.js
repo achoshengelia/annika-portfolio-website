@@ -19,7 +19,8 @@ export const FilterItemStyled = styled.li`
 export const ContainerStyled = styled.ul`
   ${CenterWrapperStyled} {
     display: flex;
-    justify-content: space-between;
+    justify-content: ${props =>
+      props.isCurationsPage ? 'flex-start' : 'space-between'};
     gap: 4rem;
     margin: 2.5rem 0;
     flex-wrap: wrap;

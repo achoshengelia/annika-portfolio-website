@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { artworkItems, searchParam } from '../../../constants/main';
+import { GlobalContext } from '../../../context/globalContext';
+import { artworkItems, searchParam } from '../../../constants/artworks';
+import { curationItems } from '../../../constants/curations';
 import { CenterWrapperStyled, Heading } from '../../global/utils';
 import {
   CardImageStyled,
@@ -11,11 +13,15 @@ import {
 } from './ItemsStyles';
 
 const Items = () => {
-  const [renderItems, setRenderItems] = useState(artworkItems);
+  const { isCurationsPage } = useContext(GlobalContext);
+
+  const items = isCurationsPage ? curationItems : artworkItems;
+
+  const [renderItems, setRenderItems] = useState(items);
   const [searchParams] = useSearchParams();
 
   const getFilteredItems = filters => {
-    const filteredItems = artworkItems.filter(item => {
+    const filteredItems = items.filter(item => {
       if (item.tags.some(tag => filters.includes(tag))) {
         return item;
       }
@@ -30,11 +36,11 @@ const Items = () => {
     if (selectedFilters.length) {
       return setRenderItems(getFilteredItems(selectedFilters));
     }
-    setRenderItems(artworkItems);
+    setRenderItems(items);
   }, [searchParams]);
 
   return (
-    <ContainerStyled>
+    <ContainerStyled isCurationsPage={isCurationsPage}>
       {!renderItems.length ? (
         <Heading size="8rem" as="h1">
           No item matches your filters :(

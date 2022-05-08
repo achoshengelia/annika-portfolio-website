@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { filterItems, searchParam } from '../../../../constants/main';
+import {
+  artworkFilterItems,
+  searchParam
+} from '../../../../constants/artworks';
+import { curationFilterItems } from '../../../../constants/curations';
 import { CloseIcon } from '../../../global/icons';
 import { CenterWrapperStyled, LineBreakStyled } from '../../../global/utils';
 import { ContainerStyled, FilterItemStyled } from './FiltersStyles';
 
-const Filters = () => {
+const Filters = props => {
   const [isActive, setIsActive] = useState(['all']);
   const [searchParams, setSearchParams] = useSearchParams();
+  const { isCurationsPage } = props;
 
   const filterIsApplied = filter => {
     const allParams = searchParams.getAll(searchParam);
@@ -42,6 +47,10 @@ const Filters = () => {
     setSearchParams(searchParams);
   };
 
+  const renderItems = isCurationsPage
+    ? curationFilterItems
+    : artworkFilterItems;
+
   useEffect(() => {
     const selectedFilters = searchParams.getAll(searchParam);
 
@@ -52,10 +61,10 @@ const Filters = () => {
   }, [searchParams]);
 
   return (
-    <ContainerStyled>
+    <ContainerStyled isCurationsPage={isCurationsPage}>
       <LineBreakStyled />
       <CenterWrapperStyled>
-        {filterItems.map(item => (
+        {renderItems.map(item => (
           <FilterItemStyled
             key={item}
             isActive={isActive.includes(item)}
