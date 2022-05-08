@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Swiper from '../Swiper/Swiper';
 import { getArtworkDetails } from '../../constants/artwork-details';
+import { getCurationDetails } from '../../constants/curation-details';
+import Swiper from '../Swiper/Swiper';
 import ItemDetailsFooter from './ItemDetailsFooter/ItemDetailsFooter';
 import { ContainerStyled } from './ItemDetailsStyles';
-import { getCurationDetails } from '../../constants/curation-details';
 
 const ItemDetails = ({ isCurationPage }) => {
   const { id } = useParams();
