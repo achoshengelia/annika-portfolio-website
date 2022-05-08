@@ -28,7 +28,7 @@ const Header = () => {
       </MainWrapperStyled>
 
       {showMenu
-        ? createPortal(<Menu />, document.getElementById('root'))
+        ? createPortal(<Menu />, document.getElementById('menu'))
         : null}
     </>
   );

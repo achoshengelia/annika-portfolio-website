@@ -57,7 +57,7 @@ const Items = () => {
       pageIsLoaded={pageIsLoaded}
     >
       {renderItems.map(({ id, imageSrc, caption }) => (
-        <Link to={`${id}`} key={id}>
+        <Link to={`${caption}`} key={id}>
           <CardStyled>
             <CardImageStyled src={imageSrc} alt="" />
             <CardTitleContainerStyled>

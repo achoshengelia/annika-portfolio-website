@@ -7,7 +7,7 @@ import {
 } from './ArtworkDetailsFooterStyles';
 import MoreInfo from './MoreInfo/MoreInfo';
 
-const ArtworkDetailsFooter = () => {
+const ArtworkDetailsFooter = ({ itemDetails }) => {
   const [showMore, setShowMore] = useState(false);
 
   const handleToggleShowMore = () => setShowMore(prevState => !prevState);
@@ -16,15 +16,18 @@ const ArtworkDetailsFooter = () => {
     <>
       <ContainerStyled>
         <Text size="1.6rem" isUppercase>
-          extrasober
+          {itemDetails?.caption}
         </Text>
-        <Text size="1.6rem">Curation | Co-management | 2021</Text>
+        <Text size="1.6rem">{itemDetails?.curation}</Text>
         <MoreButtonStyled onClick={handleToggleShowMore}>
           {showMore ? 'Back' : 'More'}
         </MoreButtonStyled>
       </ContainerStyled>
       {showMore
-        ? createPortal(<MoreInfo />, document.getElementById('modal'))
+        ? createPortal(
+            <MoreInfo moreInfo={itemDetails.moreInfo} />,
+            document.getElementById('modal')
+          )
         : null}
     </>
   );

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { PopIn } from '../../../animations';
 import { HeadingStyled as Heading } from '../../global/utils';
 
 export const CardTitleStyled = styled.figcaption`

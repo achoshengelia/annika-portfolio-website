@@ -2,15 +2,10 @@ import React from 'react';
 import { Text } from '../../../global/utils';
 import { ContainerStyled } from './MoreInfoStyles';
 
-const MoreInfo = () => {
+const MoreInfo = ({ moreInfo }) => {
   return (
     <ContainerStyled>
-      <Text as="p">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta facere
-        eveniet repellendus quo eaque! Beatae itaque cumque quisquam magni
-        assumenda voluptatibus. Est, accusantium minus repellendus tempora nam
-        deserunt sapiente vel!
-      </Text>
+      <Text as="p">{moreInfo}</Text>
     </ContainerStyled>
   );
 };

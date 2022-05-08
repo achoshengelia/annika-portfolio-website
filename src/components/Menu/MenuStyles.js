@@ -4,7 +4,7 @@ import { CenterWrapperStyled } from '../global/utils';
 export const MainWrapperStyled = styled.div`
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 3;
   background-color: ${props => props.theme.colors.primary.main};
   ${CenterWrapperStyled} {
     height: 100%;
