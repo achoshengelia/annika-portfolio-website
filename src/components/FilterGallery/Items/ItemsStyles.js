@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { PopIn } from '../../../animations';
 import {
   CenterWrapperStyled,
   HeadingStyled as Heading
@@ -34,7 +35,10 @@ export const CardImageStyled = styled.img`
   transition: transform 0.2s ease-in;
 `;
 
-export const CardStyled = styled.figure``;
+export const CardStyled = styled.figure`
+  opacity: 0;
+  animation: ${PopIn} 0.6s forwards;
+`;
 
 export const ContainerStyled = styled.section`
   ${CenterWrapperStyled} {
@@ -66,11 +70,11 @@ export const ContainerStyled = styled.section`
   }
 
   ${CardStyled} {
-    min-height: ${props => (props.isCurationsPage ? '30rem' : '48rem')};
-    /* width: ${props => (props.isCurationsPage ? '45rem' : 'max-content')}; */
+    height: ${props => (props.isCurationsPage ? '30rem' : '48rem')};
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    animation-delay: ${({ pageIsLoaded }) => (pageIsLoaded ? '0s' : '0.6s')};
 
     &:hover {
       ${CardTitleContainerStyled} {
