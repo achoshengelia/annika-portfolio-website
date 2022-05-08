@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const MainWrapperStyled = styled.footer`
   margin-top: 5rem;
@@ -9,6 +10,15 @@ export const ListItemsStyled = styled.ul`
   justify-content: space-between;
   align-items: center;
   min-height: 5rem;
+`;
+
+export const LinkStyled = styled(Link)`
+  transition: all 115ms ease-in-out;
+
+  &:hover {
+    color: #000000;
+    opacity: 0.75;
+  }
 `;
 
 export const ItemStyled = styled.li`

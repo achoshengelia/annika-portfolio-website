@@ -39,12 +39,12 @@ export const MenuStyled = styled.li`
   cursor: pointer;
   width: fit-content;
   text-transform: uppercase;
+  transition: all 200ms ease-in-out;
 
   &:hover {
-    transition: all 100ms ease-in-out;
     color: #a863ff;
     -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
+    -ms-transform: scale(1.03);
     transform: scale(1.02);
   }
 
