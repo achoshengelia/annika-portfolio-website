@@ -9,23 +9,32 @@ export const curationFilterItems = [all, onlineExhibition, exhibition];
 export const curationItems = [
   {
     id: createID(),
-    caption: 'Givi Janelia',
+    caption: 'Extrasober',
     imageSrc:
-      'https://s3-alpha-sig.figma.com/img/65f5/d5eb/ae2f7457601fa067c1221f2d6143a69b?Expires=1652659200&Signature=CGLKHdrQjPEcWpsbWFEMBfOlqEeG84hoHyebRMuijQZyiYaUdDfhfAb5-BKVzHdX5Wkn3jzLzmK~qwER9L-ZY73YDEaRiahSHuIXsigPuPPdgObaBET6LU6HE-GRO6ssLoHj9rFIK-awWV2PTNCGzgeYJT-HUJr4lWnV90gI6sihsT3~06XFHihm81uKrJnegd60MzEfzDDAYyD2NeXpkBfuZxd1-98N1zp18hdhlYLauyaJkLE6qRy75EPfLpjTHiqeXVMpiV5zYWlx6s825azMqYI3hEpToPQITiC8ixSR4-1lXv5ua9fNE2YIMjh5FcURBdFkXeirPISt4zI6hA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober5_mf0he5.jpg',
     tags: [all, onlineExhibition]
   },
   {
     id: createID(),
-    caption: 'Givi Janelia',
+    caption: 'Dunkle Ecken',
     imageSrc:
-      'https://s3-alpha-sig.figma.com/img/65f5/d5eb/ae2f7457601fa067c1221f2d6143a69b?Expires=1652659200&Signature=CGLKHdrQjPEcWpsbWFEMBfOlqEeG84hoHyebRMuijQZyiYaUdDfhfAb5-BKVzHdX5Wkn3jzLzmK~qwER9L-ZY73YDEaRiahSHuIXsigPuPPdgObaBET6LU6HE-GRO6ssLoHj9rFIK-awWV2PTNCGzgeYJT-HUJr4lWnV90gI6sihsT3~06XFHihm81uKrJnegd60MzEfzDDAYyD2NeXpkBfuZxd1-98N1zp18hdhlYLauyaJkLE6qRy75EPfLpjTHiqeXVMpiV5zYWlx6s825azMqYI3hEpToPQITiC8ixSR4-1lXv5ua9fNE2YIMjh5FcURBdFkXeirPISt4zI6hA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
-    tags: [all, onlineExhibition]
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken6_pe4xhm.jpg',
+    tags: [all, onlineExhibition, exhibition]
   },
   {
     id: createID(),
-    caption: 'Givi Janelia',
+    caption: 'Trashspotting 2',
     imageSrc:
-      'https://s3-alpha-sig.figma.com/img/65f5/d5eb/ae2f7457601fa067c1221f2d6143a69b?Expires=1652659200&Signature=CGLKHdrQjPEcWpsbWFEMBfOlqEeG84hoHyebRMuijQZyiYaUdDfhfAb5-BKVzHdX5Wkn3jzLzmK~qwER9L-ZY73YDEaRiahSHuIXsigPuPPdgObaBET6LU6HE-GRO6ssLoHj9rFIK-awWV2PTNCGzgeYJT-HUJr4lWnV90gI6sihsT3~06XFHihm81uKrJnegd60MzEfzDDAYyD2NeXpkBfuZxd1-98N1zp18hdhlYLauyaJkLE6qRy75EPfLpjTHiqeXVMpiV5zYWlx6s825azMqYI3hEpToPQITiC8ixSR4-1lXv5ua9fNE2YIMjh5FcURBdFkXeirPISt4zI6hA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
-    tags: [all, onlineExhibition]
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010912/Curation/trashspotting1/trash_dt2_jdqjy6.jpg',
+    //      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779847/Curation/trashspotting2/trash_dt2_rwijer.jpg',
+    tags: [all, exhibition]
+  },
+  {
+    id: createID(),
+    caption: 'Trashspotting',
+    imageSrc:
+      // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan3_xe8kfn.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan4_dsoq5g.jpg',
+    tags: [all, exhibition]
   }
 ];
