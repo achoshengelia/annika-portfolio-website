@@ -10,6 +10,7 @@ import ArtworkDetailsPage from './pages/ArtworkDetails/ArtworkDetailsPage';
 import Imprint from './components/Imprint/Imprint';
 import { ScrollToTop } from './components/global/utils';
 import { GlobalContext } from './context/globalContext';
+import CurationDetailsPage from './pages/CurationDetails/CurationDetailsPage';
 
 const App = () => {
   const { showFooter } = useContext(GlobalContext);
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="design-artworks" element={<ArtworksPage />} />
         <Route path="design-artworks/:id" element={<ArtworkDetailsPage />} />
         <Route path="curation" element={<CurationsPage />} />
+        <Route path="curation/:id" element={<CurationDetailsPage />} />
         <Route path="index" element={<Index />} />
         <Route path="about" element={<About />} />
         <Route path="imprint" element={<Imprint />} />

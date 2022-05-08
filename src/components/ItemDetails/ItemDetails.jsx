@@ -2,23 +2,26 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Swiper from '../Swiper/Swiper';
 import { getArtworkDetails } from '../../constants/artwork-details';
-import ArtworkDetailsFooter from './ArtworkDetailsFooter/ArtworkDetailsFooter';
-import { ContainerStyled } from './ArtworkDetailsStyles';
+import ItemDetailsFooter from './ItemDetailsFooter/ItemDetailsFooter';
+import { ContainerStyled } from './ItemDetailsStyles';
+import { getCurationDetails } from '../../constants/curation-details';
 
-const ArtworkDetails = () => {
+const ItemDetails = ({ isCurationPage }) => {
   const { id } = useParams();
   const [itemDetails, setItemDetails] = useState();
 
   useEffect(() => {
-    setItemDetails(getArtworkDetails(id));
+    setItemDetails(
+      isCurationPage ? getCurationDetails(id) : getArtworkDetails(id)
+    );
   }, []);
 
   return (
-    <ContainerStyled>
+    <ContainerStyled isCurationPage={isCurationPage}>
       {itemDetails ? (
         <>
           <Swiper gallery={itemDetails?.gallery} />
-          <ArtworkDetailsFooter itemDetails={itemDetails} />
+          <ItemDetailsFooter itemDetails={itemDetails} />
         </>
       ) : (
         <div>Not Found!</div>
@@ -27,4 +30,4 @@ const ArtworkDetails = () => {
   );
 };
 
-export default ArtworkDetails;
+export default ItemDetails;

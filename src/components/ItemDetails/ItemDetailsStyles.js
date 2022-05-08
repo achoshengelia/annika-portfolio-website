@@ -10,7 +10,7 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
 
   ${Swiper} {
     margin: auto 0;
-    max-width: 85rem;
+    max-width: ${props => (props.isCurationPage ? '85rem' : '35rem')};
     height: 50rem;
 
     @media ${props => props.theme.breakpoints.lg} {

@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import ItemDetails from '../../components/ItemDetails/ItemDetails';
 import { GlobalContext } from '../../context/globalContext';
-import { ContainerStyled } from './ArtworkDetailsPageStyles';
+import { ContainerStyled } from './CurationDetailsPageStyles';
 
-const ArtworkDetailsPage = () => {
+const CurationDetailsPage = () => {
   const { handleSetShowFooter } = useContext(GlobalContext);
 
   useEffect(() => {
@@ -16,9 +16,9 @@ const ArtworkDetailsPage = () => {
 
   return (
     <ContainerStyled>
-      <ItemDetails />
+      <ItemDetails isCurationPage />
     </ContainerStyled>
   );
 };
 
-export default ArtworkDetailsPage;
+export default CurationDetailsPage;
