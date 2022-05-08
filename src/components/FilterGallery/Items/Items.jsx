@@ -18,6 +18,7 @@ const Items = () => {
   const items = isCurationsPage ? curationItems : artworkItems;
 
   const [renderItems, setRenderItems] = useState(items);
+  const [pageIsLoaded, setPageIsLoaded] = useState(false);
   const [searchParams] = useSearchParams();
 
   const getFilteredItems = filters => {
@@ -27,8 +28,15 @@ const Items = () => {
       }
       return null;
     });
+
     return filteredItems;
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setPageIsLoaded(true);
+    }, [2000]);
+  }, []);
 
   useEffect(() => {
     const selectedFilters = searchParams.getAll(searchParam);
@@ -40,7 +48,10 @@ const Items = () => {
   }, [searchParams]);
 
   return (
-    <ContainerStyled isCurationsPage={isCurationsPage}>
+    <ContainerStyled
+      isCurationsPage={isCurationsPage}
+      pageIsLoaded={pageIsLoaded}
+    >
       {!renderItems.length ? (
         <Heading size="8rem" as="h1">
           No item matches your filters :(
@@ -49,7 +60,7 @@ const Items = () => {
         <CenterWrapperStyled>
           {renderItems.map(({ id, imageSrc, caption }) => (
             <CardStyled key={id}>
-              <CardImageStyled src={imageSrc} alt="" />
+              <CardImageStyled src={imageSrc} />
               <CardTitleContainerStyled>
                 <CardTitleStyled>{caption}</CardTitleStyled>
               </CardTitleContainerStyled>

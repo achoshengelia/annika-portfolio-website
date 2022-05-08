@@ -6,10 +6,12 @@ import Index from './components/Index/Index';
 import About from './components/About/About';
 import CurationsPage from './pages/Curations/CurationsPage';
 import Imprint from './components/Imprint/Imprint';
+import { ScrollToTop } from './components/global/utils';
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="design-artworks" element={<ArtworksPage />} />
