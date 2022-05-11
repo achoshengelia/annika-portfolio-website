@@ -44,6 +44,7 @@ export const HeadingStyled = styled.span`
       : null};
   text-transform: ${({ isUppercase }) =>
     isUppercase ? 'uppercase' : 'capitalize'};
+  white-space: nowrap;
 
   @media ${props => props.theme.breakpoints.md} {
     font-size: ${({ size, as }) =>

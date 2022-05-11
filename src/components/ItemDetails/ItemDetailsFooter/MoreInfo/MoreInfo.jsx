@@ -4,20 +4,17 @@ import { ContainerStyled, ContainerBackgroundStyled } from './MoreInfoStyles';
 
 const MoreInfo = ({ moreInfo }) => {
   return (
-    <>
-      <ContainerStyled>
-        <Text as="p" className="text">
-          {moreInfo.map(text => (
-            <React.Fragment key={text}>
-              {text}
-              <br />
-              <br />
-            </React.Fragment>
-          ))}
-        </Text>
-      </ContainerStyled>
-      <ContainerBackgroundStyled></ContainerBackgroundStyled>
-    </>
+    <ContainerStyled>
+      <Text as="p">
+        {moreInfo.map(text => (
+          <React.Fragment key={text}>
+            {text}
+            <br />
+            <br />
+          </React.Fragment>
+        ))}
+      </Text>
+    </ContainerStyled>
   );
 };
 

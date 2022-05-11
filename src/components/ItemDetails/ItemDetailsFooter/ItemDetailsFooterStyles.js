@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { CenterWrapperStyled } from '../../global/utils';
 
 export const MoreButtonStyled = styled.button`
   background: transparent;
@@ -19,14 +20,23 @@ export const MoreButtonStyled = styled.button`
 `;
 
 export const ContainerStyled = styled.footer`
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin-top: auto;
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  z-index: 2;
-  border-top: 1px solid ${props => props.theme.colors.secondary.main};
-  border-bottom: 1px solid ${props => props.theme.colors.secondary.main};
-  padding: 1.4rem 2.5rem;
-  background-color: ${props => props.theme.colors.primary.main};
+  z-index: 9;
+
+  ${CenterWrapperStyled} {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    border-top: 1px solid ${props => props.theme.colors.secondary.main};
+    border-bottom: 1px solid ${props => props.theme.colors.secondary.main};
+    padding: 1.4rem 2.5rem;
+    background-color: ${props => props.theme.colors.primary.main};
+  }
 `;

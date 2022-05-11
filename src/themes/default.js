@@ -6,7 +6,8 @@ const defaultTheme = {
     primary: {
       light: '#EDEDED',
       main: '#E5E5E5',
-      dark: '#C7C7C7'
+      dark: '#C7C7C7',
+      transparent: 'rgba(229, 229, 229, .8)'
     },
     secondary: {
       light: '#999',

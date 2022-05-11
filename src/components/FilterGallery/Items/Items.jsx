@@ -49,13 +49,16 @@ const Items = () => {
   }, [searchParams]);
 
   return !renderItems.length ? (
-    <ContainterErrorStyled>
-      <Heading as="h5">No item matches your filters :(</Heading>
-    </ContainterErrorStyled>
+    <ContainerStyled>
+      <Heading as="h1" size="2rem">
+        No item matches your filters :(
+      </Heading>
+    </ContainerStyled>
   ) : (
     <ContainerStyled
       isCurationsPage={isCurationsPage}
       pageIsLoaded={pageIsLoaded}
+      grid
     >
       {renderItems.map(({ id, imageSrc, caption }) => (
         <Link to={`${caption}`} key={id}>

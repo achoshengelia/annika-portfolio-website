@@ -32,6 +32,10 @@ const Swiper = ({ gallery }) => {
       loop
       navigation={isSmallDevice}
       modules={[EffectFade, Navigation]}
+      autoHeight
+      centeredSlides
+      fadeEffect={{ crossFade: true }}
+      speed={500}
     >
       {gallery?.map(link => (
         <SwiperSlide key={link}>
