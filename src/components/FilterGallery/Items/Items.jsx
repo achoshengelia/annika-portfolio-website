@@ -9,7 +9,8 @@ import {
   CardStyled,
   CardTitleContainerStyled,
   CardTitleStyled,
-  ContainerStyled
+  ContainerStyled,
+  ContainterErrorStyled
 } from './ItemsStyles';
 
 const Items = () => {
@@ -48,9 +49,9 @@ const Items = () => {
   }, [searchParams]);
 
   return !renderItems.length ? (
-    <Heading size="8rem" as="h1">
-      No item matches your filters :(
-    </Heading>
+    <ContainterErrorStyled>
+      <Heading as="h5">No item matches your filters :(</Heading>
+    </ContainterErrorStyled>
   ) : (
     <ContainerStyled
       isCurationsPage={isCurationsPage}

@@ -19,3 +19,12 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
     }
   }
 `;
+
+export const ContainerDetailsStyled = styled.div`
+  position: fixed;
+  bottom: 3%;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+`;

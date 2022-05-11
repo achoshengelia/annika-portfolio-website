@@ -14,7 +14,14 @@ export const SwiperStyled = styled(Swiper)`
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 80%;
+    object-fit: scale-down;
+  }
+
+  .swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: scale-down;
   }
 `;

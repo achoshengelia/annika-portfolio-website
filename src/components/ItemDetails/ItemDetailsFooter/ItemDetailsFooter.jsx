@@ -12,10 +12,11 @@ const ItemDetailsFooter = ({ itemDetails }) => {
   return (
     <>
       <ContainerStyled>
-        <Text size="1.6rem" isUppercase>
+        <Text as="h5" isUppercase>
           {itemDetails?.caption}
         </Text>
-        <Text size="1.6rem">{itemDetails?.curation}</Text>
+        {/* when width of screen is sm or smaller, the jsx below should not be shown */}
+        <Text as="h5">{itemDetails?.curation}</Text>
         <MoreButtonStyled onClick={handleToggleShowMore}>
           {showMore ? 'Back' : 'More'}
         </MoreButtonStyled>

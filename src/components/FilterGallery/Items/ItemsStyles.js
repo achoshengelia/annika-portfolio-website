@@ -90,3 +90,10 @@ export const ContainerStyled = styled.section`
     }
   }
 `;
+
+export const ContainterErrorStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+`;
