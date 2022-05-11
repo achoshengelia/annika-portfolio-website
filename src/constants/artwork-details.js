@@ -43,7 +43,7 @@ export const artworkDetailsItems = [
   },
   {
     id: createID(),
-    caption: 'canederli AR',
+    caption: 'Knedl AR',
     curation: 'AR Filter | 2021',
     gallery: [
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651780024/Artworks/canederliAR/canederli4_ebsf8c.mp4',
@@ -51,7 +51,10 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651780001/Artworks/canederliAR/canederli5_ra9hcd.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651780002/Artworks/canederliAR/canederli8_w0uqrc.png'
     ],
-    moreInfo: ['', 'Developed in Spark AR and published on Facebook']
+    moreInfo: [
+      'Dumplings are a speciality from the northern Italian region of "South Tyrol" and the former Austrian province.  This typical peasant dish utilises leftover bread that has dried up and comes in many variations from cheese to nettle.',
+      'Knedl AR allows the user to draw with a stream of South Tyrolean dumplings in different flavours.'
+    ]
   },
   {
     id: createID(),
@@ -68,8 +71,10 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779245/Artworks/zueinander/zueinander_web8_obevh4.png'
     ],
     moreInfo: [
-      '',
-      '',
+      'The project "Zueinander (finden) - trovarsi" was developed for the Ariadne association to raise awareness for mental health. After a year of the Corona pandemic and the various lockdowns, the need was great to create a symbol of encounter and community in public space.',
+      'During the conceptual development, Sophie Lazari and me worked to develop a project that meets the needs of the associations. The result is a public bench that makes the project accessible to all. Just like the logo designed by Sophie Lazari, the people are facing each other. This encourages interaction and communication between the sitting partners. Near the benches, slogans from the members of the associations served as thought-provoking elements, opening up a second level to stimulate a discussion about mental health. A link to the project website allowed users to share their own personal background and thoughts on this taboo topic online at the same time.',
+      "The installation is a social-artistic project that visited 9 locations in the northern Italian region of South Tyrol. An opening event with artistic performances by artists and poets of the South Tyrolean Artists' Association has involved other pedestrians in the project in many places.",
+      'Many thanks go to the Kofler carpentry in Völlan for their help in constructing the benches and to Achi Shengelia and Reziko Chkadua for their support in developing the website.',
       'Concept and Website developed for Association Ariadne',
       'Grafic & Logo: Sophie Lazari'
     ]
@@ -93,6 +98,11 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779624/Artworks/imperceptible/imperceptible4_rzv1hu.jpg'
     ],
     moreInfo: [
+      'In the course of industrialisation and the associated rapid transformation of the environment, human sensors were unable to adapt evolutionarily. Artificial senses could help to point out new and health-threatening environmental toxins. For people who will live in a heavily contaminated world in the future, such sensory enhancements can provide important information about the immediate environment. ',
+      '(Im)perceptible targets two different scenarios, the sensitisation of fine particulate matter4 (PM) and TVOC5 (volatile organic compounds) is targeted. The level of particulate matter pollution is translated into a tactile pattern and the exceeding of the safe TVOC level into an olfactory signal. The main aim is to find out whether it helps to avoid the sources and reduce the triggers, and whether it can lead to a change in behaviour.',
+      'The final prototypes each consists of a sensor that measures the fine dust (PM) on the one hand and the TVOC content of the air on the other. In the first prototype, these values are communicated by an individually selected warning signal as soon as they exceed the limit value. The user is inevitably exposed to the odour and must actively act to reduce the value back to normal. As fragrances are also TVOCs, this can lead to a further unhealthy increase in TVOC levels if the users do not take action.',
+      'In the second scenario, a wearable prototype was created that allows the user to experience the current level of particulate matter through a tactile vibration pattern. The vibration intensity of the three coin-operated vibration motors indicates when there is an increase in PM levels. A portable rechargeable battery makes the wearable ready for long journeys and daily use. A higher resolution and wearing it closer to the body would provide the user with more information and more complex data via the skin.',
+      'In addition to refining the tactile signals and the position of the device on the user’s body, the interface in the form of an app would also have to be revised. This is particularly important, as initial wearing of the device orientation values to learn to interpret the signals. In order to increase the willingness to learn, the design of the visual aids is therefore an essential point to reduce the initial barriers to entry.',
       'Special thanks for helping realizing this project: Sophie Lazari, Constantin Engelmann, Robert Schüller, Vinzent Aubry, Merani Schilcher, Achi Shengelia'
     ]
   },
@@ -114,13 +124,16 @@ export const artworkDetailsItems = [
   },
   {
     id: createID(),
-    caption: 'Wos geat?',
+    caption: 'Wos geat',
     curation: 'AR Filter | 2019',
     gallery: [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.27_n5vwq5.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.04_iuyxjf.png'
     ],
-    moreInfo: []
+    moreInfo: [
+      'Watten is the most popular card game in northern Italy. It is part of everyday life in South Tyrol and its guesthouse culture. Usually played in pairs, two players from opposing teams can choose the trump card in each new round.',
+      'Wos geat? (what (trump) goes? in South Tyrollean dialect) is an AR filter created with Spark AR that helps to randomly select a new trump.It can be used in a new way when making out by deciding the trump, or it can simply stand as an homage to the traditional card game.'
+    ]
   },
   {
     id: createID(),
@@ -138,7 +151,10 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779015/Artworks/bodynamics/bodynamics1_imxssd.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779015/Artworks/bodynamics/bodynamics2_ivoj11.jpg'
     ],
-    moreInfo: ['', 'Model: Sophie Lazari']
+    moreInfo: [
+      'As René Descartes once wrote: "The human body is a machine whose movements are directed by the soul." Bodynamics captures the soul in its various forms and stages in a photographic series.  Celebrating the adaptability and diversity of the human body and mind.',
+      'Model: Sophie Lazari'
+    ]
   },
   {
     id: createID(),
@@ -158,7 +174,16 @@ export const artworkDetailsItems = [
     curation: 'Physical data visualisation | 2019',
     gallery: [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779568/Artworks/datadust2/datadust24_xzwv9m.jpg',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779567/Artworks/datadust2/datadust22_pjuc4l.jpg'
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779567/Artworks/datadust2/datadust22_pjuc4l.jpg',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779598/Artworks/datadust2/datadust21_fdqkni.mov',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust28_nc2lbo.png',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779583/Artworks/datadust2/datadust29_jf8qdj.mp4',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust27_eqshu0.png',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779573/Artworks/datadust2/datadust212_ay81ki.mp4',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust26_flf0rm.png',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779583/Artworks/datadust2/datadust210_srrghb.mp4',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779568/Artworks/datadust2/datadust25_qhb9ud.jpg',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779580/Artworks/datadust2/datadust211_derre4.mp4'
     ],
     moreInfo: [
       'Salt lakes arise mostly in drylands or deserts. As a result of high evaporation, the salt content of the water is constantly increased. If the rate of water evaporation exceeds the rate of precipitation, salt pans are formed. Climate change and human intervention through water diversification cause saline lakes to dry up. The near collapse of salt lakes leave dust storms threatening human health and agricultural fields.',
@@ -173,16 +198,7 @@ export const artworkDetailsItems = [
     curation: 'Physical data visualisation | 2019',
     gallery: [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779536/Artworks/datadust1/IMG_5684_nn6lxm.jpg',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779536/Artworks/datadust1/datadust004_tfhd3z.jpg',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779598/Artworks/datadust2/datadust21_fdqkni.mov',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust28_nc2lbo.png',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779583/Artworks/datadust2/datadust29_jf8qdj.mp4',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust27_eqshu0.png',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779573/Artworks/datadust2/datadust212_ay81ki.mp4',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust26_flf0rm.png',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779583/Artworks/datadust2/datadust210_srrghb.mp4',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779568/Artworks/datadust2/datadust25_qhb9ud.jpg',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779580/Artworks/datadust2/datadust211_derre4.mp4'
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779536/Artworks/datadust1/datadust004_tfhd3z.jpg'
     ],
     moreInfo: [
       'Datadust 0 is a first attempt to physically reproduce data using hourglasses. For four days in November 2018, I tracked the time I spent on the smartphone.',

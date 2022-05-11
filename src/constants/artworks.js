@@ -41,7 +41,7 @@ export const artworkItems = [
   },
   {
     id: createID(),
-    caption: 'canederli AR',
+    caption: 'Knedl AR',
     imageSrc:
       //'https://res.cloudinary.com/dojsjcecs/image/upload/v1652008383/Artworks/previewpics/canederli5_kmbh7k.jpg',
       //'https://res.cloudinary.com/dojsjcecs/image/upload/v1652007282/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_14.54.24_sbttqd.png',
@@ -72,7 +72,7 @@ export const artworkItems = [
   },
   {
     id: createID(),
-    caption: 'Wos geat?',
+    caption: 'Wos geat',
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.04_iuyxjf.png',
     tags: [all, augumentedReality]
