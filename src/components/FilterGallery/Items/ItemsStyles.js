@@ -39,7 +39,7 @@ export const CardStyled = styled.figure`
 
 export const ContainerStyled = styled.section`
   padding-top: 3rem;
-  display: grid;
+  display: ${({ grid }) => (grid ? 'grid' : 'block')};
   grid-template-columns: ${props =>
     props.isCurationsPage ? 'repeat(3, 1fr)' : 'repeat(4, 1fr)'};
   gap: 2rem;

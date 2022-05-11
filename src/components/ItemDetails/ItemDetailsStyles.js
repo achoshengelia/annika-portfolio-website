@@ -9,9 +9,13 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
   align-items: center;
 
   ${Swiper} {
-    margin: auto 0;
-    max-width: ${props => (props.isCurationPage ? '85rem' : '35rem')};
-    height: 50rem;
+    margin-top: 7rem;
+    max-width: 50%;
+    max-height: 80%;
+
+    /* max-width: ${props => (props.isCurationPage ? '85rem' : '35rem')}; */
+    /* height: 50rem; */
+    /* max-height: 80%; */
 
     @media ${props => props.theme.breakpoints.lg} {
       max-width: 100%;

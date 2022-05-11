@@ -12,7 +12,7 @@ export const ContainerStyled = styled.div`
   cursor: ${({ prev, isSmallDevice }) =>
     isSmallDevice ? null : prev ? `url(${Prev}), auto` : `url(${Next}), auto`};
   z-index: 10;
-  height: 100%;
+  height: 80%;
   width: 50%;
 
   & > img {

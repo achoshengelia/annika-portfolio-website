@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useParams } from 'react-router-dom';
 import { getArtworkDetails } from '../../constants/artwork-details';
 import { getCurationDetails } from '../../constants/curation-details';
@@ -17,16 +18,21 @@ const ItemDetails = ({ isCurationPage }) => {
   }, []);
 
   return (
-    <ContainerStyled isCurationPage={isCurationPage}>
-      {itemDetails ? (
-        <>
-          <Swiper gallery={itemDetails?.gallery} />
-          <ItemDetailsFooter itemDetails={itemDetails} />
-        </>
-      ) : (
-        <div>Not Found!</div>
-      )}
-    </ContainerStyled>
+    <>
+      <ContainerStyled isCurationPage={isCurationPage}>
+        {itemDetails ? (
+          <>
+            <Swiper gallery={itemDetails?.gallery} />
+            {createPortal(
+              <ItemDetailsFooter itemDetails={itemDetails} />,
+              document.getElementById('root')
+            )}
+          </>
+        ) : (
+          <div>Not Found!</div>
+        )}
+      </ContainerStyled>
+    </>
   );
 };
 
