@@ -8,8 +8,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   *::selection{
-    background: ${props => props.theme.colors.text.main};
-    color: ${props => props.theme.colors.primary.main};
+    background: ${props => props.theme.colors.other.purple};
+    color: ${props => props.theme.colors.background.main};
   }
 
   html, body, #root {

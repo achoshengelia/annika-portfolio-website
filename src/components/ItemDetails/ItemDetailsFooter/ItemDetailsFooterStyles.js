@@ -6,6 +6,10 @@ export const MoreButtonStyled = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
 
+  @media ${props => props.theme.breakpoints.lg} {
+    font-size: 1.6rem;
+  }
+
   @media ${props => props.theme.breakpoints.md} {
     font-size: 1.35rem;
   }
@@ -35,5 +39,20 @@ export const ContainerStyled = styled.footer`
     border-bottom: 1px solid ${props => props.theme.colors.secondary.main};
     padding: 1.4rem 2.5rem;
     background-color: ${props => props.theme.colors.primary.main};
+
+    @media ${props => props.theme.breakpoints.md} {
+      font-size: 1.35rem;
+      padding: 1.4rem 1.5rem;
+    }
+
+    @media ${props => props.theme.breakpoints.sm} {
+      font-size: 1.2rem;
+      padding: 1.4rem 1rem;
+    }
+
+    @media ${props => props.theme.breakpoints.xs} {
+      font-size: 1.1rem;
+      padding: 1.4rem 0.8rem;
+    }
   }
 `;

@@ -55,8 +55,6 @@ export const ContainerStyled = styled.div`
     @media ${props => props.theme.breakpoints.sm} {
       margin: 1.5rem 0;
       gap: 3rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
     }
   }
 `;

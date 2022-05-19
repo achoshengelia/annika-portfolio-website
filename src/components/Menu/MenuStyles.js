@@ -42,7 +42,7 @@ export const MenuStyled = styled.li`
   transition: all 200ms ease-in-out;
 
   &:hover {
-    color: #a863ff;
+    color: ${props => props.theme.colors.other.purple};
     -webkit-transform: scale(1.02);
     -ms-transform: scale(1.03);
     transform: scale(1.02);
