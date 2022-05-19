@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
+import useWindowDimensions from '../../../hooks/useWindowDimensions';
 import { CenterWrapperStyled, Text } from '../../global/utils';
 import { ContainerStyled, MoreButtonStyled } from './ItemDetailsFooterStyles';
 import MoreInfo from './MoreInfo/MoreInfo';
@@ -9,13 +10,14 @@ const ItemDetailsFooter = ({ itemDetails }) => {
 
   const handleToggleShowMore = () => setShowMore(prevState => !prevState);
 
+  const { width } = useWindowDimensions();
+
   return (
     <>
       <ContainerStyled>
         <CenterWrapperStyled>
           <Text isUppercase>{itemDetails?.caption}</Text>
-          {/* when width of screen is sm or smaller, the jsx below should not be shown */}
-          <Text>{itemDetails?.curation}</Text>
+          {width > 950 ? <Text>{itemDetails?.curation}</Text> : null}
           <MoreButtonStyled onClick={handleToggleShowMore}>
             {showMore ? 'Back' : 'More'}
           </MoreButtonStyled>

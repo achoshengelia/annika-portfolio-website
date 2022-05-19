@@ -28,7 +28,7 @@ const defaultTheme = {
     other: {
       white: '#fff',
       black: '#000',
-      purple: '#4b4b4b'
+      purple: '#9933FF'
     }
   },
   breakpoints: {
