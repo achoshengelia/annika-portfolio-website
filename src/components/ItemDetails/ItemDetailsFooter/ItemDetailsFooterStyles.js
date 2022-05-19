@@ -22,10 +22,7 @@ export const MoreButtonStyled = styled.button`
 export const ContainerStyled = styled.footer`
   padding: 0 2rem;
   margin-bottom: 1.5rem;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  z-index: 9;
 
   ${CenterWrapperStyled} {
     display: flex;

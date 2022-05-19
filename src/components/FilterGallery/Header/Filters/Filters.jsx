@@ -61,9 +61,9 @@ const Filters = props => {
   }, [searchParams]);
 
   return (
-    <ContainerStyled isCurationsPage={isCurationsPage}>
+    <ContainerStyled>
       <LineBreakStyled />
-      <CenterWrapperStyled>
+      <CenterWrapperStyled as="ul">
         {renderItems.map(item => (
           <FilterItemStyled
             key={item}

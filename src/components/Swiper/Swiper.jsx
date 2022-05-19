@@ -25,6 +25,18 @@ const Swiper = ({ gallery }) => {
     }
   };
 
+  const handleVideoSlide = () => {
+    const videos = [...document.getElementsByClassName('video')];
+
+    videos.forEach(video => {
+      if (video.classList.value.includes('active')) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  };
+
   return (
     <SwiperStyled
       spaceBetween={30}
@@ -32,20 +44,21 @@ const Swiper = ({ gallery }) => {
       loop
       navigation={isSmallDevice}
       modules={[EffectFade, Navigation]}
-      autoHeight
-      centeredSlides
       fadeEffect={{ crossFade: true }}
       speed={500}
+      onTransitionEnd={handleVideoSlide}
     >
       {gallery?.map(link => (
         <SwiperSlide key={link}>
-          {isVideo(link) ? (
-            <video autoPlay height="100%">
-              <source src={link}></source>
-            </video>
-          ) : (
-            <img src={link} />
-          )}
+          {({ isActive }) =>
+            isVideo(link) ? (
+              <video className={`video ${isActive ? 'active' : ''}`} loop>
+                <source src={link} />
+              </video>
+            ) : (
+              <img src={link} alt="" />
+            )
+          }
         </SwiperSlide>
       ))}
 

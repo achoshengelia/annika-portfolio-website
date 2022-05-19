@@ -9,8 +9,7 @@ import {
   CardStyled,
   CardTitleContainerStyled,
   CardTitleStyled,
-  ContainerStyled,
-  ContainterErrorStyled
+  ContainerStyled
 } from './ItemsStyles';
 
 const Items = () => {
@@ -22,17 +21,6 @@ const Items = () => {
   const [pageIsLoaded, setPageIsLoaded] = useState(false);
   const [searchParams] = useSearchParams();
 
-  const getFilteredItems = filters => {
-    const filteredItems = items.filter(item => {
-      if (item.tags.some(tag => filters.includes(tag))) {
-        return item;
-      }
-      return null;
-    });
-
-    return filteredItems;
-  };
-
   useEffect(() => {
     setTimeout(() => {
       setPageIsLoaded(true);
@@ -41,12 +29,22 @@ const Items = () => {
 
   useEffect(() => {
     const selectedFilters = searchParams.getAll(searchParam);
+    const getFilteredItems = filters => {
+      const filteredItems = items.filter(item => {
+        if (item.tags.some(tag => filters.includes(tag))) {
+          return item;
+        }
+        return null;
+      });
+
+      return filteredItems;
+    };
 
     if (selectedFilters.length) {
       return setRenderItems(getFilteredItems(selectedFilters));
     }
     setRenderItems(items);
-  }, [searchParams]);
+  }, [items, searchParams]);
 
   return !renderItems.length ? (
     <ContainerStyled>
@@ -58,7 +56,7 @@ const Items = () => {
     <ContainerStyled
       isCurationsPage={isCurationsPage}
       pageIsLoaded={pageIsLoaded}
-      grid
+      isGrid
     >
       {renderItems.map(({ id, imageSrc, caption }) => (
         <Link to={`${caption}`} key={id}>

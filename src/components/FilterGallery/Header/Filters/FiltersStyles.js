@@ -40,13 +40,11 @@ export const FilterItemStyled = styled.li`
   }
 `;
 
-export const ContainerStyled = styled.ul`
+export const ContainerStyled = styled.div`
   ${CenterWrapperStyled} {
     display: flex;
-    justify-content: ${props =>
-      props.isCurationsPage ? 'flex-start' : 'space-between'};
     gap: 4rem;
-    margin: 2.5rem 0;
+    margin: 2.5rem auto;
     flex-wrap: wrap;
 
     @media ${props => props.theme.breakpoints.md} {
@@ -59,9 +57,6 @@ export const ContainerStyled = styled.ul`
       gap: 3rem;
       padding-left: 1rem;
       padding-right: 1rem;
-    }
-
-    @media ${props => props.theme.breakpoints.xs} {
     }
   }
 `;

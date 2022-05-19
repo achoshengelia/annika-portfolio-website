@@ -9,7 +9,6 @@ export const MainWrapperStyled = styled.header`
     rgba(0, 0, 0, 0),
     rgba(230, 229, 227, 1)
   );
-  padding-bottom: 2.2rem;
 `;
 
 export const ListItemsStyled = styled.ul`
