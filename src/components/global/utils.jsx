@@ -45,69 +45,6 @@ export const HeadingStyled = styled.span`
   text-transform: ${({ isUppercase }) =>
     isUppercase ? 'uppercase' : 'capitalize'};
   white-space: nowrap;
-
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: ${({ size, as }) =>
-      size
-        ? size
-        : as === 'h1'
-        ? '6.5rem'
-        : as === 'h2'
-        ? '6rem'
-        : as === 'h3'
-        ? '5.5rem'
-        : as === 'h4'
-        ? '3.5rem'
-        : as === 'h5'
-        ? '2rem'
-        : as === 'h6'
-        ? '1.6rem'
-        : null};
-    text-transform: ${({ isUppercase }) =>
-      isUppercase ? 'uppercase' : 'capitalize'};
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: ${({ size, as }) =>
-      size
-        ? size
-        : as === 'h1'
-        ? '5.5rem'
-        : as === 'h2'
-        ? '4.5rem'
-        : as === 'h3'
-        ? '6rem'
-        : as === 'h4'
-        ? '3rem'
-        : as === 'h5'
-        ? '2rem'
-        : as === 'h6'
-        ? '1.3rem'
-        : null};
-    text-transform: ${({ isUppercase }) =>
-      isUppercase ? 'uppercase' : 'capitalize'};
-  }
-
-  /* @media ${props => props.theme.breakpoints.xs} {
-    font-size: ${({ size, as }) =>
-    size
-      ? size
-      : as === 'h1'
-      ? '3.5rem'
-      : as === 'h2'
-      ? '5rem'
-      : as === 'h3'
-      ? '4rem'
-      : as === 'h4'
-      ? '3rem'
-      : as === 'h5'
-      ? '1.6rem'
-      : as === 'h6'
-      ? '1.1rem'
-      : null};
-    text-transform: ${({ isUppercase }) =>
-    isUppercase ? 'uppercase' : 'capitalize'};
-  } */
 `;
 
 export const Heading = props => {
