@@ -10,6 +10,34 @@ export const CardTitleStyled = styled.figcaption`
   text-transform: uppercase;
   text-align: center;
   line-height: 4rem;
+
+  @media only screen and (max-width: 1150px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 950px) {
+    font-size: 2.3rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 460px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 380px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 330px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const CardTitleContainerStyled = styled.div`
@@ -44,15 +72,19 @@ export const ContainerStyled = styled.section`
     props.isCurationsPage ? 'repeat(3, 1fr)' : 'repeat(4, 1fr)'};
   gap: 2rem;
 
-  @media ${props => props.theme.breakpoints.lg} {
-    grid-template-columns: repeat(3, 1fr);
+  @media only screen and (max-width: 1100px) {
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: ${props =>
+      props.isCurationsPage ? 'repeat(2, 1fr)' : 'repeat(3, 1fr)'};
   }
 
-  @media ${props => props.theme.breakpoints.md} {
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 870px) {
+    //grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: ${props =>
+      props.isCurationsPage ? 'repeat(1, 1fr)' : 'repeat(2, 1fr)'};
   }
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 620px) {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -81,12 +113,24 @@ export const ContainerStyled = styled.section`
       }
     }
 
-    @media ${props => props.theme.breakpoints.md} {
-      height: 60rem;
+    @media screen and (max-width: 870px) {
+      height: ${props => (props.isCurationsPage ? '50rem' : '60rem')};
     }
 
-    @media ${props => props.theme.breakpoints.sm} {
-      height: 70rem;
+    @media screen and (max-width: 770px) {
+      height: ${props => (props.isCurationsPage ? '45rem' : '45rem')};
+    }
+
+    @media screen and (max-width: 620px) {
+      height: ${props => (props.isCurationsPage ? '40rem' : '70rem')};
+    }
+
+    @media screen and (max-width: 441px) {
+      height: ${props => (props.isCurationsPage ? '30rem' : '55rem')};
+    }
+
+    @media screen and (max-width: 382px) {
+      height: ${props => (props.isCurationsPage ? '22rem' : '45rem')};
     }
   }
 `;
