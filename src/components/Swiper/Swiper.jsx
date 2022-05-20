@@ -62,8 +62,8 @@ const Swiper = ({ gallery }) => {
         </SwiperSlide>
       ))}
 
-      <Prevbutton id="edit-img" isSmallDevice={isSmallDevice} prev />
-      <NextButton id="edit-img" isSmallDevice={isSmallDevice} />
+      <Prevbutton isSmallDevice={isSmallDevice} prev />
+      <NextButton isSmallDevice={isSmallDevice} />
     </SwiperStyled>
   );
 };
