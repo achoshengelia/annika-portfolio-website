@@ -12,9 +12,19 @@ const ItemDetails = ({ isCurationPage }) => {
   const [itemDetails, setItemDetails] = useState();
 
   useEffect(() => {
+    document.querySelector('html').style.height = '100%';
+    document.querySelector('body').style.height = '100%';
+    document.querySelector('#root').style.height = '100%';
+
     setItemDetails(
       isCurationPage ? getCurationDetails(id) : getArtworkDetails(id)
     );
+
+    return () => {
+      document.querySelector('html').removeAttribute('style');
+      document.querySelector('body').removeAttribute('style');
+      document.querySelector('#root').removeAttribute('style');
+    };
   }, []);
 
   return (

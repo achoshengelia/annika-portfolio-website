@@ -29,7 +29,6 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.text.main};
     cursor: default;
     text-rendering: optimizeSpeed;
-
   }
 
   #root {
