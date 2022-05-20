@@ -27,6 +27,7 @@ export const ContainerStyled = styled.footer`
   padding: 0 2rem;
   margin-bottom: 1.5rem;
   width: 100%;
+  z-index: 10;
 
   ${CenterWrapperStyled} {
     display: flex;
@@ -34,7 +35,7 @@ export const ContainerStyled = styled.footer`
     align-content: center;
     margin-top: auto;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
     border-top: 1px solid ${props => props.theme.colors.secondary.main};
     border-bottom: 1px solid ${props => props.theme.colors.secondary.main};
     padding: 1.4rem 2.5rem;

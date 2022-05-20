@@ -3,10 +3,12 @@ import styled from 'styled-components';
 export const MainWrapperStyled = styled.header`
   position: sticky;
   top: 0;
-  z-index: 12;
+  z-index: 15;
+  padding-bottom: 1.5rem;
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0),
+    rgba(230, 229, 227, 0.5),
     rgba(230, 229, 227, 1)
   );
 `;
@@ -17,7 +19,6 @@ export const ListItemsStyled = styled.ul`
   align-items: center;
   padding-top: 2rem;
   min-height: 5rem;
-  padding-top: 2rem;
 `;
 
 export const ItemStyled = styled.li`
