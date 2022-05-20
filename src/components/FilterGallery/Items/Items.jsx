@@ -12,6 +12,28 @@ import {
   ContainerStyled
 } from './ItemsStyles';
 
+const Item = ({ item: { imageSrc, caption } }) => {
+  const [imageIsLoaded, setImageIsLoaded] = useState(false);
+
+  return (
+    <CardStyled>
+      <CardImageStyled
+        src={imageSrc}
+        alt={caption}
+        onLoad={() => setImageIsLoaded(true)}
+        imageIsLoaded={imageIsLoaded}
+      />
+      {!imageIsLoaded ? (
+        <div>Loading...</div>
+      ) : (
+        <CardTitleContainerStyled>
+          <CardTitleStyled>{caption}</CardTitleStyled>
+        </CardTitleContainerStyled>
+      )}
+    </CardStyled>
+  );
+};
+
 const Items = () => {
   const { isCurationsPage } = useContext(GlobalContext);
 
@@ -68,25 +90,3 @@ const Items = () => {
 };
 
 export default Items;
-
-const Item = ({ item: { imageSrc, caption } }) => {
-  const [imageIsLoaded, setImageIsLoaded] = useState(false);
-
-  return (
-    <CardStyled>
-      <CardImageStyled
-        src={imageSrc}
-        alt={caption}
-        onLoad={() => setImageIsLoaded(true)}
-        imageIsLoaded={imageIsLoaded}
-      />
-      {!imageIsLoaded ? (
-        <div>Loading...</div>
-      ) : (
-        <CardTitleContainerStyled>
-          <CardTitleStyled>{caption}</CardTitleStyled>
-        </CardTitleContainerStyled>
-      )}
-    </CardStyled>
-  );
-};
