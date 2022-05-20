@@ -58,11 +58,15 @@ export const CardImageStyled = styled.img`
   width: 100%;
   object-fit: cover;
   transition: transform 0.2s ease-in;
+  display: ${({ imageIsLoaded }) => (!imageIsLoaded ? 'none' : 'block')};
 `;
 
 export const CardStyled = styled.figure`
   opacity: 0;
   animation: ${PopIn} 0.6s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ContainerStyled = styled.section`
