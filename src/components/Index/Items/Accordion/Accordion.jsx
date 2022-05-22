@@ -1,12 +1,7 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import useWindowDimensions from '../../../../hooks/useWindowDimensions';
 import { LineBreakStyled, Text } from '../../../global/utils';
-import {
-  ContainerStyled,
-  HeaderStyled,
-  TagsStyled,
-  ImageStyled
-} from './AccordionStyles';
+import { ContainerStyled, HeaderStyled, ImageStyled } from './AccordionStyles';
 
 const Accordion = ({ item }) => {
   const { caption, tags, organisation, projectlink, year, image } = item;
