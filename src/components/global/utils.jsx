@@ -42,8 +42,8 @@ export const HeadingStyled = styled.span`
       : as === 'h6'
       ? '1.8rem'
       : null};
-  text-transform: ${({ isUppercase }) =>
-    isUppercase ? 'uppercase' : 'capitalize'};
+  text-transform: ${({ isUppercase, noTransform }) =>
+    isUppercase ? 'uppercase' : noTransform ? null : 'capitalize'};
   white-space: nowrap;
 `;
 
