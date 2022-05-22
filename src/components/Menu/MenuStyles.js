@@ -6,6 +6,7 @@ export const MainWrapperStyled = styled.div`
   inset: 0;
   z-index: 10;
   background-color: ${props => props.theme.colors.primary.main};
+
   ${CenterWrapperStyled} {
     height: 100%;
   }
@@ -39,7 +40,7 @@ export const MenuStyled = styled.li`
   cursor: pointer;
   width: fit-content;
   text-transform: uppercase;
-  transition: all 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 
   &:hover {
     color: ${props => props.theme.colors.other.purple};

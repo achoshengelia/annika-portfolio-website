@@ -4,34 +4,31 @@ export const GlobalContext = createContext({
   showMenu: false,
   isCurationsPage: false,
   showFooter: true,
+  isItemDetailsPage: false,
   handleToggleShowMenu: () => {},
-  handleSetShowFooter: () => {}
+  handleSetShowFooter: () => {},
+  setIsItemDetailsPage: () => {}
 });
 
 export const GlobalContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showFooter, setShowFooter] = useState(true);
+  const [isItemDetailsPage, setIsItemDetailsPage] = useState(false);
   const isCurationsPage = window.location.pathname
     .split('/')
     .includes('curation');
 
-  const handleToggleShowMenu = () => {
-    setShowMenu(prevState => !prevState);
-
-    if (!showMenu) {
-      return (document.body.style.overflow = 'hidden');
-    }
-
-    document.body.style = null;
-  };
+  const handleToggleShowMenu = () => setShowMenu(prevState => !prevState);
   const handleSetShowFooter = value => setShowFooter(value);
 
   const contextValue = {
     showMenu,
     showFooter,
     isCurationsPage,
+    isItemDetailsPage,
     handleToggleShowMenu,
-    handleSetShowFooter
+    handleSetShowFooter,
+    setIsItemDetailsPage
   };
 
   return (

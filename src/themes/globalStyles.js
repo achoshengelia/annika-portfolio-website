@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #root {
     min-height: 100%;
+    height: ${props => (props.isItemDetailsPage ? '100%' : null)}
   }
 
   html {
@@ -29,6 +30,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.text.main};
     cursor: default;
     text-rendering: optimizeSpeed;
+    overflow: ${props => (props.showMenu ? 'hidden' : null)}
   }
 
   #root {
