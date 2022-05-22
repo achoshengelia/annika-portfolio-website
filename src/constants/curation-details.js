@@ -96,8 +96,7 @@ export const curationDetailsItems = [
       'Curated by Sophie Lazari, Annika Terwey & Linda Schwarz',
       'Grafic: Sophie Lazari',
       'Logo: Sophie Lazari & Annika Terwey',
-      'Fotos: Katja Bettin',
-      'Press video: https://vimeo.com/640344469'
+      'Fotos: Katja Bettin'
     ]
   }
 ];
