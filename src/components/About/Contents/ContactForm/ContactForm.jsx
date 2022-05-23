@@ -117,7 +117,7 @@ const ContactForm = () => {
               ) : null}
 
               <FieldStyled
-                as="text"
+                as="textarea"
                 name="message"
                 id="message"
                 placeholder="MESSAGE"
