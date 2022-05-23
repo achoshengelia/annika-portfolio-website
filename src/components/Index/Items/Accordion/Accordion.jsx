@@ -17,7 +17,7 @@ const Accordion = ({ item }) => {
         {width > 755 ? <Text>{tags}</Text> : null}
         {width > 1112 ? (
           <Text>
-            <a href={projectlink} target="blank">
+            <a href={projectlink} target="blank" rel="noreferrer">
               {organisation}
             </a>
           </Text>
