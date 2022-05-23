@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from '../../../global/utils';
-import { ContainerStyled, ContainerBackgroundStyled } from './MoreInfoStyles';
+import { ContainerStyled } from './MoreInfoStyles';
 
 const MoreInfo = ({ moreInfo }) => {
   return (

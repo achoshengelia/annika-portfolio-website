@@ -4,6 +4,7 @@ import {
   exhibitionDetails
 } from '../../../constants/about-friends';
 import { Heading, TextStyled as Text } from '../../global/utils';
+import ContactForm from './ContactForm/ContactForm';
 import {
   ContainerStyled,
   GridWrapperStyled,
@@ -66,6 +67,7 @@ const Contents = () => {
         <Heading as="h2" size="2.6rem" noTransform $wrap>
           Got a project in mind? Si hi and write me :)
         </Heading>
+        <ContactForm />
       </ContactWrapperStyled>
 
       <ExhibitionsWrapperStyled>
