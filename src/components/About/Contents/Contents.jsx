@@ -16,7 +16,8 @@ import {
   ExhibitionListItemStyled,
   AboutMeWrapperStyled,
   FriendsListStyled,
-  FriendsListItemStyled
+  FriendsListItemStyled,
+  IDoWrapperStyled
 } from './ContentsStyles';
 
 const Contents = () => {
@@ -47,7 +48,7 @@ const Contents = () => {
             Sophie Lazari.
           </Text>
         </AboutMeWrapperStyled>
-        <div>
+        <IDoWrapperStyled>
           <Heading as="h2" size="2.6rem">
             What I do?
           </Heading>
@@ -58,11 +59,11 @@ const Contents = () => {
             <IDoListItemStyled>Frontend Developer</IDoListItemStyled>
             <IDoListItemStyled>Augmented Reality (WebAR)</IDoListItemStyled>
           </IDoListStyled>
-        </div>
+        </IDoWrapperStyled>
       </GridWrapperStyled>
 
       <ContactWrapperStyled>
-        <Heading as="h2" size="2.6rem" noTransform>
+        <Heading as="h2" size="2.6rem" noTransform $wrap>
           Got a project in mind? Si hi and write me :)
         </Heading>
       </ContactWrapperStyled>
@@ -99,7 +100,7 @@ const Contents = () => {
       </ExhibitionsWrapperStyled>
 
       <FriendsWrapperStyled>
-        <Heading as="h2" size="2.6rem">
+        <Heading as="h2" size="2.6rem" noTransform $wrap>
           Don’t miss out and also take a look at what my friends are working on!
         </Heading>
         <FriendsListStyled>
