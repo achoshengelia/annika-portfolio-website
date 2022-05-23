@@ -4,6 +4,16 @@ import {
   TextStyled as Text
 } from '../../global/utils';
 
+export const FriendsListItemStyled = styled.li`
+  font-size: 2.2rem;
+`;
+
+export const FriendsListStyled = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+`;
+
 export const ExhibitionListItemStyled = styled.li`
   margin-top: 1rem;
 
