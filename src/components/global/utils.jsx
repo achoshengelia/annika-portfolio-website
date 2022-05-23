@@ -44,7 +44,7 @@ export const HeadingStyled = styled.span`
       : null};
   text-transform: ${({ isUppercase, noTransform }) =>
     isUppercase ? 'uppercase' : noTransform ? null : 'capitalize'};
-  white-space: nowrap;
+  white-space: ${({ $wrap }) => ($wrap ? null : 'nowrap')};
 `;
 
 export const Heading = props => {
