@@ -7,6 +7,7 @@ import CurationsPage from './pages/Curations/CurationsPage';
 import ArtworksPage from './pages/Artworks/ArtworksPage';
 import ArtworkDetailsPage from './pages/ArtworkDetails/ArtworkDetailsPage';
 import IndexPage from './pages/Index/IndexPage';
+import ImprintPage from './pages/Imprint/ImprintPage';
 import Imprint from './components/Imprint/Imprint';
 import CurationDetailsPage from './pages/CurationDetails/CurationDetailsPage';
 import { ScrollToTop } from './components/global/utils';
@@ -26,7 +27,7 @@ const App = () => {
         <Route path="curation/:id" element={<CurationDetailsPage />} />
         <Route path="index" element={<IndexPage />} />
         <Route path="about" element={<About />} />
-        <Route path="imprint" element={<Imprint />} />
+        <Route path="imprint" element={<ImprintPage />} />
       </Routes>
       {showFooter ? <Footer /> : null}
     </>
