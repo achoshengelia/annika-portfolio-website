@@ -15,26 +15,11 @@ export const FriendsListStyled = styled.ul`
 `;
 
 export const ExhibitionListItemStyled = styled.li`
+  font-size: 2.2rem;
   margin-top: 1rem;
 
   &:first-child {
     margin-top: 0;
-  }
-
-  @media only screen and (max-width: 900px) {
-    font-size: 2rem;
-  }
-
-  @media only screen and (max-width: 450px) {
-    font-size: 1.8rem;
-  }
-
-  @media only screen and (max-width: 370px) {
-    font-size: 1.6rem;
-  }
-
-  @media only screen and (max-width: 330px) {
-    font-size: 1.45rem;
   }
 `;
 
@@ -46,25 +31,29 @@ export const IDoListItemStyled = styled.li`
   list-style: disc;
   margin-left: 1.2em;
   font-size: 2.2rem;
-
-  @media only screen and (max-width: 900px) {
-    font-size: 2rem;
-  }
-
-  @media only screen and (max-width: 450px) {
-    font-size: 1.8rem;
-  }
-
-  @media only screen and (max-width: 370px) {
-    font-size: 1.6rem;
-  }
-
-  @media only screen and (max-width: 330px) {
-    font-size: 1.45rem;
-  }
 `;
 
 export const IDoListStyled = styled.ul``;
+
+export const IDoWrapperStyled = styled.div`
+  & > ${Heading} {
+    @media only screen and (max-width: 900px) {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 2.2rem;
+    }
+
+    @media only screen and (max-width: 370px) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 330px) {
+      font-size: 1.9rem;
+    }
+  }
+`;
 
 export const AboutMeWrapperStyled = styled.div`
   ${Text} {
@@ -73,22 +62,6 @@ export const AboutMeWrapperStyled = styled.div`
     &:first-child {
       margin-top: 0;
     }
-
-    @media only screen and (max-width: 900px) {
-      font-size: 2rem;
-    }
-
-    @media only screen and (max-width: 450px) {
-      font-size: 1.8rem;
-    }
-
-    @media only screen and (max-width: 370px) {
-      font-size: 1.6rem;
-    }
-
-    @media only screen and (max-width: 330px) {
-      font-size: 1.45rem;
-    }
   }
 
   @media ${props => props.theme.breakpoints.md} {
@@ -96,52 +69,7 @@ export const AboutMeWrapperStyled = styled.div`
   }
 `;
 
-export const FriendsWrapperStyled = styled.div`
-  ${Heading} {
-    margin-bottom: 3rem;
-  }
-
-  @media only screen and (max-width: 900px) {
-    & h2 {
-      font-size: 2.4rem;
-    }
-    & p {
-      font-size: 2rem;
-    }
-  }
-
-  @media only screen and (max-width: 450px) {
-    & h2 {
-      font-size: 2.2rem;
-    }
-
-    & p {
-      font-size: 1.8rem;
-      line-height: 2.6rem;
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    & h2 {
-      font-size: 2rem;
-    }
-
-    & p {
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-    & h2 {
-      font-size: 1.9rem;
-    }
-
-    & p {
-      font-size: 1.45rem;
-    }
-  }
-`;
+export const FriendsWrapperStyled = styled.div``;
 
 export const ExhibitionsWrapperStyled = styled.div`
   ${Heading} {
@@ -149,72 +77,9 @@ export const ExhibitionsWrapperStyled = styled.div`
   }
 
   font-size: 2.2rem;
-
-  @media only screen and (max-width: 900px) {
-    & h2 {
-      font-size: 2.4rem;
-    }
-    & p {
-      font-size: 2rem;
-    }
-  }
-
-  @media only screen and (max-width: 450px) {
-    & h2 {
-      font-size: 2.2rem;
-    }
-
-    & p {
-      font-size: 1.8rem;
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    & h2 {
-      font-size: 2rem;
-    }
-
-    & p {
-      font-size: 1.6rem;
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-    & h2 {
-      font-size: 1.9rem;
-    }
-
-    & p {
-      font-size: 1.45rem;
-    }
-  }
 `;
 
-export const ContactWrapperStyled = styled.div`
-  @media only screen and (max-width: 900px) {
-    & h2 {
-      font-size: 2.4rem;
-      white-space: normal;
-    }
-  }
-  @media only screen and (max-width: 450px) {
-    & h2 {
-      font-size: 2.2rem;
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    & h2 {
-      font-size: 2rem;
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-    & h2 {
-      font-size: 1.9rem;
-    }
-  }
-`;
+export const ContactWrapperStyled = styled.div``;
 
 export const GridWrapperStyled = styled.div`
   display: grid;
@@ -224,29 +89,6 @@ export const GridWrapperStyled = styled.div`
   @media ${props => props.theme.breakpoints.md} {
     grid-template-columns: 1fr;
     gap: 0rem;
-  }
-
-  @media only screen and (max-width: 900px) {
-    & h2 {
-      font-size: 2.4rem;
-    }
-  }
-  @media only screen and (max-width: 450px) {
-    & h2 {
-      font-size: 2.2rem;
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    & h2 {
-      font-size: 2rem;
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-    & h2 {
-      font-size: 1.9rem;
-    }
   }
 `;
 
@@ -258,6 +100,48 @@ export const ContainerStyled = styled.section`
 
     &:first-child {
       margin-top: 0;
+    }
+
+    & > ${Heading} {
+      margin-bottom: 3rem;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 2.4rem;
+      }
+
+      @media only screen and (max-width: 450px) {
+        font-size: 2.2rem;
+      }
+
+      @media only screen and (max-width: 370px) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 330px) {
+        font-size: 1.9rem;
+      }
+    }
+
+    &
+      ${Text},
+      ${IDoListItemStyled},
+      ${ExhibitionListItemStyled},
+      ${FriendsListItemStyled} {
+      @media only screen and (max-width: 900px) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 450px) {
+        font-size: 1.8rem;
+      }
+
+      @media only screen and (max-width: 370px) {
+        font-size: 1.6rem;
+      }
+
+      @media only screen and (max-width: 330px) {
+        font-size: 1.45rem;
+      }
     }
   }
 `;
