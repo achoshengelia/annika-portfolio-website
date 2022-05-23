@@ -98,7 +98,7 @@ const Contents = () => {
         </ExhibitionsWrapperStyled>
 
         <FriendsWrapperStyled>
-          <Heading as="h2" size="2.6rem">
+          <Heading as="h2" size="2.6rem" noTransform $wrap>
             Don’t miss out and also take a look at what my friends are working
             on!
           </Heading>
