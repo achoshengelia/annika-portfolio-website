@@ -4,6 +4,7 @@ import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
 import {
   ArrowWrapperStyled,
+  ErrorMessageSent,
   ButtonStyled,
   ButtonWrapperStyled,
   ErrorMessageStyled,
@@ -46,7 +47,7 @@ const ContactForm = () => {
         'service_uqkvw9y',
         'template_oyhn187',
         formRef?.current,
-        'nFu0aP1pEiDKw53z7gdkjakgak'
+        'nFu0aP1pEiDKw53z7'
       );
 
       setIsSuccess(true);
@@ -63,12 +64,16 @@ const ContactForm = () => {
       {isLoading ? (
         <Spinner />
       ) : isError ? (
-        <div>
-          Sorry, something went wrong when sending the email :(
-          <button onClick={() => setIsError(false)}>Try again</button>
-        </div>
+        <ErrorMessageSent>
+          Sorry, something went wrong when sending the email.{'     '}
+          <button onClick={() => setIsError(false)}>
+            Click here to try again!
+          </button>
+        </ErrorMessageSent>
       ) : isSuccess ? (
-        <div>Success</div>
+        <ErrorMessageSent>
+          Thanks for reaching out! I will come back to you as soon as possible.
+        </ErrorMessageSent>
       ) : (
         <Formik
           initialValues={initialValues}
@@ -112,7 +117,7 @@ const ContactForm = () => {
               ) : null}
 
               <FieldStyled
-                as="textarea"
+                as="text"
                 name="message"
                 id="message"
                 placeholder="MESSAGE"

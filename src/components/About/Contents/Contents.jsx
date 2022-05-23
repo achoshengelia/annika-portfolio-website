@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import {
   aboutFriends,
   exhibitionDetails
@@ -18,10 +18,19 @@ import {
   AboutMeWrapperStyled,
   FriendsListStyled,
   FriendsListItemStyled,
-  IDoWrapperStyled
+  IDoWrapperStyled,
+  ArrowWrapperStyled,
+  ButtonStyled,
+  ButtonWrapperStyled
 } from './ContentsStyles';
 
 const Contents = () => {
+  const [isFormOpen, SetIsFormOpen] = useState(false);
+
+  const handleWriteMail = () => {
+    SetIsFormOpen(true);
+  };
+
   const arrayExh = exhibitionDetails.length;
   const halfArray = arrayExh / 2;
 
@@ -63,10 +72,18 @@ const Contents = () => {
         </IDoWrapperStyled>
       </GridWrapperStyled>
 
-      <ContactWrapperStyled>
+      <ContactWrapperStyled isFormOpen={isFormOpen}>
         <Heading as="h2" size="2.6rem" noTransform $wrap>
           Got a project in mind? Si hi and write me :)
         </Heading>
+        {!isFormOpen ? (
+          <ButtonWrapperStyled>
+            <ButtonStyled onClick={handleWriteMail}>
+              {/* // type="submit" disabled={isSubmitting} */}
+              <ArrowWrapperStyled>→</ArrowWrapperStyled> WRITE ME AN EMAIL
+            </ButtonStyled>
+          </ButtonWrapperStyled>
+        ) : null}
         <ContactForm />
       </ContactWrapperStyled>
 
