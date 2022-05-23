@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Spinning } from '../../animations';
 
 export const CloseIcon = styled.i`
   position: relative;
@@ -19,4 +20,15 @@ export const CloseIcon = styled.i`
   &::after {
     transform: rotate(-45deg);
   }
+`;
+
+export const Spinner = styled.i`
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 5px solid ${props => props.theme.colors.other.black};
+  border-bottom-color: transparent;
+  position: relative;
+  animation: ${Spinning} 1s linear infinite;
 `;

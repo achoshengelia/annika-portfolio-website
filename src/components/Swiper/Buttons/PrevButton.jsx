@@ -13,7 +13,7 @@ const Prevbutton = ({ isSmallDevice }) => {
       prev
     >
       {isSmallDevice ? (
-        <img src={Prev} onClick={() => swiper.slidePrev()} />
+        <img src={Prev} alt="arrow" onClick={() => swiper.slidePrev()} />
       ) : null}
     </ContainerStyled>
   );

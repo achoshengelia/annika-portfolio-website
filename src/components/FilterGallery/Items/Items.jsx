@@ -11,6 +11,7 @@ import {
   CardTitleStyled,
   ContainerStyled
 } from './ItemsStyles';
+import { Spinner } from '../../global/icons';
 
 const Item = ({ item: { imageSrc, caption } }) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
@@ -24,7 +25,7 @@ const Item = ({ item: { imageSrc, caption } }) => {
         imageIsLoaded={imageIsLoaded}
       />
       {!imageIsLoaded ? (
-        <div>Loading...</div>
+        <Spinner />
       ) : (
         <CardTitleContainerStyled>
           <CardTitleStyled>{caption}</CardTitleStyled>

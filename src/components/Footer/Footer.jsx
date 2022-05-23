@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { footerItems } from '../../constants/footer';
 import { CenterWrapperStyled } from '../global/utils';
 import {
