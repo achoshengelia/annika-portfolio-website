@@ -7,6 +7,10 @@ import {
 export const ContainerStyled = styled.section`
   margin-top: 5rem;
 
+  & h2 {
+    white-space: normal;
+  }
+
   & > * {
     margin-top: 5rem;
 
@@ -15,9 +19,10 @@ export const ContainerStyled = styled.section`
     }
   }
 
-  @media only screen and (max-width: 450px) {
-    & h1 {
+  @media only screen and (max-width: 520px) {
+    & h2 {
       font-size: 2rem;
+      white-space: normal;
     }
 
     & p {
@@ -26,7 +31,7 @@ export const ContainerStyled = styled.section`
   }
 
   @media only screen and (max-width: 370px) {
-    & h1 {
+    & h2 {
       font-size: 1.9rem;
     }
 
@@ -36,7 +41,7 @@ export const ContainerStyled = styled.section`
   }
 
   @media only screen and (max-width: 330px) {
-    & h1 {
+    & h2 {
       font-size: 1.8rem;
     }
 

@@ -5,22 +5,22 @@ import { ContainerStyled, GridWrapperStyled } from './ImprintContentStyles';
 const ImprintContent = () => {
   return (
     <ContainerStyled>
-      <Text as="h1" size="2.2rem">
+      <Heading as="h2" size="2.2rem">
         Details according to § 5 TMG:
-      </Text>
+      </Heading>
       <Text as="p" size="2rem">
         © Copyright 2015-2022 Annika Terwey <br /> Responsible according to § 10
         paragraph 3 MDStV: Annika Terwey
       </Text>
-      <Text as="h1" size="2.2rem">
+      <Heading as="h2" size="2.2rem">
         Responsible for the content according to § 55 para. 2 RStV:
-      </Text>
+      </Heading>
       <Text as="p" size="2rem">
         Annika Terwey
       </Text>
-      <Text as="h1" size="2.2rem">
+      <Heading as="h2" size="2.2rem">
         Disclaimer - Liability for contents
-      </Text>
+      </Heading>
       <GridWrapperStyled>
         <Text as="p" size="2rem">
           The contents of our pages were created with the greatest care.
@@ -42,9 +42,9 @@ const ImprintContent = () => {
           corresponding infringements, we will remove this content immediately.
         </Text>
       </GridWrapperStyled>
-      <Text as="h1" size="2.2rem">
+      <Heading as="h2" size="2.2rem">
         Liability for links{' '}
-      </Text>{' '}
+      </Heading>
       <GridWrapperStyled>
         <Text as="p" size="2rem">
           Our offer contains links to external websites of third parties, on
@@ -63,9 +63,9 @@ const ImprintContent = () => {
           will delete the according links.
         </Text>
       </GridWrapperStyled>
-      <Text as="h1" size="2.2rem">
+      <Heading as="h2" size="2.2rem">
         Copyright
-      </Text>
+      </Heading>
       <GridWrapperStyled>
         <Text as="p" size="2rem">
           All content of this website, especially pictures, images, graphical

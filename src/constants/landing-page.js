@@ -1,5 +1,3 @@
-import { v4 as createID } from 'uuid';
-
 export const landingGallery = [
   'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable0_fepbm7.jpg',
   'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779730/Artworks/industrialscars/industrialscars15_o3qxx5.jpg',
