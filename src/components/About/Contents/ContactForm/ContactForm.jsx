@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
 import {
   ArrowWrapperStyled,
-  ErrorMessageSent,
+  ResponseWrapperStyled,
   ButtonStyled,
   ButtonWrapperStyled,
   ErrorMessageStyled,
@@ -31,14 +31,14 @@ const validationSchema = yup.object({
 });
 
 const ContactForm = () => {
-  const [isSubmitted, SetIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
   const formRef = useRef(null);
 
   const handleSubmit = async () => {
-    SetIsSubmitted(true);
+    setIsSubmitted(true);
 
     try {
       setIsLoading(true);
@@ -59,21 +59,27 @@ const ContactForm = () => {
     }
   };
 
+  const handleReset = () => {
+    setIsSubmitted(false);
+    setIsLoading(false);
+    setIsSuccess(false);
+    setIsError(false);
+  };
+
   return (
     <>
       {isLoading ? (
         <Spinner />
       ) : isError ? (
-        <ErrorMessageSent>
-          Sorry, something went wrong when sending the email.{'     '}
-          <button onClick={() => setIsError(false)}>
-            Click here to try again!
-          </button>
-        </ErrorMessageSent>
+        <ResponseWrapperStyled>
+          Sorry, something went wrong when sending the message.{'     '}
+          <button onClick={handleReset}>Click here to try again!</button>
+        </ResponseWrapperStyled>
       ) : isSuccess ? (
-        <ErrorMessageSent>
-          Thanks for reaching out! I will come back to you as soon as possible.
-        </ErrorMessageSent>
+        <ResponseWrapperStyled>
+          Thanks for reaching out! I will come back to you as soon as possible.{' '}
+          <button onClick={handleReset}>Send another message</button>
+        </ResponseWrapperStyled>
       ) : (
         <Formik
           initialValues={initialValues}

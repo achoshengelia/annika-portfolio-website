@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import {
   aboutFriends,
   exhibitionDetails
@@ -26,10 +26,6 @@ import {
 
 const Contents = () => {
   const [isFormOpen, SetIsFormOpen] = useState(false);
-
-  const handleWriteMail = () => {
-    SetIsFormOpen(true);
-  };
 
   const arrayExh = exhibitionDetails.length;
   const halfArray = arrayExh / 2;
@@ -78,8 +74,7 @@ const Contents = () => {
         </Heading>
         {!isFormOpen ? (
           <ButtonWrapperStyled>
-            <ButtonStyled onClick={handleWriteMail}>
-              {/* // type="submit" disabled={isSubmitting} */}
+            <ButtonStyled onClick={() => SetIsFormOpen(true)}>
               <ArrowWrapperStyled>→</ArrowWrapperStyled> WRITE ME AN EMAIL
             </ButtonStyled>
           </ButtonWrapperStyled>
