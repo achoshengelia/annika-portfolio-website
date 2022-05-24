@@ -42,9 +42,9 @@ export const HeadingStyled = styled.span`
       : as === 'h6'
       ? '1.8rem'
       : null};
-  text-transform: ${({ isUppercase }) =>
-    isUppercase ? 'uppercase' : 'capitalize'};
-  white-space: nowrap;
+  text-transform: ${({ isUppercase, noTransform }) =>
+    isUppercase ? 'uppercase' : noTransform ? null : 'capitalize'};
+  white-space: ${({ $wrap }) => ($wrap ? null : 'nowrap')};
 `;
 
 export const Heading = props => {

@@ -12,7 +12,7 @@ const CurationDetailsPage = () => {
     return () => {
       handleSetShowFooter(true);
     };
-  }, []);
+  }, [handleSetShowFooter]);
 
   return (
     <ContainerStyled>

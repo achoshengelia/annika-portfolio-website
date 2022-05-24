@@ -12,7 +12,7 @@ const ArtworkDetailsPage = () => {
     return () => {
       handleSetShowFooter(true);
     };
-  }, []);
+  }, [handleSetShowFooter]);
 
   return (
     <ContainerStyled>
