@@ -2,9 +2,38 @@ import { Field, Form } from 'formik';
 import styled from 'styled-components';
 import { LightUp } from '../../../../animations';
 
-export const ErrorMessageSent = styled.div`
+export const ResponseWrapperStyled = styled.div`
   font-size: 2.2rem;
   transition: transform 0.3s ease;
+
+  & button {
+    font-size: 2.2rem;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+
+    &:hover {
+      color: ${props => props.theme.colors.other.purple};
+      transform: scale(1.02);
+    }
+
+    @media only screen and (max-width: 900px) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 370px) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: 330px) {
+      font-size: 1.45rem;
+    }
+  }
 
   @media only screen and (max-width: 900px) {
     font-size: 2rem;
@@ -20,50 +49,6 @@ export const ErrorMessageSent = styled.div`
 
   @media only screen and (max-width: 330px) {
     font-size: 1.45rem;
-  }
-
-  & button {
-    font-size: 2.2rem;
-    background-color: rgba(0, 0, 0, 0);
-    text-decoration: underline;
-    cursor: pointer;
-
-    &:hover {
-      color: ${props => props.theme.colors.other.purple};
-      font-size: 2.25rem;
-    }
-
-    @media only screen and (max-width: 900px) {
-      font-size: 2rem;
-
-      &:hover {
-        font-size: 2.05rem;
-      }
-    }
-
-    @media only screen and (max-width: 450px) {
-      font-size: 1.8rem;
-
-      &:hover {
-        font-size: 1.85rem;
-      }
-    }
-
-    @media only screen and (max-width: 370px) {
-      font-size: 1.6rem;
-
-      &:hover {
-        font-size: 1.62rem;
-      }
-    }
-
-    @media only screen and (max-width: 330px) {
-      font-size: 1.45rem;
-
-      &:hover {
-        font-size: 1.42rem;
-      }
-    }
   }
 `;
 
