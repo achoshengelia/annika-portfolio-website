@@ -165,6 +165,10 @@ export const ArrowWrapperStyled = styled.span`
   font-family: ${props => props.theme.fonts.main};
   display: inline-block;
   transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(30%);
+  }
 `;
 
 export const ButtonStyled = styled.button`
@@ -174,12 +178,6 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
   width: max-content;
   margin-bottom: 8rem;
-
-  & &:hover {
-    ${ArrowWrapperStyled} {
-      transform: translateX(30%);
-    }
-  }
 
   @media only screen and (max-width: 900px) {
     font-size: 4.2rem;
