@@ -160,6 +160,10 @@ export const ArrowWrapperStyled = styled.span`
   font-family: ${props => props.theme.fonts.main};
   display: inline-block;
   transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(30%);
+  }
 `;
 
 export const ButtonStyled = styled.button`
@@ -170,9 +174,9 @@ export const ButtonStyled = styled.button`
   width: max-content;
   margin-bottom: 8rem;
 
-  & &:hover {
+  &:hover {
     ${ArrowWrapperStyled} {
-      transform: translateX(30%);
+      transform: translateX(25%);
     }
   }
 
