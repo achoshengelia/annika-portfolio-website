@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { CenterWrapperStyled } from '../../global/utils';
+import { pxToEm } from '../../../helpers';
 
 export const MoreButtonStyled = styled.button`
   background: transparent;
@@ -31,8 +32,9 @@ export const ContainerStyled = styled(motion.footer)`
   z-index: 10;
 
   ${CenterWrapperStyled} {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     margin-top: auto;
     width: 100%;
@@ -41,6 +43,35 @@ export const ContainerStyled = styled(motion.footer)`
     border-bottom: 1px solid ${props => props.theme.colors.secondary.main};
     padding: 1.4rem 2.5rem;
     background-color: ${props => props.theme.colors.primary.main};
+
+    & > * {
+      &:nth-child(2) {
+        @media only screen and (max-width: ${pxToEm(950)}) {
+          visibility: hidden;
+        }
+      }
+
+      &:first-child,
+      :last-child {
+        position: absolute;
+      }
+
+      &:first-child {
+        left: 2.5rem;
+
+        @media ${props => props.theme.breakpoints.sm} {
+          left: 1rem;
+        }
+      }
+
+      &:last-child {
+        right: 2.5rem;
+
+        @media ${props => props.theme.breakpoints.sm} {
+          right: 1rem;
+        }
+      }
+    }
 
     @media ${props => props.theme.breakpoints.md} {
       font-size: 1.35rem;

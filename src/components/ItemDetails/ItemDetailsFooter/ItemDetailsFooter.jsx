@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
-import useWindowDimensions from '../../../hooks/useWindowDimensions';
+import { Link } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import { CenterWrapperStyled, Text } from '../../global/utils';
 import { ContainerStyled, MoreButtonStyled } from './ItemDetailsFooterStyles';
 import MoreInfo from './MoreInfo/MoreInfo';
-import { Link } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 
 const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
   const [showMore, setShowMore] = useState(false);
 
   const handleToggleShowMore = () => setShowMore(prevState => !prevState);
-
-  const { width } = useWindowDimensions();
 
   return (
     <>
@@ -43,8 +40,7 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
             </Link>{' '}
             {itemDetails?.caption}
           </Text>
-
-          {width > 950 ? <Text>{itemDetails?.curation}</Text> : null}
+          <Text>{itemDetails?.curation}</Text>
           <MoreButtonStyled onClick={handleToggleShowMore}>
             <Text isUppercase>{showMore ? 'Back' : 'Info'}</Text>
           </MoreButtonStyled>

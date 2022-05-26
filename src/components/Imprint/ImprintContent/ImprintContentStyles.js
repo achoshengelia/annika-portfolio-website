@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { pxToEm } from '../../../helpers';
 
 export const ContainerStyled = styled(motion.section)`
   margin-top: 5rem;
@@ -16,7 +17,7 @@ export const ContainerStyled = styled(motion.section)`
     }
   }
 
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: ${pxToEm(520)}) {
     & h2 {
       font-size: 2rem;
       white-space: normal;
@@ -27,7 +28,7 @@ export const ContainerStyled = styled(motion.section)`
     }
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: ${pxToEm(370)}) {
     & h2 {
       font-size: 1.9rem;
     }
@@ -37,7 +38,7 @@ export const ContainerStyled = styled(motion.section)`
     }
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: ${pxToEm(330)}) {
     & h2 {
       font-size: 1.8rem;
     }

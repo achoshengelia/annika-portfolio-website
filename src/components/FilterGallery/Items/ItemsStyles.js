@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { HeadingStyled as Heading } from '../../global/utils';
+import { pxToEm } from '../../../helpers';
 
 export const CardTitleStyled = styled.figcaption`
   margin: auto;
@@ -11,31 +12,31 @@ export const CardTitleStyled = styled.figcaption`
   text-align: center;
   line-height: 4rem;
 
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: ${pxToEm(1150)}) {
     font-size: 2.5rem;
   }
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: ${pxToEm(950)}) {
     font-size: 2.3rem;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: ${pxToEm(700)}) {
     font-size: 2rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: ${pxToEm(600)}) {
     font-size: 3rem;
   }
 
-  @media only screen and (max-width: 460px) {
+  @media only screen and (max-width: ${pxToEm(460)}) {
     font-size: 2.5rem;
   }
 
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: ${pxToEm(380)}) {
     font-size: 2rem;
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: ${pxToEm(330)}) {
     font-size: 1.8rem;
   }
 `;
@@ -75,19 +76,19 @@ export const ContainerStyled = styled.section`
     props.isCurationsPage ? 'repeat(3, 1fr)' : 'repeat(4, 1fr)'};
   gap: 2rem;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: ${pxToEm(1100)}) {
     //grid-template-columns: repeat(3, 1fr);
     grid-template-columns: ${props =>
       props.isCurationsPage ? 'repeat(2, 1fr)' : 'repeat(3, 1fr)'};
   }
 
-  @media screen and (max-width: 870px) {
+  @media only screen and (max-width: ${pxToEm(870)}) {
     //grid-template-columns: repeat(2, 1fr);
     grid-template-columns: ${props =>
       props.isCurationsPage ? 'repeat(1, 1fr)' : 'repeat(2, 1fr)'};
   }
 
-  @media screen and (max-width: 620px) {
+  @media only screen and (max-width: ${pxToEm(620)}) {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -116,23 +117,23 @@ export const ContainerStyled = styled.section`
       }
     }
 
-    @media screen and (max-width: 870px) {
+    @media only screen and (max-width: ${pxToEm(870)}) {
       height: ${props => (props.isCurationsPage ? '50rem' : '60rem')};
     }
 
-    @media screen and (max-width: 770px) {
+    @media only screen and (max-width: ${pxToEm(770)}) {
       height: ${props => (props.isCurationsPage ? '45rem' : '45rem')};
     }
 
-    @media screen and (max-width: 620px) {
+    @media only screen and (max-width: ${pxToEm(620)}) {
       height: ${props => (props.isCurationsPage ? '40rem' : '70rem')};
     }
 
-    @media screen and (max-width: 441px) {
+    @media only screen and (max-width: ${pxToEm(441)}) {
       height: ${props => (props.isCurationsPage ? '30rem' : '55rem')};
     }
 
-    @media screen and (max-width: 382px) {
+    @media only screen and (max-width: ${pxToEm(382)}) {
       height: ${props => (props.isCurationsPage ? '22rem' : '45rem')};
     }
   }

@@ -8,3 +8,5 @@ export const isMobileDevice = () => {
   }
   return false;
 };
+
+export const pxToEm = pixels => pixels / 16 + 'em';

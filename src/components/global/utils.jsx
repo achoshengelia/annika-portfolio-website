@@ -61,7 +61,6 @@ export const TextStyled = styled.span`
   color: ${({ theme, color }) =>
     color ? theme.colors.text[color] : theme.colors.text.main};
   font-weight: ${({ weight }) => (weight ? weight : 'normal')};
-  //font-size: ${({ size }) => (size ? size : '2rem')};
   font-size: ${({ size, as }) =>
     size ? size : as === 'p' ? '1.8rem' : as === 'h5' ? '1.5rem' : null};
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { pxToEm } from '../../../../helpers';
 import { TextStyled as Text } from '../../../global/utils';
 
 export const ImageStyled = styled.img`
@@ -20,22 +21,22 @@ export const HeaderStyled = styled.header`
     }
   }
 
-  @media only screen and (max-width: 1112px) {
+  @media only screen and (max-width: ${pxToEm(1112)}) {
     grid-template-columns: repeat(2, 1fr) 0.6fr;
     font-size: 1.4rem;
   }
 
-  @media only screen and (max-width: 755px) {
+  @media only screen and (max-width: ${pxToEm(755)}) {
     grid-template-columns: repeat(1, 1fr) 0.6fr;
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 455px) {
+  @media only screen and (max-width: ${pxToEm(455)}) {
     font-size: 1.4rem;
     padding: 2.5rem 2rem;
   }
 
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: ${pxToEm(390)}) {
     font-size: 1.3rem;
     padding: 2.5rem 1rem;
   }

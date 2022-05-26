@@ -1,6 +1,7 @@
 import { Field, Form } from 'formik';
 import styled from 'styled-components';
 import { LightUp } from '../../../../animations';
+import { pxToEm } from '../../../../helpers';
 
 export const ResponseWrapperStyled = styled.div`
   font-size: 2.2rem;
@@ -18,36 +19,36 @@ export const ResponseWrapperStyled = styled.div`
       transform: scale(1.02);
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: ${pxToEm(900)}) {
       font-size: 2rem;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: ${pxToEm(450)}) {
       font-size: 1.8rem;
     }
 
-    @media only screen and (max-width: 370px) {
+    @media only screen and (max-width: ${pxToEm(370)}) {
       font-size: 1.6rem;
     }
 
-    @media only screen and (max-width: 330px) {
+    @media only screen and (max-width: ${pxToEm(330)}) {
       font-size: 1.45rem;
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: ${pxToEm(900)}) {
     font-size: 2rem;
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: ${pxToEm(450)}) {
     font-size: 1.8rem;
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: ${pxToEm(370)}) {
     font-size: 1.6rem;
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: ${pxToEm(330)}) {
     font-size: 1.45rem;
   }
 `;
@@ -71,23 +72,23 @@ export const ButtonStyled = styled.button`
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: ${pxToEm(900)}) {
     font-size: 4.2rem;
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: ${pxToEm(550)}) {
     font-size: 3.5rem;
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: ${pxToEm(450)}) {
     font-size: 3rem;
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: ${pxToEm(370)}) {
     font-size: 2.5rem;
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: ${pxToEm(330)}) {
     font-size: 2.2rem;
   }
 `;
@@ -96,7 +97,7 @@ export const ButtonWrapperStyled = styled.div`
   border-top: 1px solid;
   padding-left: 1rem;
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: ${pxToEm(450)}) {
     padding-left: 0.4rem;
   }
 `;
@@ -106,7 +107,7 @@ export const ErrorMessageStyled = styled.div`
   color: ${props => props.theme.colors.other.purple};
   animation: ${LightUp} 0.3s forwards;
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: ${pxToEm(450)}) {
     padding-left: 0.4rem;
   }
 `;
@@ -123,20 +124,20 @@ export const FieldStyled = styled(Field)`
     font-family: ${props => props.theme.fonts.main};
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: ${pxToEm(900)}) {
     font-size: 2.8rem;
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: ${pxToEm(450)}) {
     font-size: 2.6rem;
     padding-left: 0.4rem;
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: ${pxToEm(370)}) {
     font-size: 2.3rem;
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: ${pxToEm(330)}) {
     font-size: 2rem;
   }
 `;

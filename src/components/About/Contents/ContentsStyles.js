@@ -4,6 +4,7 @@ import {
   HeadingStyled as Heading,
   TextStyled as Text
 } from '../../global/utils';
+import { pxToEm } from '../../../helpers';
 
 export const FriendsListItemStyled = styled.li`
   font-size: 2.2rem;
@@ -38,19 +39,19 @@ export const IDoListStyled = styled.ul``;
 
 export const IDoWrapperStyled = styled.div`
   & > ${Heading} {
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: ${pxToEm(900)}) {
       font-size: 2.4rem;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: ${pxToEm(450)}) {
       font-size: 2.2rem;
     }
 
-    @media only screen and (max-width: 370px) {
+    @media only screen and (max-width: ${pxToEm(370)}) {
       font-size: 2rem;
     }
 
-    @media only screen and (max-width: 330px) {
+    @media only screen and (max-width: ${pxToEm(330)}) {
       font-size: 1.9rem;
     }
   }
@@ -85,15 +86,8 @@ export const ContactWrapperStyled = styled(motion.div)`
   overflow: hidden;
   transition: all 0.8s ease;
 
-  @media only screen and (max-width: 510px) {
-  }
-
-  @media only screen and (max-width: 370px) {
-    max-height: ${props => (props.isFormOpen ? '100rem' : '11.5rem')};
-  }
-
-  @media only screen and (max-width: 330px) {
-    max-height: ${props => (props.isFormOpen ? '100rem' : '11.5rem')};
+  @media only screen and (max-width: ${pxToEm(370)}) {
+    max-height: ${props => (props.$isFormOpen ? '100rem' : '11.5rem')};
   }
 `;
 
@@ -121,19 +115,19 @@ export const ContainerStyled = styled.section`
     & > ${Heading} {
       margin-bottom: 4rem;
 
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: ${pxToEm(900)}) {
         font-size: 2.4rem;
       }
 
-      @media only screen and (max-width: 450px) {
+      @media only screen and (max-width: ${pxToEm(450)}) {
         font-size: 2.2rem;
       }
 
-      @media only screen and (max-width: 370px) {
+      @media only screen and (max-width: ${pxToEm(370)}) {
         font-size: 2rem;
       }
 
-      @media only screen and (max-width: 330px) {
+      @media only screen and (max-width: ${pxToEm(330)}) {
         font-size: 1.9rem;
       }
     }
@@ -143,19 +137,19 @@ export const ContainerStyled = styled.section`
       ${IDoListItemStyled},
       ${ExhibitionListItemStyled},
       ${FriendsListItemStyled} {
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: ${pxToEm(900)}) {
         font-size: 2rem;
       }
 
-      @media only screen and (max-width: 450px) {
+      @media only screen and (max-width: ${pxToEm(450)}) {
         font-size: 1.8rem;
       }
 
-      @media only screen and (max-width: 370px) {
+      @media only screen and (max-width: ${pxToEm(370)}) {
         font-size: 1.6rem;
       }
 
-      @media only screen and (max-width: 330px) {
+      @media only screen and (max-width: ${pxToEm(330)}) {
         font-size: 1.45rem;
       }
     }
@@ -182,33 +176,32 @@ export const ButtonStyled = styled.button`
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: ${pxToEm(900)}) {
     font-size: 4.2rem;
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: ${pxToEm(550)}) {
     font-size: 3.5rem;
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: ${pxToEm(450)}) {
     font-size: 3rem;
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: ${pxToEm(370)}) {
     font-size: 2.5rem;
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: ${pxToEm(330)}) {
     font-size: 2.2rem;
     margin-bottom: 5rem;
   }
 `;
 
 export const ButtonWrapperStyled = styled.div`
-  /* border-top: 1px solid; */
   padding-left: 1rem;
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: ${pxToEm(450)}) {
     padding-left: 0.4rem;
   }
 `;
