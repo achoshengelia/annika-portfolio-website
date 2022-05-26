@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { pxToEm } from '../../helpers';
 import { CenterWrapperStyled } from '../global/utils';
 
 export const MainWrapperStyled = styled(motion.div)`
@@ -26,8 +27,12 @@ export const MenuListStyled = styled.ul`
   }
 
   @media ${props => props.theme.breakpoints.sm} {
-    margin-left: 0rem;
+    margin-left: 3rem;
     gap: 4rem;
+  }
+
+  @media only screen and (max-width: ${pxToEm(345)}) {
+    margin-left: 1rem;
   }
 
   @media ${props => props.theme.breakpoints.xs} {
