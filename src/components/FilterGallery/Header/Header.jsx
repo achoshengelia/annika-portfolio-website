@@ -8,7 +8,24 @@ const Header = () => {
   const { isCurationsPage } = useContext(GlobalContext);
 
   return (
-    <ContainerStyled>
+    <ContainerStyled
+      initial={{ opacity: 0, y: -50 }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.5,
+          delay: 0.3
+        }
+      }}
+      exit={{
+        opacity: 0,
+        y: -50,
+        transition: {
+          duration: 0.5
+        }
+      }}
+    >
       <Heading as="h1" isUppercase>
         {isCurationsPage ? 'curation' : 'design & artworks'}
       </Heading>

@@ -1,10 +1,7 @@
 import styled from 'styled-components';
-import {
-  HeadingStyled as Heading,
-  TextStyled as Text
-} from '../../global/utils';
+import { motion } from 'framer-motion';
 
-export const ContainerStyled = styled.section`
+export const ContainerStyled = styled(motion.section)`
   margin-top: 5rem;
 
   & h2 {

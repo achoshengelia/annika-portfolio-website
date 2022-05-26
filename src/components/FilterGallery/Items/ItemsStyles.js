@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PopIn } from '../../../animations';
+import { motion } from 'framer-motion';
 import { HeadingStyled as Heading } from '../../global/utils';
 
 export const CardTitleStyled = styled.figcaption`
@@ -61,9 +61,8 @@ export const CardImageStyled = styled.img`
   display: ${({ imageIsLoaded }) => (!imageIsLoaded ? 'none' : 'block')};
 `;
 
-export const CardStyled = styled.figure`
+export const CardStyled = styled(motion.figure)`
   opacity: 0;
-  animation: ${PopIn} 0.6s forwards;
   display: flex;
   justify-content: center;
   align-items: center;

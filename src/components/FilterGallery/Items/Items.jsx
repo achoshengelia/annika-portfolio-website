@@ -4,6 +4,7 @@ import { GlobalContext } from '../../../context/globalContext';
 import { artworkItems, searchParam } from '../../../constants/artworks';
 import { curationItems } from '../../../constants/curations';
 import { Heading } from '../../global/utils';
+import { Spinner } from '../../global/icons';
 import {
   CardImageStyled,
   CardStyled,
@@ -11,13 +12,31 @@ import {
   CardTitleStyled,
   ContainerStyled
 } from './ItemsStyles';
-import { Spinner } from '../../global/icons';
 
-const Item = ({ item: { imageSrc, caption } }) => {
+const Item = ({ item: { imageSrc, caption }, pageIsLoaded }) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
-    <CardStyled>
+    <CardStyled
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+        transition: {
+          delay: pageIsLoaded ? 0 : 0.6,
+          duration: 0.5,
+          ease: 'easeIn'
+        }
+      }}
+      exit={{
+        opacity: 0,
+        scale: 0.8,
+        transition: {
+          duration: 0.5,
+          ease: 'easeOut'
+        }
+      }}
+    >
       <CardImageStyled
         src={imageSrc}
         alt={caption}
@@ -83,7 +102,7 @@ const Items = () => {
     >
       {renderItems.map(item => (
         <Link to={`${item.caption}`} key={item.id}>
-          <Item item={item} />
+          <Item item={item} pageIsLoaded={pageIsLoaded} />
         </Link>
       ))}
     </ContainerStyled>

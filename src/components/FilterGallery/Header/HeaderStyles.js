@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import { SlideDown } from '../../../animations';
+import { motion } from 'framer-motion';
 import { HeadingStyled as Heading } from '../../global/utils';
 
-export const ContainerStyled = styled.header`
-  animation: ${SlideDown} 0.5s ease-in;
-
+export const ContainerStyled = styled(motion.header)`
   ${Heading} {
     padding: 5rem 0;
     white-space: normal;

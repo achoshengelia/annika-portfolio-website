@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import {
   HeadingStyled as Heading,
   TextStyled as Text
@@ -69,9 +70,9 @@ export const AboutMeWrapperStyled = styled.div`
   }
 `;
 
-export const FriendsWrapperStyled = styled.div``;
+export const FriendsWrapperStyled = styled(motion.div)``;
 
-export const ExhibitionsWrapperStyled = styled.div`
+export const ExhibitionsWrapperStyled = styled(motion.div)`
   ${Heading} {
     margin-bottom: 3rem;
   }
@@ -79,7 +80,7 @@ export const ExhibitionsWrapperStyled = styled.div`
   font-size: 2.2rem;
 `;
 
-export const ContactWrapperStyled = styled.div`
+export const ContactWrapperStyled = styled(motion.div)`
   max-height: ${props => (props.isFormOpen ? '100rem' : '15rem')};
   overflow: hidden;
   transition: all 0.8s ease;
@@ -96,7 +97,7 @@ export const ContactWrapperStyled = styled.div`
   }
 `;
 
-export const GridWrapperStyled = styled.div`
+export const GridWrapperStyled = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr 0.8fr;
   gap: 8rem;

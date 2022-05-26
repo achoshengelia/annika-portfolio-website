@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { TextStyled as Text } from '../../../global/utils';
 
-export const ContainerStyled = styled.div`
+export const ContainerStyled = styled(motion.div)`
   position: fixed;
   inset: 0;
   opacity: 1;

@@ -32,7 +32,26 @@ const Contents = () => {
 
   return (
     <ContainerStyled>
-      <GridWrapperStyled>
+      <GridWrapperStyled
+        initial={{ opacity: 0, y: 30 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 0.7,
+            duration: 0.3,
+            ease: 'easeIn'
+          }
+        }}
+        exit={{
+          opacity: 0,
+          y: 30,
+          transition: {
+            duration: 0.4,
+            ease: 'easeOut'
+          }
+        }}
+      >
         <AboutMeWrapperStyled>
           <Text as="p" size="2.2rem">
             My name is Annika Terwey and I am a German Italian,
@@ -68,7 +87,27 @@ const Contents = () => {
         </IDoWrapperStyled>
       </GridWrapperStyled>
 
-      <ContactWrapperStyled isFormOpen={isFormOpen}>
+      <ContactWrapperStyled
+        isFormOpen={isFormOpen}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 0.7,
+            duration: 0.3,
+            ease: 'easeIn'
+          }
+        }}
+        exit={{
+          opacity: 0,
+          y: 30,
+          transition: {
+            duration: 0.4,
+            ease: 'easeOut'
+          }
+        }}
+      >
         <Heading as="h2" size="2.6rem" noTransform $wrap>
           Got a project in mind? Si hi and write me :)
         </Heading>
@@ -82,7 +121,26 @@ const Contents = () => {
         <ContactForm />
       </ContactWrapperStyled>
 
-      <ExhibitionsWrapperStyled>
+      <ExhibitionsWrapperStyled
+        initial={{ opacity: 0, y: 30 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 1,
+            duration: 0.3,
+            ease: 'easeIn'
+          }
+        }}
+        exit={{
+          opacity: 0,
+          y: 30,
+          transition: {
+            duration: 0.4,
+            ease: 'easeOut'
+          }
+        }}
+      >
         <Heading as="h2" size="2.6rem">
           Selected exhibitions
         </Heading>
@@ -113,7 +171,26 @@ const Contents = () => {
         </GridWrapperStyled>
       </ExhibitionsWrapperStyled>
 
-      <FriendsWrapperStyled>
+      <FriendsWrapperStyled
+        initial={{ opacity: 0, y: 30 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 1.1,
+            duration: 0.3,
+            ease: 'easeIn'
+          }
+        }}
+        exit={{
+          opacity: 0,
+          y: 30,
+          transition: {
+            duration: 0.4,
+            ease: 'easeOut'
+          }
+        }}
+      >
         <Heading as="h2" size="2.6rem" noTransform $wrap>
           Don’t miss out and also take a look at what my friends are working on!
         </Heading>

@@ -7,7 +7,7 @@ const defaultTheme = {
       light: '#EDEDED',
       main: '#E5E5E5',
       dark: '#C7C7C7',
-      transparent: 'rgba(229, 229, 229, .8)'
+      transparent: 'rgba(229, 229, 229, .96)'
     },
     secondary: {
       light: '#999',

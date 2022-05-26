@@ -30,6 +30,7 @@ const ItemDetails = ({ isCurationPage }) => {
       {itemDetails ? (
         <>
           <Swiper gallery={itemDetails?.gallery} />
+
           {createPortal(
             <ItemDetailsFooter
               itemDetails={itemDetails}

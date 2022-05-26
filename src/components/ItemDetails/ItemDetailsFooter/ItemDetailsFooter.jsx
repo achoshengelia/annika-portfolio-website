@@ -5,6 +5,7 @@ import { CenterWrapperStyled, Text } from '../../global/utils';
 import { ContainerStyled, MoreButtonStyled } from './ItemDetailsFooterStyles';
 import MoreInfo from './MoreInfo/MoreInfo';
 import { Link } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
   const [showMore, setShowMore] = useState(false);
@@ -15,7 +16,26 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
 
   return (
     <>
-      <ContainerStyled>
+      <ContainerStyled
+        initial={{ opacity: 0, y: 30 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 0.3,
+            duration: 0.3,
+            ease: 'easeIn'
+          }
+        }}
+        exit={{
+          opacity: 0,
+          y: 30,
+          transition: {
+            duration: 0.4,
+            ease: 'easeOut'
+          }
+        }}
+      >
         <CenterWrapperStyled>
           <Text isUppercase>
             <Link to={isCurationPage ? '/curation' : '/design-artworks'}>
@@ -31,12 +51,19 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
         </CenterWrapperStyled>
       </ContainerStyled>
 
-      {showMore
+      {createPortal(
+        <AnimatePresence>
+          {showMore ? <MoreInfo moreInfo={itemDetails.moreInfo} /> : null}
+        </AnimatePresence>,
+        document.getElementById('modal')
+      )}
+
+      {/* {showMore
         ? createPortal(
             <MoreInfo moreInfo={itemDetails.moreInfo} />,
             document.getElementById('modal')
           )
-        : null}
+        : null} */}
     </>
   );
 };

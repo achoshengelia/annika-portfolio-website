@@ -1,5 +1,6 @@
 import { useContext } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import CurationsPage from './pages/Curations/CurationsPage';
@@ -14,20 +15,23 @@ import { GlobalContext } from './context/globalContext';
 
 const App = () => {
   const { showFooter } = useContext(GlobalContext);
+  const location = useLocation();
 
   return (
     <>
       <ScrollToTop />
       <Header />
-      <Routes>
-        <Route path="design-artworks" element={<ArtworksPage />} />
-        <Route path="design-artworks/:id" element={<ArtworkDetailsPage />} />
-        <Route path="curation" element={<CurationsPage />} />
-        <Route path="curation/:id" element={<CurationDetailsPage />} />
-        <Route path="index" element={<IndexPage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="imprint" element={<ImprintPage />} />
-      </Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          <Route path="design-artworks" element={<ArtworksPage />} />
+          <Route path="design-artworks/:id" element={<ArtworkDetailsPage />} />
+          <Route path="curation" element={<CurationsPage />} />
+          <Route path="curation/:id" element={<CurationDetailsPage />} />
+          <Route path="index" element={<IndexPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="imprint" element={<ImprintPage />} />
+        </Routes>
+      </AnimatePresence>
       {showFooter ? <Footer /> : null}
     </>
   );

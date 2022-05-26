@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { CenterWrapperStyled } from '../../global/utils';
 
 export const MoreButtonStyled = styled.button`
@@ -23,7 +24,7 @@ export const MoreButtonStyled = styled.button`
   }
 `;
 
-export const ContainerStyled = styled.footer`
+export const ContainerStyled = styled(motion.footer)`
   padding: 0 2rem;
   margin-bottom: 1.5rem;
   width: 100%;
