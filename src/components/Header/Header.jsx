@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import React, { useContext } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
@@ -27,9 +28,12 @@ const Header = () => {
         </CenterWrapperStyled>
       </MainWrapperStyled>
 
-      {showMenu
-        ? createPortal(<Menu />, document.getElementById('menu'))
-        : null}
+      {createPortal(
+        <AnimatePresence exitBeforeEnter>
+          {showMenu ? <Menu /> : null}
+        </AnimatePresence>,
+        document.getElementById('menu')
+      )}
     </>
   );
 };

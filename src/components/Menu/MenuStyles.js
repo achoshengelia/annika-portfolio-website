@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { CenterWrapperStyled } from '../global/utils';
 
-export const MainWrapperStyled = styled.div`
+export const MainWrapperStyled = styled(motion.div)`
   position: fixed;
   inset: 0;
   z-index: 10;
@@ -34,19 +35,15 @@ export const MenuListStyled = styled.ul`
   }
 `;
 
-export const MenuStyled = styled.li`
+export const MenuStyled = styled(motion.li)`
   font-size: 8rem;
   font-weight: 500;
   cursor: pointer;
   width: fit-content;
   text-transform: uppercase;
-  transition: transform 200ms ease-in-out;
 
   &:hover {
     color: ${props => props.theme.colors.other.purple};
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.03);
-    transform: scale(1.02);
   }
 
   @media ${props => props.theme.breakpoints.lg} {

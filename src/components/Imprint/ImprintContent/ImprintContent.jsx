@@ -4,7 +4,26 @@ import { ContainerStyled, GridWrapperStyled } from './ImprintContentStyles';
 
 const ImprintContent = () => {
   return (
-    <ContainerStyled>
+    <ContainerStyled
+      initial={{ opacity: 0, y: 30 }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay: 0.7,
+          duration: 0.3,
+          ease: 'easeIn'
+        }
+      }}
+      exit={{
+        opacity: 0,
+        y: 30,
+        transition: {
+          duration: 0.4,
+          ease: 'easeOut'
+        }
+      }}
+    >
       <Heading as="h2" size="2.2rem">
         Details according to § 5 TMG:
       </Heading>
@@ -89,7 +108,7 @@ const ImprintContent = () => {
 
         <Text as="p" size="2rem">
           Source:{' '}
-          <a href="https://www.e-recht24.de/" target="_blank">
+          <a href="https://www.e-recht24.de/" target="_blank" rel="noreferrer">
             eRecht24
           </a>
         </Text>
