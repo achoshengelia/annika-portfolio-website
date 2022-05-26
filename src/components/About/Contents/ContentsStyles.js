@@ -81,7 +81,7 @@ export const ExhibitionsWrapperStyled = styled(motion.div)`
 `;
 
 export const ContactWrapperStyled = styled(motion.div)`
-  max-height: ${props => (props.isFormOpen ? '100rem' : '15rem')};
+  max-height: ${props => (props.$isFormOpen ? '100rem' : '15rem')};
   overflow: hidden;
   transition: all 0.8s ease;
 

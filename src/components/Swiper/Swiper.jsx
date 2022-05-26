@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { EffectFade, Navigation } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -6,9 +6,47 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { isMobileDevice } from '../../helpers';
+import { Spinner } from '../global/icons';
 import NextButton from './Buttons/NextButton';
 import Prevbutton from './Buttons/PrevButton';
-import { SwiperStyled } from './SwiperStyles';
+import {
+  ImageStyled,
+  SpinnerWrapperStyled,
+  SwiperStyled,
+  VideoStyled
+} from './SwiperStyles';
+
+const Item = ({ isActive, isVideo, link }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <>
+      {isVideo ? (
+        <VideoStyled
+          className={`video ${isActive ? 'active' : ''}`}
+          loop
+          onCanPlay={() => setIsLoaded(true)}
+          isLoaded={isLoaded}
+        >
+          <source src={link} />
+        </VideoStyled>
+      ) : (
+        <ImageStyled
+          src={link}
+          alt=""
+          onLoad={() => setIsLoaded(true)}
+          isLoaded={isLoaded}
+        />
+      )}
+
+      {!isLoaded ? (
+        <SpinnerWrapperStyled>
+          <Spinner />
+        </SpinnerWrapperStyled>
+      ) : null}
+    </>
+  );
+};
 
 const screenMD = 800;
 
@@ -50,15 +88,9 @@ const Swiper = ({ gallery }) => {
     >
       {gallery?.map(link => (
         <SwiperSlide key={link}>
-          {({ isActive }) =>
-            isVideo(link) ? (
-              <video className={`video ${isActive ? 'active' : ''}`} loop>
-                <source src={link} />
-              </video>
-            ) : (
-              <img src={link} alt="" />
-            )
-          }
+          {({ isActive }) => (
+            <Item isActive={isActive} isVideo={isVideo(link)} link={link} />
+          )}
         </SwiperSlide>
       ))}
 

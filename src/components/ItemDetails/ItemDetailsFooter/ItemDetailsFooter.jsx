@@ -46,7 +46,7 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
 
           {width > 950 ? <Text>{itemDetails?.curation}</Text> : null}
           <MoreButtonStyled onClick={handleToggleShowMore}>
-            <Text isUppercase>{showMore ? 'Back' : 'More'}</Text>
+            <Text isUppercase>{showMore ? 'Back' : 'Info'}</Text>
           </MoreButtonStyled>
         </CenterWrapperStyled>
       </ContainerStyled>
@@ -57,13 +57,6 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
         </AnimatePresence>,
         document.getElementById('modal')
       )}
-
-      {/* {showMore
-        ? createPortal(
-            <MoreInfo moreInfo={itemDetails.moreInfo} />,
-            document.getElementById('modal')
-          )
-        : null} */}
     </>
   );
 };

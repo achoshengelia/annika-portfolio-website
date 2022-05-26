@@ -88,7 +88,7 @@ const Contents = () => {
       </GridWrapperStyled>
 
       <ContactWrapperStyled
-        isFormOpen={isFormOpen}
+        $isFormOpen={isFormOpen}
         initial={{ opacity: 0, y: 30 }}
         animate={{
           opacity: 1,
