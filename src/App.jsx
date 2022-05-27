@@ -10,6 +10,7 @@ import IndexPage from './pages/Index/IndexPage';
 import ImprintPage from './pages/Imprint/ImprintPage';
 import CurationDetailsPage from './pages/CurationDetails/CurationDetailsPage';
 import AboutPage from './pages/About/AboutPage';
+import LandingPage from './pages/Landing/LandingPage';
 import { ScrollToTop } from './components/global/utils';
 import { GlobalContext } from './context/globalContext';
 
@@ -23,6 +24,7 @@ const App = () => {
       <Header />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
+          <Route index element={<LandingPage />} />
           <Route path="design-artworks" element={<ArtworksPage />} />
           <Route path="design-artworks/:id" element={<ArtworkDetailsPage />} />
           <Route path="curation" element={<CurationsPage />} />

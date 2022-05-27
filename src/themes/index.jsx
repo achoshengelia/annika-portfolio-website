@@ -5,9 +5,14 @@ import defaultTheme from './default';
 import GlobalStyles from './globalStyles';
 
 const Theme = ({ children }) => {
-  const { showMenu, isItemDetailsPage } = useContext(GlobalContext);
+  const { showMenu, isItemDetailsPage, isShufflePage } =
+    useContext(GlobalContext);
 
-  const globalStylesProps = { showMenu, isItemDetailsPage };
+  const globalStylesProps = {
+    showMenu,
+    isMaxHeight: isItemDetailsPage || isShufflePage,
+    isShufflePage
+  };
 
   return (
     <ThemeProvider theme={defaultTheme}>

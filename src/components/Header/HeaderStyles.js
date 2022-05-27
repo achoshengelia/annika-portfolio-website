@@ -5,12 +5,10 @@ export const MainWrapperStyled = styled.header`
   top: 0;
   z-index: 15;
   padding-bottom: 1.5rem;
-  background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0),
-    rgba(230, 229, 227, 0.5),
-    rgba(230, 229, 227, 1)
-  );
+  background-image: ${({ isShufflePage }) =>
+    isShufflePage
+      ? null
+      : 'linear-gradient( to top, rgba(0, 0, 0, 0), rgba(230, 229, 227, 0.5), rgba(230, 229, 227, 1))'};
 `;
 
 export const ListItemsStyled = styled.ul`
