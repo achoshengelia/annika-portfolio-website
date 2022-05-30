@@ -6,6 +6,7 @@ export const GlobalContext = createContext({
   isCurationsPage: false,
   isItemDetailsPage: false,
   isShufflePage: false,
+  isMaxHeight: false,
   handleToggleShowMenu: () => {},
   handleSetShowFooter: () => {},
   setIsItemDetailsPage: () => {},
@@ -17,6 +18,7 @@ export const GlobalContextProvider = ({ children }) => {
   const [showFooter, setShowFooter] = useState(false);
   const [isItemDetailsPage, setIsItemDetailsPage] = useState(false);
   const [isShufflePage, setIsShufflePage] = useState(false);
+  const [isMaxHeight, setIsMaxHeight] = useState(false);
 
   const isCurationsPage = window.location.pathname
     .split('/')
@@ -31,10 +33,12 @@ export const GlobalContextProvider = ({ children }) => {
     isCurationsPage,
     isItemDetailsPage,
     isShufflePage,
+    isMaxHeight,
     handleToggleShowMenu,
     handleSetShowFooter,
     setIsItemDetailsPage,
-    setIsShufflePage
+    setIsShufflePage,
+    setIsMaxHeight
   };
 
   return (

@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
 
-  li{
+  li {
     list-style: none;
   }
 

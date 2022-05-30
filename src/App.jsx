@@ -10,6 +10,7 @@ import ImprintPage from './pages/Imprint/ImprintPage';
 import CurationDetailsPage from './pages/CurationDetails/CurationDetailsPage';
 import AboutPage from './pages/About/AboutPage';
 import LandingPage from './pages/Landing/LandingPage';
+import NotFoundPage from './pages/NotFound/NotFoundPage';
 import { ScrollToTop } from './components/global/utils';
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="index" element={<IndexPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="imprint" element={<ImprintPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </AnimatePresence>
     </>
