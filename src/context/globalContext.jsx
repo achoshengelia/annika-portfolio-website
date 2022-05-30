@@ -2,7 +2,7 @@ import { createContext, useState } from 'react';
 
 export const GlobalContext = createContext({
   showMenu: false,
-  showFooter: true,
+  showFooter: false,
   isCurationsPage: false,
   isItemDetailsPage: false,
   isShufflePage: false,
@@ -14,7 +14,7 @@ export const GlobalContext = createContext({
 
 export const GlobalContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const [showFooter, setShowFooter] = useState(true);
+  const [showFooter, setShowFooter] = useState(false);
   const [isItemDetailsPage, setIsItemDetailsPage] = useState(false);
   const [isShufflePage, setIsShufflePage] = useState(false);
 

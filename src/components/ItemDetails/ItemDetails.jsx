@@ -10,9 +10,9 @@ import { ContainerStyled } from './ItemDetailsStyles';
 import ItemNotFound from './ItemNotFound/ItemNotFound';
 
 const ItemDetails = ({ isCurationPage }) => {
-  const [itemDetails, setItemDetails] = useState();
-  const { setIsItemDetailsPage } = useContext(GlobalContext);
   const { id } = useParams();
+  const [itemDetails, setItemDetails] = useState({});
+  const { setIsItemDetailsPage } = useContext(GlobalContext);
 
   useEffect(() => {
     setIsItemDetailsPage(true);
@@ -28,17 +28,19 @@ const ItemDetails = ({ isCurationPage }) => {
 
   return (
     <ContainerStyled isCurationPage={isCurationPage}>
-      {itemDetails ? (
+      {itemDetails !== undefined ? (
         <>
           <Swiper gallery={itemDetails?.gallery} />
 
-          {createPortal(
-            <ItemDetailsFooter
-              itemDetails={itemDetails}
-              isCurationPage={isCurationPage}
-            />,
-            document.getElementById('root')
-          )}
+          {itemDetails?.gallery?.length
+            ? createPortal(
+                <ItemDetailsFooter
+                  itemDetails={itemDetails}
+                  isCurationPage={isCurationPage}
+                />,
+                document.getElementById('root')
+              )
+            : null}
         </>
       ) : (
         <ItemNotFound isCurationPage={isCurationPage} />

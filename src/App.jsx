@@ -1,8 +1,7 @@
-import { useContext } from 'react';
+import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 import CurationsPage from './pages/Curations/CurationsPage';
 import ArtworksPage from './pages/Artworks/ArtworksPage';
 import ArtworkDetailsPage from './pages/ArtworkDetails/ArtworkDetailsPage';
@@ -12,10 +11,8 @@ import CurationDetailsPage from './pages/CurationDetails/CurationDetailsPage';
 import AboutPage from './pages/About/AboutPage';
 import LandingPage from './pages/Landing/LandingPage';
 import { ScrollToTop } from './components/global/utils';
-import { GlobalContext } from './context/globalContext';
 
 const App = () => {
-  const { showFooter } = useContext(GlobalContext);
   const location = useLocation();
 
   return (
@@ -34,7 +31,6 @@ const App = () => {
           <Route path="imprint" element={<ImprintPage />} />
         </Routes>
       </AnimatePresence>
-      {showFooter ? <Footer /> : null}
     </>
   );
 };

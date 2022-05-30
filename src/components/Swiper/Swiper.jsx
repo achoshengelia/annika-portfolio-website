@@ -75,17 +75,19 @@ const Swiper = ({ gallery }) => {
     });
   };
 
+  const swiperProps = {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    navigation: isSmallDevice,
+    modules: [EffectFade, Navigation],
+    fadeEffect: { crossFade: true },
+    speed: 500,
+    onTransitionEnd: handleVideoSlide
+  };
+
   return (
-    <SwiperStyled
-      spaceBetween={30}
-      effect={'fade'}
-      loop
-      navigation={isSmallDevice}
-      modules={[EffectFade, Navigation]}
-      fadeEffect={{ crossFade: true }}
-      speed={500}
-      onTransitionEnd={handleVideoSlide}
-    >
+    <SwiperStyled {...swiperProps}>
       {gallery?.map(link => (
         <SwiperSlide key={link}>
           {({ isActive }) => (
