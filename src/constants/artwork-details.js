@@ -25,9 +25,9 @@ export const artworkDetailsItems = [
     caption: 'Dunkle Ecken Archive',
     curation: 'Web Design | Co-Web-developement | 2021',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779352/Artworks/dunkleeckenarchiv/dearchive11_zeiwe2.mov',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779499/Artworks/dunkleeckenarchiv/dearchive13_lhfbmq.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779500/Artworks/dunkleeckenarchiv/dearchive12_rvdmdq.jpg',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779352/Artworks/dunkleeckenarchiv/dearchive11_zeiwe2.mov',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779353/Artworks/dunkleeckenarchiv/dearchive10_yy2upo.mov',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779368/Artworks/dunkleeckenarchiv/dearchive6_iebapy.mov',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779508/Artworks/dunkleeckenarchiv/dearchive2_qnygxn.png',
@@ -46,8 +46,8 @@ export const artworkDetailsItems = [
     caption: 'Knedl AR',
     curation: 'AR Filter | 2021',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651780024/Artworks/canederliAR/canederli4_ebsf8c.mp4',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652011575/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_16.03_Kopie_m8fqpl.jpg',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651780024/Artworks/canederliAR/canederli4_ebsf8c.mp4',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651780001/Artworks/canederliAR/canederli5_ra9hcd.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651780002/Artworks/canederliAR/canederli8_w0uqrc.png'
     ],
@@ -61,10 +61,10 @@ export const artworkDetailsItems = [
     caption: 'Zueinander - trovarsi',
     curation: 'Concept | Web design and co-development | Product design | 2021',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779211/Artworks/zueinander/zueinander15_sw46jq.mov',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779209/Artworks/zueinander/zueinander14_ixjzn6.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779209/Artworks/zueinander/zueinander11_mqclon.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779209/Artworks/zueinander/zueinander1_ryahxj.jpg',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779211/Artworks/zueinander/zueinander15_sw46jq.mov',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779252/Artworks/zueinander/zueinander_web1_iwyond.mov',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779246/Artworks/zueinander/zueinander_web2_oytsph.mov',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779245/Artworks/zueinander/zueinander_web10_ziymxf.png',
@@ -111,8 +111,8 @@ export const artworkDetailsItems = [
     caption: 'forecast',
     curation: 'Shader | Video sculpture | 2019',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779611/Artworks/forecast/Forecast_kzrnby.mov',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779603/Artworks/forecast/forecast05_mvdwbn.jpg',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779611/Artworks/forecast/Forecast_kzrnby.mov',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779602/Artworks/forecast/forecast03_Kopie_kmcoji.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779602/Artworks/forecast/forecast02_txlc57.jpg'
     ],
