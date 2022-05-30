@@ -7,6 +7,7 @@ import { GlobalContext } from '../../context/globalContext';
 import Swiper from '../Swiper/Swiper';
 import ItemDetailsFooter from './ItemDetailsFooter/ItemDetailsFooter';
 import { ContainerStyled } from './ItemDetailsStyles';
+import ItemNotFound from './ItemNotFound/ItemNotFound';
 
 const ItemDetails = ({ isCurationPage }) => {
   const [itemDetails, setItemDetails] = useState();
@@ -40,7 +41,7 @@ const ItemDetails = ({ isCurationPage }) => {
           )}
         </>
       ) : (
-        <div>Not Found!</div>
+        <ItemNotFound isCurationPage={isCurationPage} />
       )}
     </ContainerStyled>
   );
