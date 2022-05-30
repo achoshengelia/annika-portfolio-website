@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-import {
-  CenterWrapperStyled,
-  TextStyled as Text
-} from '../../../components/global/utils';
+import { CenterWrapperStyled, TextStyled as Text } from '../../global/utils';
 
 export const ContainerStyled = styled(CenterWrapperStyled)`
   & > ${Text} {
@@ -17,16 +14,20 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
       z-index: 1;
     }
 
-    @media only screen and (max-width: 1255px) {
-      font-size: 8.5rem;
+    @media only screen and (max-width: 1280px) {
+      font-size: 8rem;
     }
 
     @media only screen and (max-width: 1065px) {
-      font-size: 7.7rem;
+      font-size: 7.5rem;
     }
 
-    @media only screen and (max-width: 900px) {
-      font-size: 7rem;
+    @media only screen and (max-width: 980px) {
+      font-size: 6.5rem;
+    }
+
+    @media only screen and (max-width: 890px) {
+      font-size: 5.5rem;
     }
 
     @media only screen and (max-width: 800px) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Text } from '../../../components/global/utils';
+import { Text } from '../../global/utils';
 import { ContainerStyled } from './LandingTextStyles';
 
 const LandingText = () => {
