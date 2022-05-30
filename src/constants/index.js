@@ -6,7 +6,7 @@ export const indexItems = [
     caption: 'Dunkle Ecken Archive',
     tags: 'Webdesign | Co-Webdevelopment',
     organisation: 'LanaLive',
-    projectlink: 'https://www.dunkleecken.com/en',
+    projectlink: 'https://www.dunkleecken.com',
     year: '2021',
     image:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1653079768/Index/index_0011_Ebene_11_bpm5mc.jpg'
