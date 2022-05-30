@@ -1,5 +1,11 @@
 import { keyframes } from 'styled-components';
 
+export const turnPurple = keyframes`
+   to {
+      background-color: #9933FF;
+   }
+`;
+
 export const Spinning = keyframes`
    to {
     transform: rotate(1turn);
