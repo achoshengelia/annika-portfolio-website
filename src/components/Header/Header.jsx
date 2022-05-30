@@ -8,11 +8,12 @@ import Menu from '../Menu/Menu';
 import { ItemStyled, ListItemsStyled, MainWrapperStyled } from './HeaderStyles';
 
 const Header = () => {
-  const { showMenu, handleToggleShowMenu } = useContext(GlobalContext);
+  const { showMenu, handleToggleShowMenu, isShufflePage } =
+    useContext(GlobalContext);
 
   return (
     <>
-      <MainWrapperStyled>
+      <MainWrapperStyled isShufflePage={isShufflePage}>
         <CenterWrapperStyled as="nav">
           <ListItemsStyled>
             <ItemStyled>

@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #root {
     min-height: 100%;
-    height: ${props => (props.isItemDetailsPage ? '100%' : null)}
+    height: ${({ isMaxHeight }) => (isMaxHeight ? '100%' : null)}
   }
 
   html {
@@ -26,7 +26,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: ${props => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background.main};
+    background: ${props =>
+      props.isShufflePage
+        ? props.theme.colors.other.purple
+        : props.theme.colors.background.main};
     color: ${props => props.theme.colors.text.main};
     cursor: default;
     text-rendering: optimizeSpeed;
