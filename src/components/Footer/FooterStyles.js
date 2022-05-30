@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-export const MainWrapperStyled = styled.footer`
+export const MainWrapperStyled = styled(motion.footer)`
   margin-top: auto;
   padding-top: 5rem;
 `;

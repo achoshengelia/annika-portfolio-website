@@ -1,6 +1,9 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { pxToEm } from '../../helpers';
 import { CenterWrapperStyled, HeadingStyled as Heading } from '../global/utils';
+
+export const MotionHeading = motion(Heading);
 
 export const ImageStyled = styled.img`
   display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
@@ -21,7 +24,6 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
   & > ${Heading} {
     opacity: 0.1;
     line-height: 12rem;
-    /* margin: auto auto 0 auto; */
     margin-top: auto;
 
     @media ${props => props.theme.breakpoints.sm} {

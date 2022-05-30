@@ -1,8 +1,15 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { pxToEm } from '../../helpers';
-import { CenterWrapperStyled, TextStyled as Text } from '../global/utils';
+import { TextStyled as Text } from '../global/utils';
 
-export const ContainerStyled = styled(CenterWrapperStyled)`
+export const ContainerStyled = styled(motion.div)`
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 145rem;
+  height: 100%;
+
   & > ${Text} {
     margin-top: 5rem;
     font-size: 10rem;
@@ -46,5 +53,17 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
     @media only screen and (max-width: ${pxToEm(350)}) {
       font-size: 2.7rem;
     }
+  }
+
+  @media ${props => props.theme.breakpoints.md} {
+    padding: 0 3rem;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    padding: 0 1rem;
+  }
+
+  @media ${props => props.theme.breakpoints.xs} {
+    padding: 0 1rem;
   }
 `;

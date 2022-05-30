@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { landingGalleryMobile } from '../../constants/landing-page';
 import { GlobalContext } from '../../context/globalContext';
-import { Heading } from '../global/utils';
-import { ContainerStyled, ImageStyled } from './ShuffleStyles';
+import { ContainerStyled, ImageStyled, MotionHeading } from './ShuffleStyles';
 
 const Shuffle = () => {
   const { setIsShufflePage } = useContext(GlobalContext);
@@ -40,11 +39,30 @@ const Shuffle = () => {
       onTouchStart={handleMouseDown}
       onTouchEnd={handleMouseUp}
     >
-      <Heading as="h1" isUppercase size="10rem">
+      <MotionHeading
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 0.1,
+          transition: {
+            duration: 0.8,
+            delay: 0.8
+          }
+        }}
+        exit={{
+          opacity: 0,
+          y: 50,
+          transition: {
+            duration: 0.5
+          }
+        }}
+        as="h1"
+        isUppercase
+        size="10rem"
+      >
         keep <br />
         screen
         <br /> pressed
-      </Heading>
+      </MotionHeading>
 
       <ImageStyled
         src={landingGalleryMobile[imageIndex]}

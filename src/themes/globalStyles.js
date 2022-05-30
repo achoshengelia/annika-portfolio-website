@@ -1,4 +1,9 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+import { turnPurple } from '../animations';
+
+const animateBackground = css`
+  animation: ${turnPurple} 1s forwards;
+`;
 
 const GlobalStyles = createGlobalStyle`
   *,*::after,*::before  {
@@ -26,14 +31,12 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: ${props => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props =>
-      props.isShufflePage
-        ? props.theme.colors.other.purple
-        : props.theme.colors.background.main};
+    background: ${props => props.theme.colors.background.main};
     color: ${props => props.theme.colors.text.main};
     cursor: default;
     text-rendering: optimizeSpeed;
-    overflow: ${props => (props.showMenu ? 'hidden' : null)}
+    overflow: ${props => (props.showMenu ? 'hidden' : null)};
+    ${props => (props.isShufflePage ? animateBackground : null)}
   }
 
   #root {
