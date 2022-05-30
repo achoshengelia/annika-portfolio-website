@@ -9,7 +9,7 @@ import { ContainerStyled } from './LandingPageStyles';
 
 const screenMD = 800;
 
-const Landing = () => {
+const LandingPage = () => {
   const { width } = useWindowDimensions();
   const { handleSetShowFooter } = useContext(GlobalContext);
 
@@ -31,4 +31,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default LandingPage;
