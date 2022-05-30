@@ -74,15 +74,16 @@ const Contents = () => {
           </Text>
         </AboutMeWrapperStyled>
         <IDoWrapperStyled>
-          <Heading as="h2" size="2.6rem">
+          <Heading as="h2" size="2.6rem" noTransform>
             What I do?
           </Heading>
           <IDoListStyled>
             <IDoListItemStyled>Curation</IDoListItemStyled>
-            <IDoListItemStyled>Art direction</IDoListItemStyled>
-            <IDoListItemStyled>UX Design</IDoListItemStyled>
-            <IDoListItemStyled>Frontend Developer</IDoListItemStyled>
+            <IDoListItemStyled>Conceptual design</IDoListItemStyled>
+            <IDoListItemStyled>UI / UX design</IDoListItemStyled>
+            <IDoListItemStyled>Front-end web developement</IDoListItemStyled>
             <IDoListItemStyled>Augmented Reality (WebAR)</IDoListItemStyled>
+            {/* <IDoListItemStyled>Design Thinking</IDoListItemStyled> */}
           </IDoListStyled>
         </IDoWrapperStyled>
       </GridWrapperStyled>
