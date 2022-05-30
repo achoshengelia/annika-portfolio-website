@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { landingGallery } from '../../constants/landing-page';
+import { landingGalleryMobile } from '../../constants/landing-page';
 import { GlobalContext } from '../../context/globalContext';
-import { randomIntFromInterval } from '../../helpers';
 import { Heading } from '../global/utils';
 import { ContainerStyled, ImageStyled } from './ShuffleStyles';
 
@@ -21,7 +20,9 @@ const Shuffle = () => {
   const handleMouseDown = () => {
     setTimer(
       setInterval(() => {
-        setImageIndex(randomIntFromInterval(0, landingGallery.length));
+        setImageIndex(prevState =>
+          prevState === landingGalleryMobile.length - 1 ? 0 : prevState + 1
+        );
       }, 120)
     );
   };
@@ -46,7 +47,7 @@ const Shuffle = () => {
       </Heading>
 
       <ImageStyled
-        src={landingGallery[imageIndex]}
+        src={landingGalleryMobile[imageIndex]}
         alt=""
         isVisible={Boolean(timer)}
       />

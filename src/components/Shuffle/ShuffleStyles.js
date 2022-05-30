@@ -13,6 +13,8 @@ export const ImageStyled = styled.img`
 `;
 
 export const ContainerStyled = styled(CenterWrapperStyled)`
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
 

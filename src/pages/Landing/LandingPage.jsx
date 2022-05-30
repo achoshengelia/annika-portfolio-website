@@ -4,6 +4,7 @@ import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { GlobalContext } from '../../context/globalContext';
 import { isMobileDevice } from '../../helpers';
 import Shuffle from '../../components/Shuffle/Shuffle';
+import LandingText from './LandingText/LandingText';
 import { ContainerStyled } from './LandingPageStyles';
 
 const screenMD = 800;
@@ -25,6 +26,7 @@ const LandingPage = () => {
   return (
     <ContainerStyled>
       {!isSmallDevice ? <Trail /> : <Shuffle />}
+      <LandingText />
     </ContainerStyled>
   );
 };
