@@ -11,7 +11,7 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
   user-select: none;
   font-size: 2.5rem;
 
-  & button {
+  & a {
     padding: 2rem;
     font-size: 1.8rem;
     background-color: rgba(0, 0, 0, 0);
