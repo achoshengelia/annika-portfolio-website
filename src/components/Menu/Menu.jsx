@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { menuItems } from '../../constants/menu';
 import { GlobalContext } from '../../context/globalContext';
 import { CenterWrapperStyled } from '../global/utils';
-import { MainWrapperStyled, MenuListStyled, MenuStyled } from './MenuStyles';
+import { MainWrapperStyled, MenuItemStyled } from './MenuStyles';
 
 const mainVariants = {
   initial: {
@@ -58,19 +58,17 @@ const Menu = () => {
       exit="exit"
       variants={mainVariants}
     >
-      <CenterWrapperStyled as="nav">
-        <MenuListStyled>
-          {menuItems.map(({ id, value, link }) => (
-            <MenuStyled
-              key={id}
-              onClick={handleToggleShowMenu}
-              variants={childVariants}
-              whileHover={{ scale: 1.02 }}
-            >
-              <Link to={link}>{value}</Link>
-            </MenuStyled>
-          ))}
-        </MenuListStyled>
+      <CenterWrapperStyled as="ul" aria-label="primary navigation">
+        {menuItems.map(({ id, value, link }) => (
+          <MenuItemStyled
+            key={id}
+            onClick={handleToggleShowMenu}
+            variants={childVariants}
+            whileHover={{ scale: 1.02 }}
+          >
+            <Link to={link}>{value}</Link>
+          </MenuItemStyled>
+        ))}
       </CenterWrapperStyled>
     </MainWrapperStyled>
   );

@@ -3,44 +3,18 @@ import { motion } from 'framer-motion';
 import { pxToEm } from '../../helpers';
 import { CenterWrapperStyled } from '../global/utils';
 
-export const MainWrapperStyled = styled(motion.div)`
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  background-color: ${props => props.theme.colors.primary.main};
-
-  ${CenterWrapperStyled} {
-    height: 100%;
-  }
-`;
-
-export const MenuListStyled = styled.ul`
+export const LanguageListStyled = styled.ul`
+  padding-top: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  margin-left: 8rem;
-  gap: 2.5rem;
-
-  @media ${props => props.theme.breakpoints.lg} {
-    margin-left: 2rem;
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    margin-left: 3rem;
-    gap: 4rem;
-  }
-
-  @media only screen and (max-width: ${pxToEm(345)}) {
-    margin-left: 1rem;
-  }
-
-  @media ${props => props.theme.breakpoints.xs} {
-    gap: 3rem;
-  }
 `;
 
-export const MenuStyled = styled(motion.li)`
+export const LanguageStyled = styled.li`
+  font-size: 3rem;
+  padding-right: 2rem;
+  cursor: pointer;
+`;
+
+export const MenuItemStyled = styled(motion.li)`
   font-size: 8rem;
   font-weight: 500;
   cursor: pointer;
@@ -68,13 +42,37 @@ export const MenuStyled = styled(motion.li)`
   }
 `;
 
-export const LanguageListStyled = styled.ul`
-  padding-top: 1rem;
-  display: flex;
-`;
+export const MainWrapperStyled = styled(motion.nav)`
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-color: ${props => props.theme.colors.primary.main};
 
-export const LanguageStyled = styled.li`
-  font-size: 3rem;
-  padding-right: 2rem;
-  cursor: pointer;
+  ${CenterWrapperStyled} {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 8rem;
+    gap: 2.5rem;
+
+    @media ${props => props.theme.breakpoints.lg} {
+      margin-left: 2rem;
+    }
+
+    @media ${props => props.theme.breakpoints.sm} {
+      margin-left: 3rem;
+      gap: 4rem;
+    }
+
+    @media only screen and (max-width: ${pxToEm(345)}) {
+      margin-left: 1rem;
+    }
+
+    @media ${props => props.theme.breakpoints.xs} {
+      gap: 3rem;
+    }
+  }
 `;

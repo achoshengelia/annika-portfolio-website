@@ -31,7 +31,7 @@ const Footer = () => {
         }
       }}
     >
-      <CenterWrapperStyled as="nav">
+      <CenterWrapperStyled as="nav" aria-label="footer navigation">
         <ListItemsStyled>
           <ItemStyled>
             © Annika Terwey.

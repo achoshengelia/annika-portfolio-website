@@ -1,17 +1,18 @@
-import * as React from 'react';
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, memo } from 'react';
 import { useAnimation } from 'framer-motion';
 import { mix, distance, wrap } from '@popmotion/popcorn';
+import { landingGallery } from '../../constants/landing-page';
 import { center, powerOut4, generateSize, useAnimationLoop } from './utils';
 import { ContainerStyled, PlaceholderStyled } from './TrailStyles';
-import { landingGallery } from '../../constants/landing-page';
 
-const ImagePlaceholder = ({ position, link }) => {
+const ImagePlaceholder = memo(({ position, link }) => {
   const controls = useAnimation();
 
   useEffect(() => {
     if (!position) return;
+
     const { xOrigin, x, yOrigin, y } = position;
+
     controls.start({
       x: [xOrigin, x, x],
       y: [yOrigin, y, y],
@@ -36,9 +37,9 @@ const ImagePlaceholder = ({ position, link }) => {
       style={{ ...style }}
     />
   );
-};
+});
 
-const Trail = ({ distanceThreshold = 140 }) => {
+const Trail = ({ distanceThreshold = 150 }) => {
   const mouseInfo = useRef({
     now: { x: 0, y: 0 },
     prev: { x: 0, y: 0 },
@@ -84,13 +85,13 @@ const Trail = ({ distanceThreshold = 140 }) => {
     >
       {landingGallery.map((link, i) => (
         <ImagePlaceholder
+          key={link + i}
           position={imagePositions.current[i]}
           link={link}
-          key={link + i}
         />
       ))}
     </ContainerStyled>
   );
 };
 
-export default Trail;
+export default memo(Trail);

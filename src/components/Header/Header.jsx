@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <MainWrapperStyled isShufflePage={isShufflePage}>
-        <CenterWrapperStyled as="nav">
+        <CenterWrapperStyled as="nav" aria-label="header navigation">
           <ListItemsStyled>
             <ItemStyled>
               {!showMenu ? <Link to="/">ANNIKA TERWEY</Link> : null}
