@@ -35,7 +35,8 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.text.main};
     cursor: default;
     text-rendering: optimizeSpeed;
-    overflow: ${props => (props.showMenu ? 'hidden' : null)};
+    overflow: ${props =>
+      props.showMenu || props.isShufflePage ? 'hidden' : null};
     ${props => (props.isShufflePage ? animateBackground : null)}
   }
 
