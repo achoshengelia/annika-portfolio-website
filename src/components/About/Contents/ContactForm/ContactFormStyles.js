@@ -147,6 +147,12 @@ export const FormStyled = styled(Form)`
   flex-direction: column;
   gap: 1rem;
 
+  @supports not (inset: 0) {
+    & > * + * {
+      margin-top: 1rem;
+    }
+  }
+
   & > textarea {
     font-family: ${props => props.theme.fonts.main};
     min-height: 20rem;

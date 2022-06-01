@@ -8,7 +8,7 @@ export const MainWrapperStyled = styled.header`
   background-image: ${({ isShufflePage }) =>
     isShufflePage
       ? null
-      : 'linear-gradient( to top, rgba(0, 0, 0, 0), rgba(230, 229, 227, 0.5), rgba(230, 229, 227, 1))'};
+      : 'linear-gradient(to top, rgba(230, 229, 227, 0), rgba(230, 229, 227, 0.5), rgba(230, 229, 227, 1))'};
 `;
 
 export const ListItemsStyled = styled.ul`

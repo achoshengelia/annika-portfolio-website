@@ -74,5 +74,26 @@ export const MainWrapperStyled = styled(motion.nav)`
     @media ${props => props.theme.breakpoints.xs} {
       gap: 3rem;
     }
+
+    @supports not (inset: 0) {
+      & > * + * {
+        margin-top: 2.5rem;
+
+        @media ${props => props.theme.breakpoints.sm} {
+          margin-top: 4rem;
+        }
+
+        @media ${props => props.theme.breakpoints.xs} {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+
+  @supports not (inset: 0) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 `;
