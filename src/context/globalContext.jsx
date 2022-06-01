@@ -49,7 +49,7 @@ export const GlobalContextProvider = ({ children }) => {
     if (pageNeedsFooter()) {
       setTimeout(() => {
         setShowFooter(true);
-      }, 500);
+      }, 600);
     }
   }, [location.pathname]);
 

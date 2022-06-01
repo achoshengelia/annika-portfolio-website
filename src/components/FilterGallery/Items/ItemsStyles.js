@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { HeadingStyled as Heading } from '../../global/utils';
 import { pxToEm } from '../../../helpers';
+import { HeadingStyled as Heading } from '../../global/utils';
 
 export const CardTitleStyled = styled.figcaption`
   margin: auto;
@@ -52,6 +52,13 @@ export const CardTitleContainerStyled = styled.div`
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in;
+
+  @supports not (inset: 0) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 `;
 
 export const CardImageStyled = styled.img`
@@ -77,13 +84,11 @@ export const ContainerStyled = styled.section`
   gap: 2rem;
 
   @media only screen and (max-width: ${pxToEm(1100)}) {
-    //grid-template-columns: repeat(3, 1fr);
     grid-template-columns: ${props =>
       props.isCurationsPage ? 'repeat(2, 1fr)' : 'repeat(3, 1fr)'};
   }
 
   @media only screen and (max-width: ${pxToEm(870)}) {
-    //grid-template-columns: repeat(2, 1fr);
     grid-template-columns: ${props =>
       props.isCurationsPage ? 'repeat(1, 1fr)' : 'repeat(2, 1fr)'};
   }

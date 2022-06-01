@@ -2,6 +2,24 @@ import styled from 'styled-components';
 import { CloseIcon } from '../../../global/icons';
 import { CenterWrapperStyled } from '../../../global/utils';
 
+export const RowGapStyled = styled.li`
+  display: none;
+
+  @supports not (inset: 0) {
+    display: block;
+
+    margin: 2.5rem 0;
+
+    @media ${props => props.theme.breakpoints.md} {
+      margin: 1.5rem 0;
+    }
+
+    @media ${props => props.theme.breakpoints.sm} {
+      /* margin: 2rem 0; */
+    }
+  }
+`;
+
 export const FilterItemStyled = styled.li`
   font-size: 2rem;
   color: ${props =>
@@ -43,9 +61,9 @@ export const FilterItemStyled = styled.li`
 export const ContainerStyled = styled.div`
   ${CenterWrapperStyled} {
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
     margin: 2.5rem auto;
-    flex-wrap: wrap;
 
     @media ${props => props.theme.breakpoints.md} {
       margin: 1.5rem 0;
@@ -55,6 +73,15 @@ export const ContainerStyled = styled.div`
     @media ${props => props.theme.breakpoints.sm} {
       margin: 1.5rem 0;
       gap: 3rem;
+    }
+
+    @supports not (inset: 0) {
+      /* justify-content: ${({ isCurationsPage }) =>
+        isCurationsPage ? null : 'space-evenly'}; */
+
+      & > * + * {
+        margin-left: 2rem;
+      }
     }
   }
 `;

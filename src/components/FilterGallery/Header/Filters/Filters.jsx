@@ -1,15 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import {
   artworkFilterItems,
   searchParam
 } from '../../../../constants/artworks';
 import { curationFilterItems } from '../../../../constants/curations';
+import useWindowDimensions from '../../../../hooks/useWindowDimensions';
 import { CloseIcon } from '../../../global/icons';
 import { CenterWrapperStyled, LineBreakStyled } from '../../../global/utils';
-import { ContainerStyled, FilterItemStyled } from './FiltersStyles';
+import {
+  ContainerStyled,
+  FilterItemStyled,
+  RowGapStyled
+} from './FiltersStyles';
 
 const Filters = props => {
+  const { width } = useWindowDimensions();
   const [isActive, setIsActive] = useState(['all']);
   const [searchParams, setSearchParams] = useSearchParams();
   const { isCurationsPage } = props;
@@ -61,20 +67,26 @@ const Filters = props => {
   }, [searchParams]);
 
   return (
-    <ContainerStyled>
+    <ContainerStyled isCurationsPage={isCurationsPage}>
       <LineBreakStyled />
       <CenterWrapperStyled as="ul">
-        {renderItems.map(item => (
-          <FilterItemStyled
-            key={item}
-            isActive={isActive.includes(item)}
-            onClick={() => handleSetFilter(item)}
-          >
-            {item}
-            {isActive.includes(item) && item !== 'all' ? (
-              <CloseIcon size="1.3rem" />
-            ) : null}
-          </FilterItemStyled>
+        {renderItems.map((item, i) => (
+          <Fragment key={item}>
+            {width < 1187 && i === 4 ? <RowGapStyled /> : null}
+
+            {width < 674 && i === 6 ? <RowGapStyled /> : null}
+
+            {width < 376 && i === 9 ? <RowGapStyled /> : null}
+            <FilterItemStyled
+              isActive={isActive.includes(item)}
+              onClick={() => handleSetFilter(item)}
+            >
+              {item}
+              {isActive.includes(item) && item !== 'all' ? (
+                <CloseIcon size="1.3rem" />
+              ) : null}
+            </FilterItemStyled>
+          </Fragment>
         ))}
       </CenterWrapperStyled>
       <LineBreakStyled />
