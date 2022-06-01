@@ -58,6 +58,20 @@ export const artworkItems = [
   },
   {
     id: createID(),
+    caption: 'Between Pain',
+    imageSrc:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083952/Artworks/Between%20Pain/betweenPain_Kopie_bg8z4f.jpg',
+    tags: [all, photo]
+  },
+  {
+    id: createID(),
+    caption: 'Sundew',
+    imageSrc:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083944/Artworks/Between%20Pain/sundew-2_m8maj2.jpg',
+    tags: [all, film]
+  },
+  {
+    id: createID(),
     caption: '(Im)perceptible',
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779624/Artworks/imperceptible/imperceptible3_zjigh1.jpg',
@@ -77,6 +91,7 @@ export const artworkItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.04_iuyxjf.png',
     tags: [all, augumentedReality]
   },
+
   {
     id: createID(),
     caption: 'bodynamics',
@@ -86,11 +101,23 @@ export const artworkItems = [
   },
   {
     id: createID(),
+    caption: 'Shades of grey',
+    imageSrc:
+      // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085727/Artworks/Grey%20Shades/IMG_0300_jvs5js.jpg',
+      // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085727/Artworks/Grey%20Shades/156068_bonuon.jpg',
+      // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/IMG_6867_aknhuu.jpg',
+      //'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/145140_vwn6lg.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/imm023_21A_tdqqqf.jpg',
+    tags: [all, photo]
+  },
+  {
+    id: createID(),
     caption: 'MTRX',
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009386/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.21.54_vw0t3b.png',
     tags: [all, film]
   },
+
   {
     id: createID(),
     caption: 'datadust 2',

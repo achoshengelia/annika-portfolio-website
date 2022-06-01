@@ -81,6 +81,36 @@ export const artworkDetailsItems = [
   },
   {
     id: createID(),
+    caption: 'Between Pain',
+    curation: 'Short film still | 2021',
+    gallery: [
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083952/Artworks/Between%20Pain/betweenPain_Kopie_bg8z4f.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083951/Artworks/Between%20Pain/landingpage38_ixsx91.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083951/Artworks/Between%20Pain/landingpage37_vmze3a.jpg'
+    ],
+    moreInfo: [
+      "Between Pain is a still from the short film „Smartpain“, a dystopian view of an even more work driven and smart device controlled post corona pandemic home office situation. It was part of the third cultural local supply campaign, „Wir kommen zu dir - Kunst zu Hause“ (We come to you - art at home) turned one's own household into an art gallery.",
+      "The artists Arnold Mario Dall'o, Franziska Egger, Hannes Egger, Erika Inger, Sara Schwienbacher, Annika Terwey and Wolfgang Wohlfahrt created a wide variety of works especially for the occasion, which respond to the individual living spaces. These seven works of art make up an art package and are to be hung in the respective rooms. From each private art gallery, different dialogues continuously arise; in this respect, the same exhibition always emerges anew and remains individual. We come to you! - Art at Home invites you to explore and rediscover your own four walls. ",
+      'We come to you! Art at Home is a project of the South Tyrol Culture Association in cooperation with the market town of Lana.',
+      'Performer: Sophie Lazari'
+    ]
+  },
+  {
+    id: createID(),
+    caption: 'Sundew',
+    curation: 'Music video | 2021',
+    gallery: [
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083944/Artworks/Between%20Pain/Sundew__fcsdkf.jpg',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1654084041/Artworks/Sundew/achi-one_llbp9j.mp4',
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1654083993/Artworks/Sundew/achi-sundew-2_aytu7i.mp4',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083944/Artworks/Between%20Pain/sundew-2_m8maj2.jpg'
+    ],
+    moreInfo: [
+      "Music video for artist Cape Sundews aka Achi Shengelia's new music project Drosera Capensis. Like his stage name, borrowed from the carnivorous plant of the same name, that same plant becomes main character of the music video and moves to the broken beats, enveloped in airy melodies and choppy vocal samples."
+    ]
+  },
+  {
+    id: createID(),
     caption: '(Im)perceptible',
     curation: 'Design research | Prototyping | 2020',
     gallery: [
@@ -125,7 +155,7 @@ export const artworkDetailsItems = [
   {
     id: createID(),
     caption: 'Wos geat',
-    curation: 'AR Filter | 2019',
+    curation: 'AR Filter | 2020',
     gallery: [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.27_n5vwq5.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.04_iuyxjf.png'
@@ -138,7 +168,7 @@ export const artworkDetailsItems = [
   {
     id: createID(),
     caption: 'bodynamics',
-    curation: 'Photography | 2019',
+    curation: 'Photography | 2020',
     gallery: [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779017/Artworks/bodynamics/bodynamics8_gfmdl5.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779017/Artworks/bodynamics/bodynamics9_x7pddz.jpg',
@@ -154,6 +184,31 @@ export const artworkDetailsItems = [
     moreInfo: [
       'As René Descartes once wrote: "The human body is a machine whose movements are directed by the soul." Bodynamics captures the soul in its various forms and stages in a photographic series.  Celebrating the adaptability and diversity of the human body and mind.',
       'Model: Sophie Lazari'
+    ]
+  },
+  {
+    id: createID(),
+    caption: 'Shades of grey',
+    curation: 'Photography | since 2019',
+    gallery: [
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/IMG_6867_aknhuu.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/imm023_21A_tdqqqf.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085727/Artworks/Grey%20Shades/156068_bonuon.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085728/Artworks/Grey%20Shades/IMG_2883_jy8hqw.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654086569/Artworks/Grey%20Shades/IMG_0300_jvs5js.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085728/Artworks/Grey%20Shades/IMG_3277_iewuj2.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085728/Artworks/Grey%20Shades/IMG_1477_q3lsvr.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085726/Artworks/Grey%20Shades/IMG_0824_mlyuob.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085727/Artworks/Grey%20Shades/imm030_31_bjobgh.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085726/Artworks/Grey%20Shades/IMG_7614_besfvi.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085726/Artworks/Grey%20Shades/IMG_3043_ljmyzd.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085726/Artworks/Grey%20Shades/IMG_1427_2_qylxga.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085726/Artworks/Grey%20Shades/IMG_4953_ys0l6n.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085727/Artworks/Grey%20Shades/SAM_5309_tc4arg.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/145140_vwn6lg.jpg'
+    ],
+    moreInfo: [
+      'A photographic journey to explore different views drenched in grey. It is an ongoing process that will evolve over time and expand the palette of greys. '
     ]
   },
   {
