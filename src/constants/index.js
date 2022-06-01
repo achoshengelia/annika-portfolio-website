@@ -56,11 +56,34 @@ export const indexItems = [
   },
   {
     id: createID(),
+    caption: 'Between Pain',
+    tags: 'Short film still',
+    organisation: 'Südtiroler Kultur Verein - Lana live ',
+    projectlink:
+      'https://franzmagazine.com/2021/04/16/kulturelle-nahversorgung-gegen-lokale-einsamkeit/?fbclid=IwAR1G4AuksqcKfKUJ9cqQVBzGlVb6wg23iLVjdrt7mtL49pDL4PywOoglAbI',
+    year: '2021',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083952/Artworks/Between%20Pain/betweenPain_Kopie_bg8z4f.jpg'
+  },
+
+  {
+    id: createID(),
+    caption: 'Sundew',
+    tags: 'Music video',
+    organisation: 'Cape Sundew',
+    projectlink:
+      'https://www.youtube.com/watch?v=wOhzLUnP4rM&ab_channel=HATELAB',
+    year: '2021',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083944/Artworks/Between%20Pain/Sundew__fcsdkf.jpg'
+  },
+  {
+    id: createID(),
     caption: '(Im)perceptible',
     tags: 'Design research | Prototyping',
     organisation: 'Bachelor project, UdK',
     projectlink: 'https://www.iid-udk.de/2020/07/17/imperceptible/',
-    year: '2020',
+    year: '2021',
     image:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1653079768/Index/index_0008_Ebene_14_p6hqd5.jpg'
   },
@@ -80,10 +103,20 @@ export const indexItems = [
     tags: 'AR filter',
     organisation: '',
     projectlink: '',
-    year: '2019',
+    year: '2020',
     image:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.04_iuyxjf.png'
     //      'https://res.cloudinary.com/dojsjcecs/image/upload/v1653079767/Index/index_0000_Ebene_21_khzc8e.jpg'
+  },
+  {
+    id: createID(),
+    caption: 'Bodynamics',
+    tags: 'Photography',
+    organisation: '',
+    projectlink: '',
+    year: '2020',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779015/Artworks/bodynamics/bodynamics1_imxssd.jpg'
   },
   {
     id: createID(),
@@ -94,6 +127,16 @@ export const indexItems = [
     year: '2019',
     image:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1653079769/Index/index_0015_Ebene_7_e2zees.jpg'
+  },
+  {
+    id: createID(),
+    caption: 'Shades of grey',
+    tags: 'Photography',
+    organisation: '',
+    projectlink: '',
+    year: '2019',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085728/Artworks/Grey%20Shades/IMG_2883_jy8hqw.jpg'
   },
   {
     id: createID(),
