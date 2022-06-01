@@ -15,9 +15,13 @@ export const HeaderStyled = styled.header`
   cursor: pointer;
   margin-bottom: 2rem;
 
-  ${Text} {
+  & > ${Text} {
     &:last-child {
       text-align: end;
+    }
+
+    & > a {
+      text-decoration: underline;
     }
   }
 
