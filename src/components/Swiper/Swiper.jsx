@@ -76,6 +76,7 @@ const Swiper = ({ gallery }) => {
   };
 
   const swiperProps = {
+    initialSlide: 1,
     spaceBetween: 30,
     effect: 'fade',
     loop: true,
