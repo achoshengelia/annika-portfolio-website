@@ -15,8 +15,15 @@ const LandingPage = () => {
 
   return (
     <ContainerStyled>
-      {!isSmallDevice ? <Trail /> : <Shuffle />}
-      <LandingText />
+      {!isSmallDevice ? (
+        <Trail>
+          <LandingText />
+        </Trail>
+      ) : (
+        <Shuffle>
+          <LandingText />
+        </Shuffle>
+      )}
     </ContainerStyled>
   );
 };

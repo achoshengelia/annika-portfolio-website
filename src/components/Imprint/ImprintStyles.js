@@ -12,5 +12,4 @@ export const HeaderWrapperStyled = styled(motion.header)`
 
 export const ContainerStyled = styled(CenterWrapperStyled)`
   padding-top: 4rem;
-  padding-bottom: 4rem;
 `;

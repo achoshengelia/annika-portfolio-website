@@ -1,11 +1,36 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { landingGalleryMobile } from '../../constants/landing-page';
 import { GlobalContext } from '../../context/globalContext';
-import { ContainerStyled, ImageStyled, MotionHeading } from './ShuffleStyles';
+import { getRandomColour } from '../../helpers';
+import {
+  ContainerStyled,
+  ImagePlaceholderStyled,
+  ImageStyled,
+  MotionHeading
+} from './ShuffleStyles';
 
-const Shuffle = () => {
+const Image = ({ link, isVisible }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <>
+      <ImageStyled
+        src={link}
+        alt=""
+        isVisible={isVisible && isLoaded}
+        onLoad={() => setIsLoaded(true)}
+      />
+
+      {!isLoaded && isVisible ? (
+        <ImagePlaceholderStyled colour={getRandomColour()} />
+      ) : null}
+    </>
+  );
+};
+
+const Shuffle = ({ children }) => {
   const { setIsShufflePage } = useContext(GlobalContext);
-  const [imageIndex, setImageIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(null);
   const [timer, setTimer] = useState(null);
 
   useEffect(() => {
@@ -14,23 +39,27 @@ const Shuffle = () => {
     return () => {
       setIsShufflePage(false);
     };
-  }, [setIsShufflePage]);
+  });
 
   const handleMouseDown = () => {
     setTimer(
       setInterval(() => {
         setImageIndex(prevState =>
-          prevState === landingGalleryMobile.length - 1 ? 0 : prevState + 1
+          prevState === landingGalleryMobile.length - 1 || prevState === null
+            ? 0
+            : prevState + 1
         );
-      }, 120)
+      }, 140)
     );
   };
 
   const handleMouseUp = () => {
     clearInterval(timer);
-    setImageIndex(0);
+    setImageIndex(null);
     setTimer(null);
   };
+
+  const isVisible = i => (i === imageIndex ? true : false);
 
   return (
     <ContainerStyled
@@ -38,7 +67,21 @@ const Shuffle = () => {
       onMouseUp={handleMouseUp}
       onTouchStart={handleMouseDown}
       onTouchEnd={handleMouseUp}
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: {
+          duration: 0.8
+        }
+      }}
+      exit={{
+        opacity: 0,
+        transition: {
+          duration: 0.8
+        }
+      }}
     >
+      {children}
       <MotionHeading
         initial={{ opacity: 0 }}
         animate={{
@@ -64,11 +107,9 @@ const Shuffle = () => {
         <br /> pressed
       </MotionHeading>
 
-      <ImageStyled
-        src={landingGalleryMobile[imageIndex]}
-        alt=""
-        isVisible={Boolean(timer)}
-      />
+      {landingGalleryMobile.map((link, i) => (
+        <Image key={link} link={link} isVisible={isVisible(i)} />
+      ))}
     </ContainerStyled>
   );
 };

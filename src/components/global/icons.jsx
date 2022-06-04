@@ -31,4 +31,5 @@ export const Spinner = styled.i`
   border-bottom-color: transparent;
   position: relative;
   animation: ${Spinning} 1s linear infinite;
+  margin: 0 auto;
 `;

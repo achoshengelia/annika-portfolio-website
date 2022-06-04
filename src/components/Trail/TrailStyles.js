@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { CenterWrapperStyled } from '../global/utils';
 
 export const PlaceholderStyled = styled(motion.img)`
   width: 25rem;
@@ -10,7 +11,7 @@ export const PlaceholderStyled = styled(motion.img)`
   object-fit: contain;
 `;
 
-export const ContainerStyled = styled.div`
+export const ContainerStyled = styled(CenterWrapperStyled)`
   position: fixed;
   inset: 0;
 

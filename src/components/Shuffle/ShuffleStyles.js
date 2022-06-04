@@ -1,9 +1,25 @@
-import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { pxToEm } from '../../helpers';
 import { CenterWrapperStyled, HeadingStyled as Heading } from '../global/utils';
 
 export const MotionHeading = motion(Heading);
+
+export const ImagePlaceholderStyled = styled.div`
+  position: absolute;
+  inset: 0;
+  z-index: 100000;
+  height: 100vh;
+  width: 100vw;
+  background-color: ${({ colour }) => (colour ? colour : null)};
+
+  @supports not (inset: 0) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+`;
 
 export const ImageStyled = styled.img`
   display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
@@ -22,11 +38,12 @@ export const ImageStyled = styled.img`
   }
 `;
 
-export const ContainerStyled = styled(CenterWrapperStyled)`
+export const ContainerStyled = styled(motion(CenterWrapperStyled))`
   position: absolute;
   bottom: 0;
   display: flex;
   flex-direction: column;
+  background-color: ${props => props.theme.colors.other.purple};
 
   & > ${Heading} {
     opacity: 0.1;

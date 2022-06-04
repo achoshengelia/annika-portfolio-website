@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Text } from '../global/utils';
 import { ContainerStyled } from './LandingTextStyles';
 
 const LandingText = () => {
@@ -19,16 +18,14 @@ const LandingText = () => {
         opacity: 0,
         y: -50,
         transition: {
-          duration: 0.5
+          duration: 0.9
         }
       }}
     >
-      <Text as="p" size="10rem">
-        Welcome to my Portfolio Website! <Link to="/about">I am</Link> a
-        German-Italian <Link to="/design-artworks">designer</Link>,{' '}
-        <Link to="/design-artworks">multimedia artist</Link> and a{' '}
-        <Link to="/curation">curator</Link>.
-      </Text>
+      Welcome to my Portfolio Website! <Link to="/about">I am</Link> a
+      German-Italian <Link to="/design-artworks">designer</Link>,{' '}
+      <Link to="/design-artworks">multimedia artist</Link> and a{' '}
+      <Link to="/curation">curator</Link>.
     </ContainerStyled>
   );
 };

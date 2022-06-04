@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { CenterWrapperStyled } from '../global/utils';
 
-export const ContainerStyled = styled(CenterWrapperStyled)`
+export const ContainerStyled = styled(motion(CenterWrapperStyled))`
   height: 100%;
   display: flex;
   flex-direction: column;

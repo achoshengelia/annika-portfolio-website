@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef, memo } from 'react';
+import React, { useEffect, useState, useRef, memo, useCallback } from 'react';
 import { useAnimation } from 'framer-motion';
 import { mix, distance, wrap } from '@popmotion/popcorn';
 import { landingGallery } from '../../constants/landing-page';
-import { center, powerOut4, generateSize, useAnimationLoop } from './utils';
+import { center, powerOut4, useAnimationLoop } from './utils';
 import { ContainerStyled, PlaceholderStyled } from './TrailStyles';
 
 const ImagePlaceholder = memo(({ position, link }) => {
@@ -19,7 +19,7 @@ const ImagePlaceholder = memo(({ position, link }) => {
       opacity: [1, 1, 0],
       scale: [1, 1, 0.85],
       transition: {
-        duration: 0.8,
+        duration: 0.6,
         ease: ['easeOut', powerOut4],
         times: [0, 0.7, 1]
       }
@@ -39,7 +39,7 @@ const ImagePlaceholder = memo(({ position, link }) => {
   );
 });
 
-const Trail = ({ distanceThreshold = 150 }) => {
+const Trail = ({ distanceThreshold = 120, children }) => {
   const mouseInfo = useRef({
     now: { x: 0, y: 0 },
     prev: { x: 0, y: 0 },
@@ -50,7 +50,7 @@ const Trail = ({ distanceThreshold = 150 }) => {
 
   const [index, setIndex] = useState(0);
 
-  useAnimationLoop(() => {
+  const useAnimationCallback = useCallback(() => {
     const mouseDistance = distance(mouseInfo.now, mouseInfo.prevImage);
 
     mouseInfo.prev = {
@@ -68,7 +68,6 @@ const Trail = ({ distanceThreshold = 150 }) => {
         x: mouseInfo.now.x,
         y: mouseInfo.now.y,
         style: {
-          ...generateSize(),
           zIndex: imageIndex
         }
       };
@@ -77,12 +76,15 @@ const Trail = ({ distanceThreshold = 150 }) => {
 
       setIndex(newIndex);
     }
-  });
+  }, [distanceThreshold, index, mouseInfo]);
+
+  useAnimationLoop(useAnimationCallback);
 
   return (
     <ContainerStyled
       onMouseMove={e => (mouseInfo.now = { x: e.pageX, y: e.pageY })}
     >
+      {children}
       {landingGallery.map((link, i) => (
         <ImagePlaceholder
           key={link + i}

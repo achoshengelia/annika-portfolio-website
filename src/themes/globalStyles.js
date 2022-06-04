@@ -1,9 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
-import { turnPurple } from '../animations';
-
-const animateBackground = css`
-  animation: ${turnPurple} 1s forwards;
-`;
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   *,*::after,*::before  {
@@ -37,7 +32,6 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeSpeed;
     overflow: ${props =>
       props.showMenu || props.isShufflePage ? 'hidden' : null};
-    ${props => (props.isShufflePage ? animateBackground : null)}
   }
 
   #root {

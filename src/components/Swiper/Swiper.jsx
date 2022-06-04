@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { EffectFade, Navigation } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -18,15 +18,29 @@ import {
 
 const Item = ({ isActive, isVideo, link }) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef?.current;
+
+    if (isActive && isLoaded) {
+      video?.play();
+    }
+
+    return () => {
+      video?.pause();
+    };
+  }, [isActive, isLoaded]);
 
   return (
     <>
       {isVideo ? (
         <VideoStyled
-          className={`video ${isActive ? 'active' : ''}`}
           loop
-          onCanPlay={() => setIsLoaded(true)}
+          onCanPlayThrough={() => setIsLoaded(true)}
+          onWaiting={() => setIsLoaded(false)}
           isLoaded={isLoaded}
+          ref={videoRef}
         >
           <source src={link} />
         </VideoStyled>
@@ -63,18 +77,6 @@ const Swiper = ({ gallery }) => {
     }
   };
 
-  const handleVideoSlide = () => {
-    const videos = [...document.getElementsByClassName('video')];
-
-    videos.forEach(video => {
-      if (video.classList.value.includes('active')) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    });
-  };
-
   const swiperProps = {
     initialSlide: 1,
     spaceBetween: 30,
@@ -83,8 +85,7 @@ const Swiper = ({ gallery }) => {
     navigation: isSmallDevice,
     modules: [EffectFade, Navigation],
     fadeEffect: { crossFade: true },
-    speed: 500,
-    onTransitionEnd: handleVideoSlide
+    speed: 500
   };
 
   return (

@@ -28,7 +28,7 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
           opacity: 0,
           y: 30,
           transition: {
-            duration: 0.4,
+            duration: 0.5,
             ease: 'easeOut'
           }
         }}

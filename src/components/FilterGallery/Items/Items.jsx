@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext, useCallback } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { GlobalContext } from '../../../context/globalContext';
 import { artworkItems, searchParam } from '../../../constants/artworks';
@@ -62,6 +62,19 @@ const Items = () => {
   const [renderItems, setRenderItems] = useState(items);
   const [pageIsLoaded, setPageIsLoaded] = useState(false);
   const [searchParams] = useSearchParams();
+  const getFilteredItems = useCallback(
+    filters => {
+      const filteredItems = items.filter(item => {
+        if (item.tags.some(tag => filters.includes(tag))) {
+          return item;
+        }
+        return null;
+      });
+
+      return filteredItems;
+    },
+    [items]
+  );
 
   useEffect(() => {
     setTimeout(() => {
@@ -71,22 +84,12 @@ const Items = () => {
 
   useEffect(() => {
     const selectedFilters = searchParams.getAll(searchParam);
-    const getFilteredItems = filters => {
-      const filteredItems = items.filter(item => {
-        if (item.tags.some(tag => filters.includes(tag))) {
-          return item;
-        }
-        return null;
-      });
-
-      return filteredItems;
-    };
 
     if (selectedFilters.length) {
       return setRenderItems(getFilteredItems(selectedFilters));
     }
     setRenderItems(items);
-  }, [items, searchParams]);
+  }, [items, searchParams, getFilteredItems]);
 
   return !renderItems.length ? (
     <ContainerStyled>

@@ -1,46 +1,73 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import { getArtworkDetails } from '../../constants/artwork-details';
 import { getCurationDetails } from '../../constants/curation-details';
 import { GlobalContext } from '../../context/globalContext';
+import { usePrevState } from '../global/utils';
 import Swiper from '../Swiper/Swiper';
 import ItemDetailsFooter from './ItemDetailsFooter/ItemDetailsFooter';
-import { ContainerStyled } from './ItemDetailsStyles';
 import ItemNotFound from './ItemNotFound/ItemNotFound';
+import { ContainerStyled } from './ItemDetailsStyles';
 
 const ItemDetails = ({ isCurationPage }) => {
   const { id } = useParams();
+  const { pathname } = useLocation();
+  const prevPathname = usePrevState(pathname);
+  const { setIsMaxHeight } = useContext(GlobalContext);
   const [itemDetails, setItemDetails] = useState({});
-  const { setIsItemDetailsPage } = useContext(GlobalContext);
+  const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
-    setIsItemDetailsPage(true);
+    if (pathname !== prevPathname) {
+      setShowFooter(false);
+    }
+  }, [pathname, prevPathname]);
+
+  useEffect(() => {
+    setIsMaxHeight(true);
+    setShowFooter(true);
 
     setItemDetails(
       isCurationPage ? getCurationDetails(id) : getArtworkDetails(id)
     );
 
     return () => {
-      setIsItemDetailsPage(false);
+      setIsMaxHeight(false);
     };
-  }, [isCurationPage, id, setIsItemDetailsPage]);
+  }, [isCurationPage, id, setIsMaxHeight]);
 
   return (
-    <ContainerStyled isCurationPage={isCurationPage}>
+    <ContainerStyled
+      initial={{ opacity: 0, scale: 0.7 }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 0.4, delay: 0.6, ease: 'linear' }
+      }}
+      exit={{
+        opacity: 0,
+        scale: 0.7,
+        transition: { duration: 0.3, ease: 'easeOut' }
+      }}
+      isCurationPage={isCurationPage}
+    >
       {itemDetails !== undefined ? (
         <>
           <Swiper gallery={itemDetails?.gallery} />
 
-          {itemDetails?.gallery?.length
-            ? createPortal(
+          {createPortal(
+            <AnimatePresence>
+              {itemDetails?.gallery?.length && showFooter ? (
                 <ItemDetailsFooter
                   itemDetails={itemDetails}
                   isCurationPage={isCurationPage}
-                />,
-                document.getElementById('root')
-              )
-            : null}
+                />
+              ) : null}
+            </AnimatePresence>,
+            document.getElementById('root')
+          )}
         </>
       ) : (
         <ItemNotFound isCurationPage={isCurationPage} />

@@ -9,15 +9,15 @@ const MoreInfo = ({ moreInfo }) => {
       animate={{
         y: 0,
         transition: {
-          duration: 0.6,
-          ease: 'easeIn'
+          duration: 0.4,
+          ease: 'linear'
         }
       }}
       exit={{
         y: 1000,
         transition: {
-          duration: 0.6,
-          ease: 'easeOut'
+          duration: 0.4,
+          ease: 'linear'
         }
       }}
     >
