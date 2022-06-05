@@ -23,6 +23,8 @@ const Image = ({ link, isVisible }) => {
         alt=""
         isVisible={isVisible && isLoaded}
         onLoad={() => setIsLoaded(true)}
+        draggable={false}
+        unselectable
       />
 
       {!isLoaded && isVisible ? (

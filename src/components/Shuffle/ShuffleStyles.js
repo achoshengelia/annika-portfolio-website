@@ -31,6 +31,8 @@ export const ImageStyled = styled.img`
   width: 100vw;
   object-fit: cover;
   pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 
   @supports not (inset: 0) {
     top: 0;
