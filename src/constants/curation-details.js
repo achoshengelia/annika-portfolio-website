@@ -29,7 +29,6 @@ export const curationDetailsItems = [
     caption: 'Dunkle Ecken',
     curation: 'Co-Curation | Co-Management | 2020',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken2_uswgbn.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken3_m5tkhd.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken6_pe4xhm.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken5_ays99h.jpg',
@@ -40,7 +39,8 @@ export const curationDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken13_ce2hmf.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken11_dhh2i9.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken14_nnw6ha.png',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken8_hfbvfi.png'
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken8_hfbvfi.png',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken2_uswgbn.jpg'
     ],
     moreInfo: [
       'Dunkle Ecken (dark corners) comprises 20 works by international young artists around the theme of mental health. The exhibition took place in 2020 at the beginning of the pandemic during the festival LanaLive and opened up space for reflection and discussion to shed light on the taboo corners of the human condition.',
@@ -77,7 +77,6 @@ export const curationDetailsItems = [
     caption: 'Trashspotting',
     curation: 'Curation | Exhibition Design | 2019',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652184770/Curation/trashspotting1/trashspotting_poster_yfw6ss.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan4_dsoq5g.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan7_d6zfjo.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan5_z7hbts.jpg',
@@ -85,7 +84,8 @@ export const curationDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779823/Curation/trashspotting1/trash_eppan2_clfipy.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan6_esxofg.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan10_jilgbx.jpg',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan12_lx7gew.jpg'
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan12_lx7gew.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652184770/Curation/trashspotting1/trashspotting_poster_yfw6ss.jpg'
     ],
     moreInfo: [
       'Pollution knows no boundaries. Waste in particular has become an unavoidable problem in our society. The exhibition Trashspotting, which was on view from 20 March to 27 March at Lanserhaus, Eppan, picks up exactly this topic.',
