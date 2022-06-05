@@ -41,7 +41,7 @@ const Shuffle = ({ children }) => {
     return () => {
       setIsShufflePage(false);
     };
-  });
+  }, [setIsShufflePage]);
 
   const handleMouseDown = () => {
     setTimer(
