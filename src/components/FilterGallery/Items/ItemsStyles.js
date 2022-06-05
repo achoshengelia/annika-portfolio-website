@@ -112,13 +112,15 @@ export const ContainerStyled = styled.section`
     overflow: hidden;
     animation-delay: ${({ pageIsLoaded }) => (pageIsLoaded ? '0s' : '0.6s')};
 
-    &:hover {
-      ${CardTitleContainerStyled} {
-        opacity: 1;
-      }
+    @media (hover: hover) {
+      &:hover {
+        ${CardTitleContainerStyled} {
+          opacity: 1;
+        }
 
-      ${CardImageStyled} {
-        transform: scale(1.1);
+        ${CardImageStyled} {
+          transform: scale(1.1);
+        }
       }
     }
 

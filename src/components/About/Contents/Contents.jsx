@@ -20,8 +20,7 @@ import {
   FriendsListItemStyled,
   IDoWrapperStyled,
   ArrowWrapperStyled,
-  ButtonStyled,
-  ButtonWrapperStyled
+  ButtonStyled
 } from './ContentsStyles';
 
 const Contents = () => {
@@ -83,7 +82,6 @@ const Contents = () => {
             <IDoListItemStyled>UI / UX design</IDoListItemStyled>
             <IDoListItemStyled>Front-end web developement</IDoListItemStyled>
             <IDoListItemStyled>Augmented Reality (WebAR)</IDoListItemStyled>
-            {/* <IDoListItemStyled>Design Thinking</IDoListItemStyled> */}
           </IDoListStyled>
         </IDoWrapperStyled>
       </GridWrapperStyled>
@@ -110,14 +108,12 @@ const Contents = () => {
         }}
       >
         <Heading as="h2" size="2.6rem" noTransform $wrap>
-          Got a project in mind? Si hi and write me :)
+          Got a project in mind? Say hi and write me :)
         </Heading>
         {!isFormOpen ? (
-          <ButtonWrapperStyled>
-            <ButtonStyled onClick={() => SetIsFormOpen(true)}>
-              <ArrowWrapperStyled>→</ArrowWrapperStyled> WRITE ME AN EMAIL
-            </ButtonStyled>
-          </ButtonWrapperStyled>
+          <ButtonStyled onClick={() => SetIsFormOpen(true)}>
+            <ArrowWrapperStyled>→</ArrowWrapperStyled> WRITE ME AN EMAIL
+          </ButtonStyled>
         ) : null}
         <ContactForm />
       </ContactWrapperStyled>

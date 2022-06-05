@@ -26,8 +26,10 @@ export const ItemStyled = styled.li`
   opacity: ${props => (props.variant === 'back' ? '0.50' : '1')};
   transition: all 115ms ease-in-out;
 
-  &:hover {
-    opacity: 0.75;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   @media ${props => props.theme.breakpoints.sm} {

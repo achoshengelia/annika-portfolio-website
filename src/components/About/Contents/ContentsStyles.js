@@ -161,8 +161,10 @@ export const ArrowWrapperStyled = styled.span`
   display: inline-block;
   transition: transform 0.3s ease;
 
-  &:hover {
-    transform: translateX(30%);
+  @media (hover: hover) {
+    &:hover {
+      transform: translateX(30%);
+    }
   }
 `;
 
@@ -173,10 +175,14 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
   width: max-content;
   margin-bottom: 8rem;
+  margin-left: 1rem;
+  color: ${props => props.theme.colors.other.black};
 
-  &:hover {
-    ${ArrowWrapperStyled} {
-      transform: translateX(25%);
+  @media (hover: hover) {
+    &:hover {
+      ${ArrowWrapperStyled} {
+        transform: translateX(25%);
+      }
     }
   }
 
@@ -190,6 +196,7 @@ export const ButtonStyled = styled.button`
 
   @media only screen and (max-width: ${pxToEm(450)}) {
     font-size: 3rem;
+    margin-left: 0.4rem;
   }
 
   @media only screen and (max-width: ${pxToEm(370)}) {
@@ -199,13 +206,5 @@ export const ButtonStyled = styled.button`
   @media only screen and (max-width: ${pxToEm(330)}) {
     font-size: 2.2rem;
     margin-bottom: 5rem;
-  }
-`;
-
-export const ButtonWrapperStyled = styled.div`
-  padding-left: 1rem;
-
-  @media only screen and (max-width: ${pxToEm(450)}) {
-    padding-left: 0.4rem;
   }
 `;

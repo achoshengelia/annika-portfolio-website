@@ -17,9 +17,11 @@ export const ListItemsStyled = styled.ul`
 export const LinkStyled = styled(Link)`
   transition: all 115ms ease-in-out;
 
-  &:hover {
-    color: #000000;
-    opacity: 0.75;
+  @media (hover: hover) {
+    &:hover {
+      color: #000000;
+      opacity: 0.75;
+    }
   }
 `;
 

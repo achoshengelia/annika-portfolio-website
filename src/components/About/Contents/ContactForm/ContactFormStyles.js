@@ -9,14 +9,16 @@ export const ResponseWrapperStyled = styled.div`
 
   & button {
     font-size: 2.2rem;
-    background-color: rgba(0, 0, 0, 0);
+    color: ${props => props.theme.colors.other.black};
     text-decoration: underline;
     cursor: pointer;
     transition: transform 0.1s ease;
 
-    &:hover {
-      color: ${props => props.theme.colors.other.purple};
-      transform: scale(1.02);
+    @media (hover: hover) {
+      &:hover {
+        color: ${props => props.theme.colors.other.purple};
+        transform: scale(1.02);
+      }
     }
 
     @media only screen and (max-width: ${pxToEm(900)}) {
@@ -65,10 +67,13 @@ export const ButtonStyled = styled.button`
   text-align: left;
   cursor: pointer;
   width: max-content;
+  color: ${props => props.theme.colors.other.black};
 
-  &:hover {
-    ${ArrowWrapperStyled} {
-      transform: translateX(30%);
+  @media (hover: hover) {
+    &:hover {
+      ${ArrowWrapperStyled} {
+        transform: translateX(30%);
+      }
     }
   }
 
@@ -96,6 +101,7 @@ export const ButtonStyled = styled.button`
 export const ButtonWrapperStyled = styled.div`
   border-top: 1px solid;
   padding-left: 1rem;
+  border-radius: 0;
 
   @media only screen and (max-width: ${pxToEm(450)}) {
     padding-left: 0.4rem;
@@ -116,6 +122,7 @@ export const FieldStyled = styled(Field)`
   background: none;
   border: none;
   border-top: 1px solid;
+  border-radius: 0;
   padding-top: 1.5rem;
   padding-left: 1rem;
   font-size: 3rem;

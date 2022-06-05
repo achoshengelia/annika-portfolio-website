@@ -33,9 +33,11 @@ export const ContainerStyled = styled(CenterWrapperStyled)`
     cursor: pointer;
     transition: transform 0.1s ease;
 
-    &:hover {
-      color: ${props => props.theme.colors.other.purple};
-      transform: scale(1.02);
+    @media (hover: hover) {
+      &:hover {
+        color: ${props => props.theme.colors.other.purple};
+        transform: scale(1.02);
+      }
     }
   }
 

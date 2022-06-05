@@ -8,7 +8,7 @@ export const MotionHeading = motion(Heading);
 export const ImagePlaceholderStyled = styled.div`
   position: absolute;
   inset: 0;
-  z-index: 9999;
+  z-index: ${({ isFallback }) => (isFallback ? '998' : '9999')};
   height: 100vh;
   width: 100vw;
   background-color: ${({ colour, theme }) =>
@@ -50,6 +50,7 @@ export const ContainerStyled = styled(motion(CenterWrapperStyled))`
     opacity: 0.1;
     line-height: 12rem;
     margin-top: auto;
+    user-select: none;
 
     @media ${props => props.theme.breakpoints.sm} {
       font-size: 8rem;

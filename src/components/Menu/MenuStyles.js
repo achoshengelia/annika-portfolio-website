@@ -21,8 +21,10 @@ export const MenuItemStyled = styled(motion.li)`
   width: fit-content;
   text-transform: uppercase;
 
-  &:hover {
-    color: ${props => props.theme.colors.other.purple};
+  @media (hover: hover) {
+    &:hover {
+      color: ${props => props.theme.colors.other.purple};
+    }
   }
 
   @media ${props => props.theme.breakpoints.lg} {
