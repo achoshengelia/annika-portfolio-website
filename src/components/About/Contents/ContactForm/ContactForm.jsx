@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { ErrorMessage, Formik } from 'formik';
 import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
+import { Spinner } from '../../../global/icons';
 import {
   ArrowWrapperStyled,
   ResponseWrapperStyled,
@@ -9,9 +10,9 @@ import {
   ButtonWrapperStyled,
   ErrorMessageStyled,
   FieldStyled,
-  FormStyled
+  FormStyled,
+  SpinnerWrapperStyled
 } from './ContactFormStyles';
-import { Spinner } from '../../../global/icons';
 
 const initialValues = {
   name: '',
@@ -36,6 +37,7 @@ const ContactForm = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
   const formRef = useRef(null);
+  const resRef = useRef(null);
 
   const handleSubmit = async () => {
     setIsSubmitted(true);
@@ -56,6 +58,14 @@ const ContactForm = () => {
       setIsError(true);
     } finally {
       setIsLoading(false);
+
+      setTimeout(() => {
+        resRef?.current.scrollIntoView({
+          behavior: 'auto',
+          block: 'center',
+          inline: 'center'
+        });
+      }, 200);
     }
   };
 
@@ -69,14 +79,16 @@ const ContactForm = () => {
   return (
     <>
       {isLoading ? (
-        <Spinner />
+        <SpinnerWrapperStyled>
+          <Spinner />
+        </SpinnerWrapperStyled>
       ) : isError ? (
-        <ResponseWrapperStyled>
+        <ResponseWrapperStyled ref={resRef}>
           Sorry, something went wrong when sending the message.{'     '}
           <button onClick={handleReset}>Click here to try again!</button>
         </ResponseWrapperStyled>
       ) : isSuccess ? (
-        <ResponseWrapperStyled>
+        <ResponseWrapperStyled ref={resRef}>
           Thanks for reaching out! I will come back to you as soon as possible.{' '}
           <button onClick={handleReset}>Send another message</button>
         </ResponseWrapperStyled>

@@ -30,6 +30,7 @@ export const ImageStyled = styled.img`
   height: 100vh;
   width: 100vw;
   object-fit: cover;
+  pointer-events: none;
 
   @supports not (inset: 0) {
     top: 0;

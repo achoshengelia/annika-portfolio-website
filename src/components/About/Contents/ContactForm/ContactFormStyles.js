@@ -3,6 +3,13 @@ import styled from 'styled-components';
 import { LightUp } from '../../../../animations';
 import { pxToEm } from '../../../../helpers';
 
+export const SpinnerWrapperStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+`;
+
 export const ResponseWrapperStyled = styled.div`
   font-size: 2.2rem;
   transition: transform 0.3s ease;
@@ -13,6 +20,8 @@ export const ResponseWrapperStyled = styled.div`
     text-decoration: underline;
     cursor: pointer;
     transition: transform 0.1s ease;
+    height: max-content;
+    background: transparent;
 
     @media (hover: hover) {
       &:hover {
@@ -64,6 +73,7 @@ export const ArrowWrapperStyled = styled.span`
 export const ButtonStyled = styled.button`
   background: none;
   font-size: 5rem;
+  font-weight: 300;
   text-align: left;
   cursor: pointer;
   width: max-content;
