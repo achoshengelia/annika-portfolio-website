@@ -18,7 +18,7 @@ const LandingText = () => {
         opacity: 0,
         y: -50,
         transition: {
-          duration: 0.9
+          duration: 0.6
         }
       }}
     >

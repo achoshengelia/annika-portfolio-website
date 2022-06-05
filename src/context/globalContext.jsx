@@ -9,6 +9,7 @@ export const GlobalContext = createContext({
   isMaxHeight: false,
   handleToggleShowMenu: () => {},
   setIsShufflePage: () => {},
+  setIsCurationsPage: () => {},
   setIsMaxHeight: () => {}
 });
 
@@ -17,9 +18,8 @@ export const GlobalContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showFooter, setShowFooter] = useState(false);
   const [isShufflePage, setIsShufflePage] = useState(false);
+  const [isCurationsPage, setIsCurationsPage] = useState(false);
   const [isMaxHeight, setIsMaxHeight] = useState(false);
-
-  const isCurationsPage = pathname.split('/').includes('curation');
 
   const handleToggleShowMenu = () => setShowMenu(prevState => !prevState);
   const pageNeedsFooter = useCallback(() => {
@@ -56,6 +56,7 @@ export const GlobalContextProvider = ({ children }) => {
     isMaxHeight,
     handleToggleShowMenu,
     setIsShufflePage,
+    setIsCurationsPage,
     setIsMaxHeight
   };
 

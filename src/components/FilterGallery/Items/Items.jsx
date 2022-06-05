@@ -24,15 +24,15 @@ const Item = ({ item: { imageSrc, caption }, pageIsLoaded }) => {
         scale: 1,
         transition: {
           delay: pageIsLoaded ? 0 : 0.6,
-          duration: 0.5,
-          ease: 'easeIn'
+          duration: 0.4,
+          ease: 'linear'
         }
       }}
       exit={{
         opacity: 0,
         scale: 0.8,
         transition: {
-          duration: 0.5,
+          duration: 0.3,
           ease: 'easeOut'
         }
       }}

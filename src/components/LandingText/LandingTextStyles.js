@@ -12,7 +12,7 @@ export const ContainerStyled = styled(motion.p)`
 
   & > a {
     position: relative;
-    z-index: 100;
+    z-index: 9;
     text-decoration: underline;
     cursor: pointer;
     width: 100%;
