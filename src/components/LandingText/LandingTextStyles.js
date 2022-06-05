@@ -9,6 +9,7 @@ export const ContainerStyled = styled(motion.p)`
   max-width: 145rem;
   height: 100%;
   font-size: 10rem;
+  user-select: none;
 
   & > a {
     position: relative;
