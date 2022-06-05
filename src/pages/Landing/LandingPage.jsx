@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Trail from '../../components/Trail/Trail';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { isMobileDevice } from '../../helpers';
@@ -12,6 +12,10 @@ const LandingPage = () => {
   const { width } = useWindowDimensions();
 
   const isSmallDevice = width < screenMD || isMobileDevice();
+
+  useEffect(() => {
+    document.title = 'Annika Terwey';
+  }, []);
 
   return (
     <ContainerStyled>

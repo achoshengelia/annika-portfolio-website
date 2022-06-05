@@ -7,6 +7,7 @@ const CurationsPage = () => {
   const { setIsCurationsPage } = useContext(GlobalContext);
 
   useEffect(() => {
+    document.title = 'Annika Terwey | Curation';
     setIsCurationsPage(true);
 
     return () => setIsCurationsPage(false);

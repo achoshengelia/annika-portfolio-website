@@ -14,6 +14,8 @@ const Image = ({ link, isVisible }) => {
 
   return (
     <>
+      {isVisible ? <ImagePlaceholderStyled colour={getRandomColour()} /> : null}
+
       <ImageStyled
         src={link}
         alt=""

@@ -8,10 +8,11 @@ export const MotionHeading = motion(Heading);
 export const ImagePlaceholderStyled = styled.div`
   position: absolute;
   inset: 0;
-  z-index: 100000;
+  z-index: 9999;
   height: 100vh;
   width: 100vw;
-  background-color: ${({ colour }) => (colour ? colour : null)};
+  background-color: ${({ colour, theme }) =>
+    colour ? colour : theme.colors.primary.main};
 
   @supports not (inset: 0) {
     top: 0;
@@ -25,7 +26,7 @@ export const ImageStyled = styled.img`
   display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
   position: absolute;
   inset: 0;
-  z-index: 99999;
+  z-index: 999;
   height: 100vh;
   width: 100vw;
   object-fit: cover;

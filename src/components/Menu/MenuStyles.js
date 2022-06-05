@@ -45,7 +45,7 @@ export const MenuItemStyled = styled(motion.li)`
 export const MainWrapperStyled = styled(motion.nav)`
   position: fixed;
   inset: 0;
-  z-index: 10;
+  z-index: 21;
   background-color: ${props => props.theme.colors.primary.main};
 
   ${CenterWrapperStyled} {
