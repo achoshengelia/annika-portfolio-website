@@ -92,7 +92,7 @@ export const indexItems = [
     caption: 'Dunkle Ecken',
     tags: 'Co-Curation | Co-Management',
     organisation: 'LanaLive',
-    projectlink: 'https://www.dunkleecken.com/en',
+    projectlink: 'https://www.dunkleecken.com',
     year: '2020',
     image:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1653079769/Index/index_0017_Ebene_5_hwonqn.jpg'

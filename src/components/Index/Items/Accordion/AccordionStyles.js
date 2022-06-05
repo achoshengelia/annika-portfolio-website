@@ -25,6 +25,10 @@ export const HeaderStyled = styled.header`
     }
   }
 
+  & a {
+    text-decoration: underline;
+  }
+
   @media only screen and (max-width: ${pxToEm(1112)}) {
     grid-template-columns: repeat(2, 1fr) 0.6fr;
     font-size: 1.4rem;
