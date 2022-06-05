@@ -6,10 +6,10 @@ export const artworkDetailsItems = [
     caption: 'Uncomfortable Futures',
     curation: '2021',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable0_fepbm7.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable3.2_gweaa1.jpg',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779971/Artworks/uncomfortablefutures/uncomfortable2_g6odug.mov',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable4_anqyd6.jpg'
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable4_anqyd6.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable0_fepbm7.jpg'
     ],
     moreInfo: [
       '(Un)comfortable Future - an Alpine perspective for „Chair©ity“ a project by Südtiroler Künstlerbund & BZ Heartbeat.',
@@ -25,7 +25,6 @@ export const artworkDetailsItems = [
     caption: 'Dunkle Ecken Archive',
     curation: 'Web Design | Co-Web-developement | 2021',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779499/Artworks/dunkleeckenarchiv/dearchive13_lhfbmq.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779500/Artworks/dunkleeckenarchiv/dearchive12_rvdmdq.jpg',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779352/Artworks/dunkleeckenarchiv/dearchive11_zeiwe2.mov',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779353/Artworks/dunkleeckenarchiv/dearchive10_yy2upo.mov',
@@ -33,7 +32,8 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779508/Artworks/dunkleeckenarchiv/dearchive2_qnygxn.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779507/Artworks/dunkleeckenarchiv/dearchive5_ifkh2u.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779508/Artworks/dunkleeckenarchiv/dearchive3_chxrqv.png',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779508/Artworks/dunkleeckenarchiv/dearchive4_jrfqii.png'
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779508/Artworks/dunkleeckenarchiv/dearchive4_jrfqii.png',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779499/Artworks/dunkleeckenarchiv/dearchive13_lhfbmq.jpg'
     ],
     moreInfo: [
       'Organised by Annika Terwey and Sophie Lazari, the exhibition brings together 17 works of art by young artists and exhibits them online during the LanaLive Underground cultural festival. Dunkle Ecken (Dark Corners) sheds some light on the topic of mental health, considering it from a variety of perspectives in order to dissolve traditional attitudes, and associated stigmas. The exhibition aims to increase the visibility of the subject in order to promote a discourse on the integrity and transparency of mental health in our society.',
@@ -46,9 +46,9 @@ export const artworkDetailsItems = [
     caption: 'Knedl AR',
     curation: 'AR Filter | 2021',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652011575/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_16.03_Kopie_m8fqpl.jpg',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651780024/Artworks/canederliAR/canederli4_ebsf8c.mp4',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651780001/Artworks/canederliAR/canederli5_ra9hcd.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652011575/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_16.03_Kopie_m8fqpl.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651780002/Artworks/canederliAR/canederli8_w0uqrc.png'
     ],
     moreInfo: [
@@ -114,7 +114,7 @@ export const artworkDetailsItems = [
     caption: '(Im)perceptible',
     curation: 'Design research | Prototyping | 2020',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779623/Artworks/imperceptible/imperceptible2_yqqqmo.jpg',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779624/Artworks/imperceptible/imperceptible4_rzv1hu.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779624/Artworks/imperceptible/imperceptible3_zjigh1.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779625/Artworks/imperceptible/imperceptible1_oesc5h.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779625/Artworks/imperceptible/imperceptible8_lcfenf.jpg',
@@ -123,9 +123,7 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779626/Artworks/imperceptible/imperceptible11_ufxb51.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779626/Artworks/imperceptible/imperceptible9_rn09go.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779625/Artworks/imperceptible/imperceptible12_ptyxoq.jpg',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779625/Artworks/imperceptible/imperceptible5_aifc0j.jpg',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779624/Artworks/imperceptible/imperceptible6_h9p4x6.psd',
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779624/Artworks/imperceptible/imperceptible4_rzv1hu.jpg'
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779625/Artworks/imperceptible/imperceptible5_aifc0j.jpg'
     ],
     moreInfo: [
       'In the course of industrialisation and the associated rapid transformation of the environment, human sensors were unable to adapt evolutionarily. Artificial senses could help to point out new and health-threatening environmental toxins. For people who will live in a heavily contaminated world in the future, such sensory enhancements can provide important information about the immediate environment. ',
@@ -228,7 +226,6 @@ export const artworkDetailsItems = [
     caption: 'datadust 2',
     curation: 'Physical data visualisation | 2019',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779568/Artworks/datadust2/datadust24_xzwv9m.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779567/Artworks/datadust2/datadust22_pjuc4l.jpg',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779598/Artworks/datadust2/datadust21_fdqkni.mov',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust28_nc2lbo.png',
@@ -238,7 +235,8 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779569/Artworks/datadust2/datadust26_flf0rm.png',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779583/Artworks/datadust2/datadust210_srrghb.mp4',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779568/Artworks/datadust2/datadust25_qhb9ud.jpg',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779580/Artworks/datadust2/datadust211_derre4.mp4'
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779580/Artworks/datadust2/datadust211_derre4.mp4',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779568/Artworks/datadust2/datadust24_xzwv9m.jpg'
     ],
     moreInfo: [
       'Salt lakes arise mostly in drylands or deserts. As a result of high evaporation, the salt content of the water is constantly increased. If the rate of water evaporation exceeds the rate of precipitation, salt pans are formed. Climate change and human intervention through water diversification cause saline lakes to dry up. The near collapse of salt lakes leave dust storms threatening human health and agricultural fields.',
@@ -309,9 +307,9 @@ export const artworkDetailsItems = [
     caption: 'naOAc',
     curation: 'Research | Video | 2018',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009829/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.35.23_lqrolh.png',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1652190875/Artworks/naoac/NAOAC2_wjffis.mov',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1652190816/Artworks/naoac/NAOAC_buis7w.mov'
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1652190816/Artworks/naoac/NAOAC_buis7w.mov',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009829/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.35.23_lqrolh.png'
     ],
     moreInfo: [
       'Conditions are transitory and unstable. Especially with ephemeral, changeable materials, the transformation of the moment becomes visible.',
@@ -324,12 +322,12 @@ export const artworkDetailsItems = [
     caption: 'cornserve',
     curation: 'Video | Hologram | 2017',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651782217/Artworks/cornserve/cornserve2_xmvrh7.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651782215/Artworks/cornserve/cornserve5_xvodnj.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651782215/Artworks/cornserve/cornserve4_f1gjph.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651782215/Artworks/cornserve/cornserve6_blanwc.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651782216/Artworks/cornserve/cornserve1_cxlfbg.jpg',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651782226/Artworks/cornserve/cornserve3_j7flu4.mov'
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651782226/Artworks/cornserve/cornserve3_j7flu4.mov',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651782217/Artworks/cornserve/cornserve2_xmvrh7.jpg'
     ],
     moreInfo: [
       "Corn Serve is an video installation piece, highlighting the connection between canned goods and their natural source. In a contemporary society, we are often not aware of the production process of food and where it actually comes from. What we see in the supermarket is a carefully selected, processed and staged result, which doesn't reflect the origin of the products in any way.",
@@ -341,14 +339,14 @@ export const artworkDetailsItems = [
     caption: 'Mirage',
     curation: 'Hologram | 3D Animation | 2017',
     gallery: [
-      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage5_zi12d5.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage7_vrhzj3.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage3_ivkhuu.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage1_lavtji.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage2_siomna.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage6_hffhgz.jpg',
       'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779749/Artworks/mirage/Mirage_g6w6jj.mp4',
-      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779747/Artworks/mirage/mirage4_p1auhy.mp4'
+      'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779747/Artworks/mirage/mirage4_p1auhy.mp4',
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage5_zi12d5.jpg'
     ],
     moreInfo: [
       'In our everyday life we are constantly constructing images of who other people could be, often based on very little information. These caricatures are formed as a result of our subjective experiences as well as our unconscious associations; they therefore become detached from reality.',
