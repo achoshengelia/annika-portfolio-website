@@ -106,7 +106,7 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083944/Artworks/Between%20Pain/sundew-2_m8maj2.jpg'
     ],
     moreInfo: [
-      "Music video for artist Cape Sundews aka Achi Shengelia's new music project Drosera Capensis. Like his stage name, borrowed from the carnivorous plant of the same name, that same plant becomes main character of the music video and moves to the broken beats, enveloped in airy melodies and choppy vocal samples."
+      'Music video for one of the tracks from the debut EP of Cape Sundew aka Achi Shengelia. Like his stage name, borrowed from the carnivorous plant, the same plant becomes the main character of the music video and starts dancing to the beats.'
     ]
   },
   {
