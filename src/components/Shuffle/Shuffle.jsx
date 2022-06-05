@@ -6,6 +6,7 @@ import {
   ContainerStyled,
   ImagePlaceholderStyled,
   ImageStyled,
+  ImagesWrapperStyled,
   MotionHeading
 } from './ShuffleStyles';
 
@@ -15,7 +16,12 @@ const Image = ({ link, isVisible }) => {
   return (
     <>
       {isVisible ? (
-        <ImagePlaceholderStyled colour={getRandomColour()} isFallback />
+        <ImagePlaceholderStyled
+          colour={getRandomColour()}
+          isFallback
+          draggable={false}
+          unselectable="on"
+        />
       ) : null}
 
       <ImageStyled
@@ -24,7 +30,7 @@ const Image = ({ link, isVisible }) => {
         isVisible={isVisible && isLoaded}
         onLoad={() => setIsLoaded(true)}
         draggable={false}
-        unselectable
+        unselectable="on"
       />
 
       {!isLoaded && isVisible ? (
@@ -113,9 +119,11 @@ const Shuffle = ({ children }) => {
         <br /> pressed
       </MotionHeading>
 
-      {landingGalleryMobile.map((link, i) => (
-        <Image key={link} link={link} isVisible={isVisible(i)} />
-      ))}
+      <ImagesWrapperStyled>
+        {landingGalleryMobile.map((link, i) => (
+          <Image key={link} link={link} isVisible={isVisible(i)} />
+        ))}
+      </ImagesWrapperStyled>
     </ContainerStyled>
   );
 };

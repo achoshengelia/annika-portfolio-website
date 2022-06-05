@@ -3,6 +3,11 @@ import { motion } from 'framer-motion';
 import { pxToEm } from '../../helpers';
 import { CenterWrapperStyled, HeadingStyled as Heading } from '../global/utils';
 
+export const ImagesWrapperStyled = styled.div`
+  pointer-events: none;
+  user-select: none;
+`;
+
 export const MotionHeading = motion(Heading);
 
 export const ImagePlaceholderStyled = styled.div`
@@ -13,6 +18,9 @@ export const ImagePlaceholderStyled = styled.div`
   width: 100vw;
   background-color: ${({ colour, theme }) =>
     colour ? colour : theme.colors.primary.main};
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 
   @supports not (inset: 0) {
     top: 0;
