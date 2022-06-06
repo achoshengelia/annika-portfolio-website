@@ -52,7 +52,7 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651780002/Artworks/canederliAR/canederli8_w0uqrc.png'
     ],
     moreInfo: [
-      'Dumplings are a speciality from the northern Italian region of "South Tyrol" and the former Austrian province.  This typical peasant dish utilises leftover bread that has dried up and comes in many variations from cheese to nettle.',
+      'Dumplings are a speciality from the northern Italian region and the former Austrian province "South Tyrol". This typical peasant dish utilises leftover bread that has dried up and comes in many variations from cheese to nettle.',
       'Knedl AR allows the user to draw with a stream of South Tyrolean dumplings in different flavours.'
     ]
   },
@@ -71,8 +71,8 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779245/Artworks/zueinander/zueinander_web8_obevh4.png'
     ],
     moreInfo: [
-      'The project "Zueinander (finden) - trovarsi" was developed for the Ariadne association to raise awareness for mental health. After a year of the Corona pandemic and the various lockdowns, the need was great to create a symbol of encounter and community in public space.',
-      'During the conceptual development, Sophie Lazari and me worked to develop a project that meets the needs of the associations. The result is a public bench that makes the project accessible to all. Just like the logo designed by Sophie Lazari, the people are facing each other. This encourages interaction and communication between the sitting partners. Near the benches, slogans from the members of the associations served as thought-provoking elements, opening up a second level to stimulate a discussion about mental health. A link to the project website allowed users to share their own personal background and thoughts on this taboo topic online at the same time.',
+      'The project "Zueinander (finden) - trovarsi" was developed for the Ariadne association to raise awareness about mental health. After a year of the Corona pandemic and various lockdowns, the need was great to create a symbol of encounter and community in public space.',
+      'During the conceptual development, Sophie Lazari and me worked to develop a project that meets the needs of the associations. The result is a public bench that makes the project accessible to all. Just like the logo, designed by Sophie Lazari, the people are facing each other. This encourages interaction and communication between the sitting partners. Near the benches, slogans from the members of the associations served as thought-provoking elements, opening up a second level to stimulate a discussion about mental health. A link to the project website allowed users to share their own personal story and thoughts on this taboo topic online.',
       "The installation is a social-artistic project that visited 9 locations in the northern Italian region of South Tyrol. An opening event with artistic performances by artists and poets of the South Tyrolean Artists' Association has involved other pedestrians in the project in many places.",
       'Many thanks go to the Kofler carpentry in Völlan for their help in constructing the benches and to Achi Shengelia and Reziko Chkadua for their support in developing the website.',
       'Concept and Website developed for Association Ariadne',
@@ -89,8 +89,8 @@ export const artworkDetailsItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083951/Artworks/Between%20Pain/landingpage37_vmze3a.jpg'
     ],
     moreInfo: [
-      "Between Pain is a still from the short film „Smartpain“, a dystopian view of an even more work driven and smart device controlled post corona pandemic home office situation. It was part of the third cultural local supply campaign, „Wir kommen zu dir - Kunst zu Hause“ (We come to you - art at home) turned one's own household into an art gallery.",
-      "The artists Arnold Mario Dall'o, Franziska Egger, Hannes Egger, Erika Inger, Sara Schwienbacher, Annika Terwey and Wolfgang Wohlfahrt created a wide variety of works especially for the occasion, which respond to the individual living spaces. These seven works of art make up an art package and are to be hung in the respective rooms. From each private art gallery, different dialogues continuously arise; in this respect, the same exhibition always emerges anew and remains individual. We come to you! - Art at Home invites you to explore and rediscover your own four walls. ",
+      "Between Pain is a still from the short film „Smartpain“, a dystopian view of a post-Covid home office in an even more labour thirsty system that exercises control with smart devices. It was part of the third cultural local supply campaign, „Wir kommen zu dir - Kunst zu Hause“ (We come to you - art at home) turned one's own household into an art gallery.",
+      "The artists Arnold Mario Dall'o, Franziska Egger, Hannes Egger, Erika Inger, Sara Schwienbacher, Annika Terwey and Wolfgang Wohlfahrt created a wide variety of works especially for the occasion, which respond to the individual living spaces. These seven works of art make up an art package and are to be hung in the respective rooms. From each private art gallery, different dialogues continuously arise; in this respect, the same exhibition always emerges as a new and remains individual. We come to you! - Art at Home invites you to explore and rediscover your own four walls. ",
       'We come to you! Art at Home is a project of the South Tyrol Culture Association in cooperation with the market town of Lana.',
       'Performer: Sophie Lazari'
     ]
@@ -131,7 +131,7 @@ export const artworkDetailsItems = [
       'The final prototypes each consists of a sensor that measures the fine dust (PM) on the one hand and the TVOC content of the air on the other. In the first prototype, these values are communicated by an individually selected warning signal as soon as they exceed the limit value. The user is inevitably exposed to the odour and must actively act to reduce the value back to normal. As fragrances are also TVOCs, this can lead to a further unhealthy increase in TVOC levels if the users do not take action.',
       'In the second scenario, a wearable prototype was created that allows the user to experience the current level of particulate matter through a tactile vibration pattern. The vibration intensity of the three coin-operated vibration motors indicates when there is an increase in PM levels. A portable rechargeable battery makes the wearable ready for long journeys and daily use. A higher resolution and wearing it closer to the body would provide the user with more information and more complex data via the skin.',
       'In addition to refining the tactile signals and the position of the device on the user’s body, the interface in the form of an app would also have to be revised. This is particularly important, as initial wearing of the device orientation values to learn to interpret the signals. In order to increase the willingness to learn, the design of the visual aids is therefore an essential point to reduce the initial barriers to entry.',
-      'Special thanks for helping realizing this project: Sophie Lazari, Constantin Engelmann, Robert Schüller, Vinzent Aubry, Merani Schilcher, Achi Shengelia'
+      'Special thanks for helping to carry out this project: Sophie Lazari, Constantin Engelmann, Robert Schüller, Vinzent Aubry, Merani Schilcher, Achi Shengelia'
     ]
   },
   {

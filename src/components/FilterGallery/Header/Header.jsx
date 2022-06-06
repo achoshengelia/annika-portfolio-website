@@ -22,7 +22,7 @@ const Header = () => {
         opacity: 0,
         y: -50,
         transition: {
-          duration: 0.5
+          duration: 0.3
         }
       }}
     >

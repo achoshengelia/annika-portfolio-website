@@ -19,7 +19,7 @@ const Image = ({ link, isVisible }) => {
         <ImagePlaceholderStyled
           colour={getRandomColour()}
           isFallback
-          draggable={false}
+          draggable="false"
           unselectable="on"
         />
       ) : null}
@@ -29,7 +29,7 @@ const Image = ({ link, isVisible }) => {
         alt=""
         isVisible={isVisible && isLoaded}
         onLoad={() => setIsLoaded(true)}
-        draggable={false}
+        draggable="false"
         unselectable="on"
       />
 
@@ -61,7 +61,7 @@ const Shuffle = ({ children }) => {
             ? 0
             : prevState + 1
         );
-      }, 140)
+      }, 200)
     );
   };
 
@@ -75,6 +75,7 @@ const Shuffle = ({ children }) => {
 
   return (
     <ContainerStyled
+      onClick={handleMouseUp}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onTouchStart={handleMouseDown}

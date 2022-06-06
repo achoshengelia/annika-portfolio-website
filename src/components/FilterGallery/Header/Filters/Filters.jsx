@@ -82,7 +82,7 @@ const Filters = props => {
               onClick={() => handleSetFilter(item)}
             >
               {item}
-              {isActive.includes(item) && item !== 'all' ? (
+              {width > 600 && isActive.includes(item) && item !== 'all' ? (
                 <CloseIcon size="1.3rem" />
               ) : null}
             </FilterItemStyled>

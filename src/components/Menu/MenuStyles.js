@@ -37,6 +37,7 @@ export const MenuItemStyled = styled(motion.li)`
 
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 5rem;
+    width: min-content;
   }
 
   @media ${props => props.theme.breakpoints.xs} {
@@ -64,7 +65,6 @@ export const MainWrapperStyled = styled(motion.nav)`
     }
 
     @media ${props => props.theme.breakpoints.sm} {
-      margin-left: 3rem;
       gap: 4rem;
     }
 

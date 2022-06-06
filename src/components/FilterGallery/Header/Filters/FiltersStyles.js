@@ -13,10 +13,6 @@ export const RowGapStyled = styled.li`
     @media ${props => props.theme.breakpoints.md} {
       margin: 1.5rem 0;
     }
-
-    @media ${props => props.theme.breakpoints.sm} {
-      /* margin: 2rem 0; */
-    }
   }
 `;
 
@@ -40,9 +36,10 @@ export const FilterItemStyled = styled.li`
     font-size: 1.4rem;
   }
 
-  ${CloseIcon} {
+  & ${CloseIcon} {
     display: inline-block;
     margin-bottom: 1.3rem;
+    transform: translateX(-0.5rem);
 
     @media ${props => props.theme.breakpoints.md} {
       margin-bottom: 1.2rem;
@@ -59,7 +56,7 @@ export const FilterItemStyled = styled.li`
 `;
 
 export const ContainerStyled = styled.div`
-  ${CenterWrapperStyled} {
+  & ${CenterWrapperStyled} {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
@@ -76,9 +73,6 @@ export const ContainerStyled = styled.div`
     }
 
     @supports not (inset: 0) {
-      /* justify-content: ${({ isCurationsPage }) =>
-        isCurationsPage ? null : 'space-evenly'}; */
-
       & > * + * {
         margin-left: 2rem;
       }

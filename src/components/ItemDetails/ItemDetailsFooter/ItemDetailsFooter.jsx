@@ -32,6 +32,7 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
             ease: 'easeOut'
           }
         }}
+        draggable="false"
       >
         <CenterWrapperStyled>
           <Text isUppercase>

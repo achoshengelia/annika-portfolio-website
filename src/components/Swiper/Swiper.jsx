@@ -37,7 +37,7 @@ const Item = ({ isActive, isVideo, link }) => {
       {isVideo ? (
         <VideoStyled
           loop
-          onCanPlayThrough={() => setIsLoaded(true)}
+          onCanPlay={() => setIsLoaded(true)}
           onWaiting={() => setIsLoaded(false)}
           isLoaded={isLoaded}
           ref={videoRef}

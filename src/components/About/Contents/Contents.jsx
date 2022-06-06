@@ -55,20 +55,20 @@ const Contents = () => {
           <Text as="p" size="2.2rem">
             My name is Annika Terwey and I am a German Italian,
             multi-disciplinary designer, artist and curator based in Berlin.
-            Currently I am writing my Masterthesis in Interfacedesign at the
+            Currently I am writing my Master's thesis in interface design at
             FH;P.
           </Text>
 
           <Text as="p" size="2.2rem">
-            My interests range from environmental science, digitalization and
-            human perception up to creating experiences that have a positive
-            impact on the world and explore new forms of communication through
-            design, art, interaction and exhibition.
+            My interests range from environmental science, digitalisation and
+            human perception, up to creating experiences that have a positive
+            impact on the world. Moreover, exploring new forms of communication
+            through design, art, interaction and exhibition.
           </Text>
 
           <Text as="p" size="2.2rem">
             Based on my interest in combining science or current problems and
-            design, I organize exhibitions on current issues together with
+            design, I organise exhibitions on current issues together with
             Sophie Lazari.
           </Text>
         </AboutMeWrapperStyled>

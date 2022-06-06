@@ -33,10 +33,12 @@ export const ContainerStyled = styled(motion.div)`
 
   @media ${props => props.theme.breakpoints.sm} {
     padding-top: 20%;
+    padding-bottom: 5%;
   }
 
   @media ${props => props.theme.breakpoints.xs} {
     padding-top: 25%;
+    padding-bottom: 10%;
   }
 
   @supports not (inset: 0) {
