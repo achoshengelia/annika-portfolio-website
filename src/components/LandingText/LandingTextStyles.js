@@ -7,7 +7,7 @@ export const ContainerStyled = styled(motion.p)`
   width: 100%;
   margin: 10rem auto 0 auto;
   max-width: 145rem;
-  height: 100%;
+  height: max-content;
   font-size: 10rem;
   user-select: none;
 

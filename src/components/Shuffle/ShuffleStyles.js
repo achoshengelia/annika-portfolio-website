@@ -67,8 +67,15 @@ export const ContainerStyled = styled(motion(CenterWrapperStyled))`
   & > ${Heading} {
     opacity: 0.1;
     line-height: 12rem;
-    margin-top: auto;
     user-select: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    & > span {
+      margin-top: auto;
+      width: 100%;
+    }
 
     @media ${props => props.theme.breakpoints.sm} {
       font-size: 8rem;

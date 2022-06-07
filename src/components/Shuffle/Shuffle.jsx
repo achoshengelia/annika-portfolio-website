@@ -66,11 +66,6 @@ const Shuffle = ({ children }) => {
 
   return (
     <ContainerStyled
-      onClick={handleMouseUp}
-      onMouseDown={handleMouseDown}
-      onMouseUp={handleMouseUp}
-      onTouchStart={handleMouseDown}
-      onTouchEnd={handleMouseUp}
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -105,10 +100,17 @@ const Shuffle = ({ children }) => {
         as="h1"
         isUppercase
         size="10rem"
+        onClick={handleMouseUp}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onTouchStart={handleMouseDown}
+        onTouchEnd={handleMouseUp}
       >
-        keep <br />
-        screen
-        <br /> pressed
+        <span>
+          keep <br />
+          screen
+          <br /> pressed
+        </span>
       </MotionHeading>
 
       <ImagesWrapperStyled isVisible={timer || imageIndex}>
