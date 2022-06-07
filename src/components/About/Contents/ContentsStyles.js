@@ -6,6 +6,7 @@ import {
 } from '../../global/utils';
 import { pxToEm } from '../../../helpers';
 
+
 export const FriendsListItemStyled = styled.li`
   font-size: 2.2rem;
 `;

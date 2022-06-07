@@ -189,7 +189,7 @@ const Contents = () => {
         }}
       >
         <Heading as="h2" size="2.6rem" noTransform $wrap>
-          Don’t miss out and also take a look at what my friends are working on!
+          Don’t miss out on what my friends are working!
         </Heading>
         <FriendsListStyled>
           {aboutFriends.map(friend => (

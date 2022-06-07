@@ -4,7 +4,7 @@ import { LineBreakStyled, Text } from '../../../global/utils';
 import { ContainerStyled, HeaderStyled, ImageStyled } from './AccordionStyles';
 
 const Accordion = ({ item }) => {
-  const { caption, tags, organisation, projectlink, year, image } = item;
+  const { caption, tags, organisation, projectlink, year, image, alt } = item;
   const [isOpen, setIsOpen] = useState(false);
 
   const { width } = useWindowDimensions();
@@ -24,7 +24,9 @@ const Accordion = ({ item }) => {
         ) : null}
         <Text>{year}</Text>
       </HeaderStyled>
-      <ImageStyled src={image} alt="" />
+      <a href={projectlink} target="blank" rel="noreferrer">
+        <ImageStyled src={image} alt={alt} />
+      </a>
     </ContainerStyled>
   );
 };

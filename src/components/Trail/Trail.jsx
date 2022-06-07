@@ -90,6 +90,7 @@ const Trail = ({ distanceThreshold = 120, children }) => {
           key={link + i}
           position={imagePositions.current[i]}
           link={link}
+          alt="various pictures of works following the mouse"
         />
       ))}
     </ContainerStyled>

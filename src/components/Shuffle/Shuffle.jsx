@@ -17,7 +17,7 @@ const Image = memo(({ link, isVisible }) => {
     <>
       <ImageStyled
         src={link}
-        alt=""
+        alt="many pictures shown quickly after each other"
         isVisible={isVisible && isLoaded}
         onLoad={() => setIsLoaded(true)}
         draggable="false"
