@@ -6,18 +6,25 @@ import { CenterWrapperStyled, HeadingStyled as Heading } from '../global/utils';
 export const ImagesWrapperStyled = styled.div`
   pointer-events: none;
   user-select: none;
+  position: absolute;
+  inset: 0;
+  z-index: 997;
+  height: 100vh;
+  width: 100vw;
+  background-color: ${({ isVisible, theme }) =>
+    isVisible ? theme.colors.other.purple : null};
 `;
 
 export const MotionHeading = motion(Heading);
 
-export const ImagePlaceholderStyled = styled.div`
+export const ImageFallbackStyled = styled.div`
   position: absolute;
   inset: 0;
-  z-index: ${({ isFallback }) => (isFallback ? '998' : '9999')};
+  z-index: 999;
   height: 100vh;
   width: 100vw;
   background-color: ${({ colour, theme }) =>
-    colour ? colour : theme.colors.primary.main};
+    colour ? colour : theme.colors.other.purple};
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
@@ -31,10 +38,10 @@ export const ImagePlaceholderStyled = styled.div`
 `;
 
 export const ImageStyled = styled.img`
-  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
+  visibility: ${({ isVisible }) => (isVisible ? 'visible' : 'hidden')};
   position: absolute;
   inset: 0;
-  z-index: 999;
+  z-index: 998;
   height: 100vh;
   width: 100vw;
   object-fit: cover;

@@ -1,29 +1,20 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { memo, useContext, useEffect, useState } from 'react';
 import { landingGalleryMobile } from '../../constants/landing-page';
 import { GlobalContext } from '../../context/globalContext';
 import { getRandomColour } from '../../helpers';
 import {
   ContainerStyled,
-  ImagePlaceholderStyled,
+  ImageFallbackStyled,
   ImageStyled,
   ImagesWrapperStyled,
   MotionHeading
 } from './ShuffleStyles';
 
-const Image = ({ link, isVisible }) => {
+const Image = memo(({ link, isVisible }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <>
-      {isVisible ? (
-        <ImagePlaceholderStyled
-          colour={getRandomColour()}
-          isFallback
-          draggable="false"
-          unselectable="on"
-        />
-      ) : null}
-
       <ImageStyled
         src={link}
         alt=""
@@ -33,12 +24,12 @@ const Image = ({ link, isVisible }) => {
         unselectable="on"
       />
 
-      {!isLoaded && isVisible ? (
-        <ImagePlaceholderStyled colour={getRandomColour()} />
+      {isVisible && !isLoaded ? (
+        <ImageFallbackStyled colour={getRandomColour()} />
       ) : null}
     </>
   );
-};
+});
 
 const Shuffle = ({ children }) => {
   const { setIsShufflePage } = useContext(GlobalContext);
@@ -61,7 +52,7 @@ const Shuffle = ({ children }) => {
             ? 0
             : prevState + 1
         );
-      }, 200)
+      }, 250)
     );
   };
 
@@ -71,7 +62,7 @@ const Shuffle = ({ children }) => {
     setTimer(null);
   };
 
-  const isVisible = i => (i === imageIndex ? true : false);
+  const isVisible = i => i === imageIndex;
 
   return (
     <ContainerStyled
@@ -120,7 +111,7 @@ const Shuffle = ({ children }) => {
         <br /> pressed
       </MotionHeading>
 
-      <ImagesWrapperStyled>
+      <ImagesWrapperStyled isVisible={timer || imageIndex}>
         {landingGalleryMobile.map((link, i) => (
           <Image key={link} link={link} isVisible={isVisible(i)} />
         ))}

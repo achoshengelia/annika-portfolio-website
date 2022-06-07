@@ -10,9 +10,9 @@ export const landingGallery = [
   'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779731/Artworks/industrialscars/industrialscars5_pf7unr.jpg',
   'https://res.cloudinary.com/dojsjcecs/image/upload/v1652184770/Curation/trashspotting1/trashspotting_poster_yfw6ss.jpg',
   'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779731/Artworks/industrialscars/industrialscars1_xv57pb.jpg',
-  'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage3_ivkhuu.jpg',
-  'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober5_mf0he5.jpg',
-  'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken4_ad3di1.jpg'
+  'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage3_ivkhuu.jpg'
+  // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober5_mf0he5.jpg',
+  // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken4_ad3di1.jpg'
   // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009913/Artworks/previewpics/cornserve2_namt4u.jpg',
   // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1652007282/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_14.54.24_sbttqd.png',
   // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1652007219/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_14.49.45_fhlgkl.png'
