@@ -9,7 +9,7 @@ const Prevbutton = ({ isSmallDevice }) => {
   return (
     <ContainerStyled
       isSmallDevice={isSmallDevice}
-      onClick={() => !isSmallDevice && swiper.slidePrev()}
+      onClick={() => (!isSmallDevice ? swiper.slidePrev() : null)}
       prev
     >
       {isSmallDevice ? (

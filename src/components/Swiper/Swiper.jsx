@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import { EffectFade, Navigation } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -6,61 +6,11 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { isMobileDevice } from '../../helpers';
-import { Spinner } from '../global/icons';
+import Video from './Video/Video';
 import NextButton from './Buttons/NextButton';
 import Prevbutton from './Buttons/PrevButton';
-import {
-  ImageStyled,
-  SpinnerWrapperStyled,
-  SwiperStyled,
-  VideoStyled
-} from './SwiperStyles';
-
-const Item = ({ isActive, isVideo, link }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef?.current;
-
-    if (isActive && isLoaded) {
-      video?.play();
-    }
-
-    return () => {
-      video?.pause();
-    };
-  }, [isActive, isLoaded]);
-
-  return (
-    <>
-      {isVideo ? (
-        <VideoStyled
-          loop
-          onCanPlay={() => setIsLoaded(true)}
-          onWaiting={() => setIsLoaded(false)}
-          isLoaded={isLoaded}
-          ref={videoRef}
-        >
-          <source src={link} />
-        </VideoStyled>
-      ) : (
-        <ImageStyled
-          src={link}
-          alt=""
-          onLoad={() => setIsLoaded(true)}
-          isLoaded={isLoaded}
-        />
-      )}
-
-      {!isLoaded ? (
-        <SpinnerWrapperStyled>
-          <Spinner />
-        </SpinnerWrapperStyled>
-      ) : null}
-    </>
-  );
-};
+import { SwiperStyled } from './SwiperStyles';
+import Image from './Image/Image';
 
 const screenMD = 800;
 
@@ -78,7 +28,7 @@ const Swiper = ({ gallery }) => {
   };
 
   const swiperProps = {
-    initialSlide: 1,
+    initialSlide: 0,
     spaceBetween: 30,
     effect: 'fade',
     loop: true,
@@ -92,9 +42,13 @@ const Swiper = ({ gallery }) => {
     <SwiperStyled {...swiperProps}>
       {gallery?.map(({ link, alt }) => (
         <SwiperSlide key={link}>
-          {({ isActive }) => (
-            <Item isActive={isActive} isVideo={isVideo(link)} link={link} />
-          )}
+          {({ isActive }) =>
+            isVideo(link) ? (
+              <Video isActive={isActive} link={link} />
+            ) : (
+              <Image link={link} />
+            )
+          }
         </SwiperSlide>
       ))}
 

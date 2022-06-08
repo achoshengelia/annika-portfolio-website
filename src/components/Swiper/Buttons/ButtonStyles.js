@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { pxToEm } from '../../../helpers';
 import Next from '../../../assets/icons/next.png';
 import Prev from '../../../assets/icons/prev.png';
 
@@ -13,11 +14,15 @@ export const ContainerStyled = styled.div`
     isSmallDevice ? null : prev ? `url(${Prev}), auto` : `url(${Next}), auto`};
   z-index: 10;
   height: 100%;
-  width: 50%;
+  width: 40%;
 
   & > img {
     cursor: pointer;
     margin: ${({ prev }) => (prev ? 'auto auto auto 0' : 'auto 0 auto auto')};
     max-width: 5rem;
+  }
+
+  @media only screen and (max-width: ${pxToEm(420)}) {
+    width: 35%;
   }
 `;
