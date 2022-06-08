@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { PlayButtonIcon } from '../../global/icons';
 
 export const SpinnerWrapperStyled = styled.div`
   display: flex;
@@ -9,7 +8,16 @@ export const SpinnerWrapperStyled = styled.div`
   height: 100%;
 `;
 
-export const PlayButtonStyled = styled(PlayButtonIcon)``;
+export const PlayButtonWrapperStyled = styled.button`
+  background-color: ${props => props.theme.colors.primary};
+  opacity: 0.65;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 5555;
+  border-radius: 50%;
+  cursor: pointer;
+`;
 
 export const VideoStyled = styled.video``;
 
@@ -25,13 +33,5 @@ export const VideoWrapperStyled = styled.div`
     display: ${({ isLoaded }) => (isLoaded ? 'flex' : 'none')} !important;
     justify-content: center;
     align-items: center;
-  }
-
-  & ${PlayButtonStyled} {
-    max-width: 5rem;
-    position: absolute;
-    background: transparent;
-    z-index: 5555;
-    cursor: pointer;
   }
 `;

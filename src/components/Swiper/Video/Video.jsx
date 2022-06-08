@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import useWindowDimensions from '../../../hooks/useWindowDimensions';
-import { Spinner } from '../../global/icons';
+import { PlayButtonIcon, Spinner } from '../../global/icons';
 import {
-  PlayButtonStyled,
+  PlayButtonWrapperStyled,
   SpinnerWrapperStyled,
   VideoStyled,
   VideoWrapperStyled
@@ -17,7 +17,8 @@ const Video = ({ isActive, link }) => {
   const [video, setVideo] = useState(videoRef?.current);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const handlePlay = () => {
+  const handlePlay = e => {
+    e.stopPropagation();
     setIsPlaying(true);
     video?.play();
   };
@@ -27,15 +28,14 @@ const Video = ({ isActive, link }) => {
     if (isActive && isLoaded && width > screenMD) {
       video?.play();
     }
-
-    return () => {
+    if (!isActive) {
       video?.pause();
 
-      setIsPlaying(false);
-    };
+      setTimeout(() => {
+        setIsPlaying(false);
+      }, 500);
+    }
   }, [video, isActive, isLoaded, width]);
-
-  console.log(isLoaded);
 
   return (
     <>
@@ -48,16 +48,18 @@ const Video = ({ isActive, link }) => {
         >
           <source src={link} />
         </VideoStyled>
-        {!isPlaying && width < screenMD ? (
-          <PlayButtonStyled onClick={handlePlay} />
+        {!isPlaying && width < screenMD && isLoaded ? (
+          <PlayButtonWrapperStyled onClick={handlePlay}>
+            <PlayButtonIcon />
+          </PlayButtonWrapperStyled>
+        ) : null}
+
+        {!isLoaded ? (
+          <SpinnerWrapperStyled>
+            <Spinner />
+          </SpinnerWrapperStyled>
         ) : null}
       </VideoWrapperStyled>
-
-      {!isLoaded ? (
-        <SpinnerWrapperStyled>
-          <Spinner />
-        </SpinnerWrapperStyled>
-      ) : null}
     </>
   );
 };

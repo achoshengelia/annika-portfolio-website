@@ -46,7 +46,7 @@ const Swiper = ({ gallery }) => {
             isVideo(link) ? (
               <Video isActive={isActive} link={link} />
             ) : (
-              <Image link={link} />
+              <Image link={link} alt={alt} />
             )
           }
         </SwiperSlide>
