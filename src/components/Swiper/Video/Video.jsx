@@ -15,8 +15,14 @@ const Video = ({ isActive, link }) => {
   const { showMenu } = useContext(GlobalContext);
   const { width } = useWindowDimensions();
   const videoRef = useRef(null);
-  const [isLoaded, setIsLoaded] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [video, setVideo] = useState(videoRef?.current);
+
+  const handleLoadedMetaData = () => {
+    if (width < screenMD && isMobileDevice()) {
+      setIsLoaded(true);
+    }
+  };
 
   useEffect(() => {
     if (!video) setVideo(videoRef.current);
@@ -33,12 +39,8 @@ const Video = ({ isActive, link }) => {
       <VideoWrapperStyled isLoaded={isLoaded}>
         <VideoStyled
           loop
-          onCanPlayThrough={() => {
-            setIsLoaded(true);
-          }}
-          onLoadedMetaData={() =>
-            width < screenMD && isMobileDevice() ? setIsLoaded(true) : null
-          }
+          onLoadedMetaData={handleLoadedMetaData}
+          onCanPlayThrough={() => setIsLoaded(true)}
           onWaiting={() => setIsLoaded(false)}
           ref={videoRef}
           playsInline
