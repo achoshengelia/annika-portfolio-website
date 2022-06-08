@@ -9,7 +9,7 @@ const NextButton = ({ isSmallDevice }) => {
   return (
     <ContainerStyled
       isSmallDevice={isSmallDevice}
-      onClick={() => !isSmallDevice && swiper.slideNext()}
+      onClick={() => (!isSmallDevice ? swiper.slideNext() : null)}
     >
       {isSmallDevice ? (
         <img src={Next} onClick={() => swiper.slideNext()} alt="arrow" />
