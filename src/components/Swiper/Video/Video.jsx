@@ -39,7 +39,7 @@ const Video = ({ isActive, link }) => {
       <VideoWrapperStyled isLoaded={isLoaded}>
         <VideoStyled
           loop
-          onLoadedMetaData={handleLoadedMetaData}
+          onLoadedMetadata={handleLoadedMetaData}
           onCanPlayThrough={() => setIsLoaded(true)}
           onWaiting={() => setIsLoaded(false)}
           ref={videoRef}

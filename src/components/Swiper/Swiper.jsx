@@ -28,7 +28,7 @@ const Swiper = ({ gallery }) => {
   };
 
   const swiperProps = {
-    initialSlide: 0,
+    initialSlide: 1,
     spaceBetween: 30,
     effect: 'fade',
     loop: true,
