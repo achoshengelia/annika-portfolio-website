@@ -90,7 +90,7 @@ const Swiper = ({ gallery }) => {
 
   return (
     <SwiperStyled {...swiperProps}>
-      {gallery?.map(link => (
+      {gallery?.map(({ link, alt }) => (
         <SwiperSlide key={link}>
           {({ isActive }) => (
             <Item isActive={isActive} isVideo={isVideo(link)} link={link} />

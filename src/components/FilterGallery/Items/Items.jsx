@@ -13,7 +13,7 @@ import {
   ContainerStyled
 } from './ItemsStyles';
 
-const Item = ({ item: { imageSrc, caption }, pageIsLoaded }) => {
+const Item = ({ item: { imageSrc, caption, alt }, pageIsLoaded }) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
@@ -39,7 +39,7 @@ const Item = ({ item: { imageSrc, caption }, pageIsLoaded }) => {
     >
       <CardImageStyled
         src={imageSrc}
-        alt={caption}
+        alt={alt}
         onLoad={() => setImageIsLoaded(true)}
         imageIsLoaded={imageIsLoaded}
       />
