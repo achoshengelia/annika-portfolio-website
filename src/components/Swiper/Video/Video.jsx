@@ -1,8 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
+import { GlobalContext } from '../../../context/globalContext';
+import { isMobileDevice } from '../../../helpers';
 import useWindowDimensions from '../../../hooks/useWindowDimensions';
-import { PlayButtonIcon, Spinner } from '../../global/icons';
+import { Spinner } from '../../global/icons';
 import {
-  PlayButtonWrapperStyled,
   SpinnerWrapperStyled,
   VideoStyled,
   VideoWrapperStyled
@@ -11,48 +12,39 @@ import {
 const screenMD = 800;
 
 const Video = ({ isActive, link }) => {
+  const { showMenu } = useContext(GlobalContext);
   const { width } = useWindowDimensions();
   const videoRef = useRef(null);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
   const [video, setVideo] = useState(videoRef?.current);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlay = e => {
-    e.stopPropagation();
-    setIsPlaying(true);
-    video?.play();
-  };
 
   useEffect(() => {
     if (!video) setVideo(videoRef.current);
-    if (isActive && isLoaded && width > screenMD) {
+    if (isActive && isLoaded && !showMenu) {
       video?.play();
     }
-    if (!isActive) {
+    if (!isActive || showMenu) {
       video?.pause();
-
-      setTimeout(() => {
-        setIsPlaying(false);
-      }, 500);
     }
-  }, [video, isActive, isLoaded, width]);
+  }, [video, isActive, isLoaded, width, showMenu]);
 
   return (
     <>
       <VideoWrapperStyled isLoaded={isLoaded}>
         <VideoStyled
           loop
-          onCanPlayThrough={() => setIsLoaded(true)}
+          onCanPlayThrough={() => {
+            setIsLoaded(true);
+          }}
+          onLoadedMetaData={() =>
+            width < screenMD && isMobileDevice() ? setIsLoaded(true) : null
+          }
           onWaiting={() => setIsLoaded(false)}
           ref={videoRef}
+          playsInline
         >
           <source src={link} />
         </VideoStyled>
-        {!isPlaying && width < screenMD && isLoaded ? (
-          <PlayButtonWrapperStyled onClick={handlePlay}>
-            <PlayButtonIcon />
-          </PlayButtonWrapperStyled>
-        ) : null}
 
         {!isLoaded ? (
           <SpinnerWrapperStyled>
