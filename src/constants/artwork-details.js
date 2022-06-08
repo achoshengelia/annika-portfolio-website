@@ -182,10 +182,10 @@ export const artworkDetailsItems = [
         alt: 'A computer drawn Cape Sundew plant in dark blue and green colors'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/video/upload/v1654084041/Artworks/Sundew/achi-one_llbp9j.mp4'
+        link: 'https://res.cloudinary.com/dojsjcecs/video/upload/v1654701042/Artworks/Sundew/achi-one_ozvus8.mov'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/video/upload/v1654083993/Artworks/Sundew/achi-sundew-2_aytu7i.mp4'
+        link: 'https://res.cloudinary.com/dojsjcecs/video/upload/v1654701032/Artworks/Sundew/achi-sundew-2_i0cv7k.mov'
       },
       {
         link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083944/Artworks/Between%20Pain/sundew-2_m8maj2.jpg',
