@@ -9,12 +9,11 @@ export const ContainerStyled = styled.div`
   top: 0;
   right: ${({ prev }) => (!prev ? '0' : null)};
   left: ${({ prev }) => (prev ? '0' : null)};
-
   cursor: ${({ prev, isSmallDevice }) =>
     isSmallDevice ? null : prev ? `url(${Prev}), auto` : `url(${Next}), auto`};
   z-index: 10;
   height: 100%;
-  width: 40%;
+  width: 50%;
 
   & > img {
     cursor: pointer;
