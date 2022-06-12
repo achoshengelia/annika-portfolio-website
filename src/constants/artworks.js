@@ -31,7 +31,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable0_fepbm7.jpg',
     tags: [all, sculpture, designFiction],
-    alt: 'A chair covered in white snow grass with letter cut out saying uncomfortable futures'
+    alt: 'Uncomfortable Futures, Annika Terwey'
   },
   {
     id: createID(),
@@ -39,7 +39,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652008383/Artworks/previewpics/mockup1_pjr71u.png',
     tags: [all, webDesign],
-    alt: 'Laptop infront of neon yellow background showing the website Dark Corners'
+    alt: 'Dunkle Ecken Archive, Annika Terwey'
   },
   {
     id: createID(),
@@ -49,7 +49,7 @@ export const artworkItems = [
       //'https://res.cloudinary.com/dojsjcecs/image/upload/v1652007282/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_14.54.24_sbttqd.png',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652011575/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_16.03_Kopie_m8fqpl.jpg',
     tags: [all, augumentedReality],
-    alt: 'Many spinach dumplings that form the word Knedl'
+    alt: 'Knedl AR, AR Filter Annika Terwey'
   },
   {
     id: createID(),
@@ -58,7 +58,7 @@ export const artworkItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009387/Artworks/previewpics/zueinander_web11_eihevi.png',
     //      'https://res.cloudinary.com/dojsjcecs/image/upload/v1652007219/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_14.49.45_fhlgkl.png',
     tags: [all, webDesign, productDesign],
-    alt: 'Website shows pictures of 3 people walking towards a neon orange park bench with alternating backrest'
+    alt: 'Zueinander (finden) - trovarsi, Annika Terwey '
   },
   {
     id: createID(),
@@ -66,7 +66,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083952/Artworks/Between%20Pain/betweenPain_Kopie_bg8z4f.jpg',
     tags: [all, photo],
-    alt: 'An half open elevetor covering the female passenger'
+    alt: 'Between Pain, Annika Terwey'
   },
   {
     id: createID(),
@@ -74,7 +74,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1654083944/Artworks/Between%20Pain/sundew-2_m8maj2.jpg',
     tags: [all, film],
-    alt: 'A computer drawn Cape Sundew plant in dark blue and green colors'
+    alt: 'Sundew music video by Annika Terwey for Cape Sundew'
   },
   {
     id: createID(),
@@ -82,7 +82,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779624/Artworks/imperceptible/imperceptible3_zjigh1.jpg',
     tags: [all, productDesign, designFiction],
-    alt: 'Electronic and air quality sensors inside a 3d printed case'
+    alt: '(Im)perceptible, Airquality wearable by Annika Terwey'
   },
   {
     id: createID(),
@@ -90,7 +90,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779602/Artworks/forecast/forecast03_Kopie_kmcoji.jpg',
     tags: [all, newMedia, designFiction],
-    alt: 'Color infrared weather aesthetic projected on water steam'
+    alt: 'forecast, Annika Terwey'
   },
   {
     id: createID(),
@@ -98,7 +98,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010337/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.44.04_iuyxjf.png',
     tags: [all, augumentedReality],
-    alt: 'A face filter showing a Watten card above the face of the user'
+    alt: 'Wos geat - AR Filter, Annika Terwey'
   },
 
   {
@@ -107,7 +107,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779017/Artworks/bodynamics/bodynamics8_gfmdl5.jpg',
     tags: [all, photo],
-    alt: 'A red body in a twisted position in front of a black background'
+    alt: 'Bodynamics, Annika Terwey'
   },
   {
     id: createID(),
@@ -119,7 +119,7 @@ export const artworkItems = [
       //'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/145140_vwn6lg.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1654085729/Artworks/Grey%20Shades/imm023_21A_tdqqqf.jpg',
     tags: [all, photo],
-    alt: 'A mostly grey analog picture shot inside a glass house with a girl talking selfies in the background'
+    alt: 'Shades of grey, Annika Terwey'
   },
   {
     id: createID(),
@@ -127,7 +127,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009386/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.21.54_vw0t3b.png',
     tags: [all, film],
-    alt: 'Neon green squares of different shapes on black backgronud create a matrix pattern'
+    alt: 'MTRX animation by Annika Terwey'
   },
 
   {
@@ -136,7 +136,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009388/Artworks/previewpics/datadust24_h7n0eu.jpg',
     tags: [all, productDesign, newMedia],
-    alt: 'Four hour glasses filled with different amount of black sand'
+    alt: 'datadust 2, hourglass data visualisation by Annika Terwey'
   },
   {
     id: createID(),
@@ -144,7 +144,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779536/Artworks/datadust1/datadust004_tfhd3z.jpg',
     tags: [all, productDesign, newMedia],
-    alt: 'Four 3d printed hour glasses in different forms and different colored sand'
+    alt: 'datadust 1 - hourglass data visualisation by Annika Terwey'
   },
   {
     id: createID(),
@@ -152,7 +152,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009387/Artworks/previewpics/patternapp5_gt2bjl.jpg',
     tags: [all, newMedia],
-    alt: 'A programm showing a colorful striped square, which was created by the chat behaivior'
+    alt: 'Pattern App, Annika Terwey'
   },
   {
     id: createID(),
@@ -160,7 +160,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779731/Artworks/industrialscars/industrialscars1_xv57pb.jpg',
     tags: [all, photo],
-    alt: 'A tree growing on concrete column of a half collapsed fabric ruin'
+    alt: 'Industrial scars, Annika Terwey'
   },
   {
     id: createID(),
@@ -168,7 +168,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009829/Artworks/previewpics/Bildschirmfoto_2022-05-08_um_15.35.23_lqrolh.png',
     tags: [all, film],
-    alt: 'A close up of a cristalisation process in blue colors'
+    alt: 'naOAc, Annika Terwey'
   },
   {
     id: createID(),
@@ -176,7 +176,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652009913/Artworks/previewpics/cornserve2_namt4u.jpg',
     tags: [all, film, productDesign, newMedia],
-    alt: 'A girl standing behind a hologram showing a cucumber plant growing'
+    alt: 'cornserve, hologram installation by Annika Terwey'
   },
   {
     id: createID(),
@@ -184,7 +184,7 @@ export const artworkItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779747/Artworks/mirage/mirage3_ivkhuu.jpg',
     tags: [all, film, productDesign, newMedia],
-    alt: 'A white 3d modeled head twists and deforms in front of black background'
+    alt: 'mirage, hologram installation by Annika Terwey'
   }
 ];
 

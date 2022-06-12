@@ -13,7 +13,7 @@ export const curationItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober5_mf0he5.jpg',
     tags: [all, onlineExhibition],
-    alt: 'Extrasober.online website on a mobile screen'
+    alt: 'Extrasober, virtual art exhibition about drinking culture, Forum Präventions, Annika Terwey, Sophie Lazari, Vinzenz Aubry, Robyn Steffen, ... '
   },
   {
     id: createID(),
@@ -21,7 +21,7 @@ export const curationItems = [
     imageSrc:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken6_pe4xhm.jpg',
     tags: [all, onlineExhibition, exhibition],
-    alt: 'A black and white poster hangs next to a window showing a video'
+    alt: 'Dunkle Ecken, Lanalive, Annika Terwey, Sophie Lazari, Hilka Dirks, Zora Hünermann, ...'
   },
   {
     id: createID(),
@@ -30,7 +30,7 @@ export const curationItems = [
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010912/Curation/trashspotting1/trash_dt2_jdqjy6.jpg',
     //      'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779847/Curation/trashspotting2/trash_dt2_rwijer.jpg',
     tags: [all, exhibition],
-    alt: 'Showcase exhibition showing exhibits on white pedestals'
+    alt: 'Trashspotting, designtransfer, Annika Terwey, Sophie Lazari, Joanna Breithuber, Pia Wolf, Lea Huch...'
   },
   {
     id: createID(),
@@ -39,6 +39,6 @@ export const curationItems = [
       // 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan3_xe8kfn.jpg',
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan4_dsoq5g.jpg',
     tags: [all, exhibition],
-    alt: 'Exhibition visitors reading a book about plastic found on the beach'
+    alt: 'Trashspotting, Eppan, Annika Terwey, Sophie Lazari, Linda Schwarz'
   }
 ];
