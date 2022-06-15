@@ -36,14 +36,6 @@ const Shuffle = ({ children }) => {
   const [imageIndex, setImageIndex] = useState(null);
   const [timer, setTimer] = useState(null);
 
-  useEffect(() => {
-    setIsShufflePage(true);
-
-    return () => {
-      setIsShufflePage(false);
-    };
-  }, [setIsShufflePage]);
-
   const handleMouseDown = () => {
     setTimer(
       setInterval(() => {
@@ -63,6 +55,14 @@ const Shuffle = ({ children }) => {
   };
 
   const isVisible = i => i === imageIndex;
+
+  useEffect(() => {
+    setIsShufflePage(true);
+
+    return () => {
+      setIsShufflePage(false);
+    };
+  }, [setIsShufflePage]);
 
   return (
     <ContainerStyled
@@ -100,11 +100,11 @@ const Shuffle = ({ children }) => {
         as="h1"
         isUppercase
         size="10rem"
-        onClick={handleMouseUp}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
         onTouchStart={handleMouseDown}
         onTouchEnd={handleMouseUp}
+        onTouchCancel={handleMouseUp}
       >
         <span>
           keep <br />
