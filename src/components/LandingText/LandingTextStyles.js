@@ -36,7 +36,7 @@ export const ContainerStyled = styled(motion.p)`
   }
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 9rem;
   }
 
