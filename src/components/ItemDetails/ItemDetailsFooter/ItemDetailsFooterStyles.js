@@ -23,7 +23,7 @@ export const MoreButtonStyled = styled.button`
 
   @media only screen and (max-width: ${pxToEm(360)}) {
     font-size: 1.2rem;
-    padding: 1.4rem 0rem 1.4rem 0.9rem;
+    padding: 1.4rem 0rem 1.4rem 0.2rem;
   }
 `;
 
@@ -75,9 +75,16 @@ export const ContainerStyled = styled(motion.footer)`
       }
     }
 
-    @media ${props => props.theme.breakpoints.md} {
-      font-size: 1.35rem;
-      padding: 1.4rem 1.5rem;
+    & p {
+      font-size: 1.6rem;
+
+      @media ${props => props.theme.breakpoints.lg} {
+        font-size: 1.6rem;
+      }
+
+      @media ${props => props.theme.breakpoints.md} {
+        font-size: 1.35rem;
+      }
     }
 
     @media ${props => props.theme.breakpoints.sm} {
@@ -95,7 +102,7 @@ export const ContainerStyled = styled(motion.footer)`
 
       & p {
         font-size: 1.2rem;
-        padding: 1.4rem 0.9rem 1.4rem 0rem;
+        padding: 1.4rem 0.2rem 1.4rem 0rem;
       }
     }
   }
