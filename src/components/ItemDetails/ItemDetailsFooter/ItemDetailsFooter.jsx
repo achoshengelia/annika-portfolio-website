@@ -35,13 +35,12 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
         draggable="false"
       >
         <CenterWrapperStyled>
-          <Text isUppercase>
+          <Text isUppercase as="p">
             <Link to={isCurationPage ? '/curation' : '/design-artworks'}>
-              ←{' '}
-            </Link>{' '}
-            {itemDetails?.caption}
+              ← {itemDetails?.caption}
+            </Link>
           </Text>
-          <Text>{itemDetails?.curation}</Text>
+          <Text as="p">{itemDetails?.curation}</Text>
           <MoreButtonStyled onClick={handleToggleShowMore}>
             <Text isUppercase>{showMore ? 'Back' : 'Info'}</Text>
           </MoreButtonStyled>
