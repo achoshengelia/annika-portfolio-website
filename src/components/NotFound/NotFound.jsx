@@ -14,7 +14,7 @@ const NotFound = () => {
       </Text>
       <ImageStyled
         alt="uwe"
-        src="https://res.cloudinary.com/dojsjcecs/image/upload/v1653928532/uwecopie_yqurpr.png"
+        src="https://f004.backblazeb2.com/file/annika-portfolio-public/preview/uwecopie.png"
       />
       <Link to="/">Take me back home</Link>
     </ContainerStyled>

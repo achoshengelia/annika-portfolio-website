@@ -7,23 +7,23 @@ export const curationDetailsItems = [
     curation: 'Curation | Co-Management | 2021',
     gallery: [
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober0_vogylr.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/extrasober/Extrasober0.jpg',
         alt: 'Extrasober Intro website on laptop and mobile phone'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober5_mf0he5.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/extrasober/Extrasober5.jpg',
         alt: 'Colorful painting by Kennet Lekko showing a man with a burning drink on the left hand'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober2_tvnnhe.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/extrasober/Extrasober2.jpg',
         alt: 'Abstinent testimonial preview with quotes on desktop'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779864/Curation/extrasober%20/Extrasober3_o4n71p.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/extrasober/Extrasober3.jpg',
         alt: 'Abstinent testimonial preview with quotes on mobile'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/video/upload/v1651782322/Curation/extrasober%20/Extrasober6_vnkr5p.mov'
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/extrasober/Extrasober6.mov'
       }
     ],
     moreInfo: [
@@ -44,51 +44,51 @@ export const curationDetailsItems = [
     curation: 'Co-Curation | Co-Management | 2020',
     gallery: [
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken2_uswgbn.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken2.jpg',
         alt: 'A scooter is passing an empty house, from which video exhibits are shown'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken3_m5tkhd.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken3.jpg',
         alt: 'A still from the Dark corner exhibition trailer'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken6_pe4xhm.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken6.jpg',
         alt: 'Exhibtion Poster of dark corners hanging next to a window displaying exhibits'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken5_ays99h.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken5.jpg',
         alt: 'A video by Dovilé Aleksaité seen through the window'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779279/Curation/dunkleecken/dunkleecken4_ad3di1.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken4.jpg',
         alt: 'House displaying video exhibits from Dunkle Ecken through its windows'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779281/Curation/dunkleecken/dunkleecken7_fftsjt.png',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken7.png',
         alt: 'Online exhibtion on desktop showing Fiona Belousz work'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken9_gluowe.png',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken9.png',
         alt: 'Online exhibtion on desktop intoducing the work by Carolina Stieler'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779281/Curation/dunkleecken/dunkleecken10_rdvbxg.png',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken10.png',
         alt: 'Online exhibtion on desktop showing Carolina Stielers work'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken13_ce2hmf.png',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken13.png',
         alt: 'Online exhibtion on desktop showing Elias Asisis work'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken11_dhh2i9.png',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken11.png',
         alt: 'Online exhibtion on desktop showing  work by artists Hilka Dirks, Zora Hünermann & Meret Schmiese'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken14_nnw6ha.png',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken14.png',
         alt: 'Work by Mountau for online exhibition dark corners - dunkle ecken'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779280/Curation/dunkleecken/dunkleecken8_hfbvfi.png',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/dunkleecken/dunkleecken8.png',
         alt: 'Work The Blues by Isabelle Östlund'
       }
     ],
@@ -109,27 +109,27 @@ export const curationDetailsItems = [
     curation: 'Curation | Exhibition Design | 2019',
     gallery: [
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1652010912/Curation/trashspotting1/trash_dt2_jdqjy6.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting2/trash_dt2.jpg',
         alt: 'Showcase exhibition displaying exhibits on white pedestals'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779847/Curation/trashspotting2/trash_dt3_ryeh7e.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting2/trash_dt3.jpg',
         alt: 'Elsa Müller s book Plasticaplastica next to the plastic object found on the beach'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779847/Curation/trashspotting2/trash_dt1_ubipup.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting2/trash_dt1.jpg',
         alt: 'Pia Wolf s booklet showing aesthetically photographed pictures from a walt on a beach'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779847/Curation/trashspotting2/trash_dt7_dybqyy.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting2/trash_dt7.jpg',
         alt: 'ISSO project by Lea Huch - eatable fruitleather forms instead of one use dishes'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779847/Curation/trashspotting2/trash_dt5_crwyzg.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting2/trash_dt5.jpg',
         alt: 'Soapbottle by Jonna Breitenhuber'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779848/Curation/trashspotting2/trash_dt6_uggzk5.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting2/trash_dt6.jpg',
         alt: 'Trashspotting showcase exhibition by day'
       }
     ],
@@ -146,39 +146,39 @@ export const curationDetailsItems = [
     curation: 'Curation | Exhibition Design | 2019',
     gallery: [
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1652184770/Curation/trashspotting1/trashspotting_poster_yfw6ss.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trashspotting_poster.jpg',
         alt: 'Trashspotting poster - a big orange plastic bag containing a binoculars'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan4_dsoq5g.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan4.JPG',
         alt: 'Trashspotting exhibition visitors reading book by Elsa Müller'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan7_d6zfjo.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan7.jpg',
         alt: 'Booklet by Pia Wolf'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan5_z7hbts.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan5.JPG',
         alt: 'Soapbottle by Joanna Breitenhuber'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan3_xe8kfn.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan3.JPG',
         alt: 'Trashspotting exhibition on Vernissage'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779823/Curation/trashspotting1/trash_eppan2_clfipy.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan2.JPG',
         alt: 'Art print with broken tights'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan6_esxofg.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan6.JPG',
         alt: 'Maximillian Rohreggers eco friendly headphone design'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan10_jilgbx.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan10.JPG',
         alt: 'Close up of vest with wine cork by Anna-Lea Hebeisen'
       },
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779824/Curation/trashspotting1/trash_eppan12_lx7gew.jpg',
+        link: 'https://f004.backblazeb2.com/file/annika-portfolio-public/curation/trashspotting1/trash_eppan12.JPG',
         alt: 'Egg cup by Maximillian Rohregger'
       }
     ],
