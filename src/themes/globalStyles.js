@@ -14,7 +14,13 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #root {
     min-height: 100%;
-    height: ${({ isMaxHeight }) => (isMaxHeight ? '100%' : null)}
+    height: ${({ isMaxHeight }) => (isMaxHeight ? '100%' : null)};
+    overflow: ${props =>
+      props.showMenu || props.isShufflePage ? 'hidden' : null};
+    touch-action: ${props =>
+      props.showMenu || props.isShufflePage ? 'none' : null};
+    -ms-touch-action: ${props =>
+      props.showMenu || props.isShufflePage ? 'none' : null};
   }
 
   html {
@@ -30,8 +36,6 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.text.main};
     cursor: default;
     text-rendering: optimizeSpeed;
-    overflow: ${props =>
-      props.showMenu || props.isShufflePage ? 'hidden' : null};
   }
 
   #root {
