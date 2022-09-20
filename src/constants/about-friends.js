@@ -33,7 +33,7 @@ export const aboutFriends = [
   },
   {
     id: createID(),
-    caption: 'Mascha Kobylenko',
+    caption: 'Maria Kobylenko',
     link: 'https://mariakobylenko.com/'
   },
   {
@@ -68,7 +68,7 @@ export const aboutFriends = [
   },
   {
     id: createID(),
-    caption: 'Tatiana Pekhmotova',
+    caption: 'Tatiana Pakhmutova',
     link: 'https://www.tati.work/'
   },
   {
