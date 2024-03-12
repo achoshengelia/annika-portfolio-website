@@ -1,8 +1,6 @@
-import { v4 as createID } from 'uuid';
-
 export const curationDetailsItems = [
   {
-    id: createID(),
+    id: '1',
     caption: 'Extrasober',
     curation: 'Curation | Co-Management | 2021',
     gallery: [
@@ -39,7 +37,7 @@ export const curationDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '2',
     caption: 'Dunkle Ecken',
     curation: 'Co-Curation | Co-Management | 2020',
     gallery: [
@@ -104,7 +102,7 @@ export const curationDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '3',
     caption: 'Trashspotting 2',
     curation: 'Curation | Exhibition Design | 2019',
     gallery: [
@@ -141,7 +139,7 @@ export const curationDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '4',
     caption: 'Trashspotting',
     curation: 'Curation | Exhibition Design | 2019',
     gallery: [
@@ -196,6 +194,7 @@ export const curationDetailsItems = [
   }
 ];
 
-export const getCurationDetails = caption => {
-  return curationDetailsItems.find(item => item.caption === caption);
+export const getCurationDetails = id => {
+  console.log({ id, curationDetailsItems });
+  return curationDetailsItems.find(item => item.id === id);
 };

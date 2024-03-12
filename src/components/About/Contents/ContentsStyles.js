@@ -6,9 +6,8 @@ import {
 } from '../../global/utils';
 import { pxToEm } from '../../../helpers';
 
-
 export const FriendsListItemStyled = styled.li`
-  font-size: 2.2rem;
+  font-size: 2rem;
 `;
 
 export const FriendsListStyled = styled.ul`
@@ -18,7 +17,7 @@ export const FriendsListStyled = styled.ul`
 `;
 
 export const ExhibitionListItemStyled = styled.li`
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-top: 1rem;
 
   &:first-child {
@@ -61,6 +60,7 @@ export const IDoWrapperStyled = styled.div`
 export const AboutMeWrapperStyled = styled.div`
   ${Text} {
     margin-top: 2rem;
+    font-size: 2.2rem;
 
     &:first-child {
       margin-top: 0;
@@ -76,7 +76,7 @@ export const FriendsWrapperStyled = styled(motion.div)``;
 
 export const ExhibitionsWrapperStyled = styled(motion.div)`
   ${Heading} {
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
   }
 
   font-size: 2.2rem;
@@ -86,6 +86,9 @@ export const ContactWrapperStyled = styled(motion.div)`
   max-height: ${props => (props.$isFormOpen ? '100rem' : '15rem')};
   overflow: hidden;
   transition: all 0.8s ease;
+  && {
+    margin-top: 10rem;
+  }
 
   @media only screen and (max-width: ${pxToEm(370)}) {
     max-height: ${props => (props.$isFormOpen ? '100rem' : '11.5rem')};
@@ -104,17 +107,17 @@ export const GridWrapperStyled = styled(motion.div)`
 `;
 
 export const ContainerStyled = styled.section`
-  margin-top: 5rem;
+  margin-top: 7rem;
 
   & > * {
-    margin-top: 5rem;
+    margin-top: 4rem;
 
     &:first-child {
       margin-top: 0;
     }
 
     & > ${Heading} {
-      margin-bottom: 4rem;
+      margin-bottom: 2.6rem;
 
       @media only screen and (max-width: ${pxToEm(900)}) {
         font-size: 2.4rem;
@@ -161,7 +164,6 @@ export const ArrowWrapperStyled = styled.span`
   font-family: ${props => props.theme.fonts.main};
   display: inline-block;
   transition: transform 0.3s ease;
-
   @media (hover: hover) {
     &:hover {
       transform: translateX(30%);
@@ -171,11 +173,11 @@ export const ArrowWrapperStyled = styled.span`
 
 export const ButtonStyled = styled.button`
   background: none;
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-align: left;
   cursor: pointer;
   width: max-content;
-  margin-bottom: 8rem;
+  margin-bottom: 11rem;
   margin-left: 1rem;
   color: ${props => props.theme.colors.other.black};
 
@@ -188,24 +190,24 @@ export const ButtonStyled = styled.button`
   }
 
   @media only screen and (max-width: ${pxToEm(900)}) {
-    font-size: 4.2rem;
+    font-size: 5.2rem;
   }
 
   @media only screen and (max-width: ${pxToEm(550)}) {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 
   @media only screen and (max-width: ${pxToEm(450)}) {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-left: 0.4rem;
   }
 
   @media only screen and (max-width: ${pxToEm(370)}) {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   @media only screen and (max-width: ${pxToEm(330)}) {
     font-size: 2.2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
   }
 `;

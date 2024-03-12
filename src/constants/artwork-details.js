@@ -1,40 +1,184 @@
-import { v4 as createID } from 'uuid';
-
 export const artworkDetailsItems = [
   {
-    id: createID(),
-    caption: 'Uncomfortable Futures',
-    curation: '2021',
+    id: '1',
+    caption: 'Geodata-based collaboration tools for cycle network planning',
+    curation: '',
     gallery: [
       {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable0_fepbm7.jpg',
-        alt: 'Uncomfortable futures chair covered in white synthetic snow surfaces'
-      },
-      {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable3.2_gweaa1.jpg',
-        alt: 'Close up  of uncomfortable futures chair and the its letter cutouts '
-      },
-      {
-        link: 'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779971/Artworks/uncomfortablefutures/uncomfortable2_g6odug.mov'
-      },
-      {
-        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable4_anqyd6.jpg',
-        alt: 'All chairs for the Chaircity projects by Südtiroler Künstlerbund'
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486256/Index/geodatenbasierte_kollaborationstools_in_der_radnetzplanung_annika_terwey_xfmno9.jpg',
+        alt: ''
       }
     ],
     moreInfo: [
-      '(Un)comfortable Future - an Alpine perspective for „Chair©ity“ a project by Südtiroler Künstlerbund & BZ Heartbeat.',
-      'The glacier area in South Tyrol alone has decreased by 19.7% between 1983 and 1997 as a result of warming. The discernible trends point to a further decline in overall snow cover and its duration.',
-      'Snow farming and synthetic snow surfaces are one attempt to prepare against the uncertain weather conditions in winter sports. How the Alpine outlook and landscape will develop is unclear. However, according to current climate studies and weather trends, the outlook for the future does not look very comfortable.',
-      'Alpine Chair covered in synthetic snow surface on ski pole plates',
-      'Animation: Imagening (un)comfortable alpine future (somewhere in the Ötztal Alps)',
-      'Photo of the chair: Hannes Ochsenreiter'
+      'To become a cycling nation by 2030, Germany faces the challenge of extensive infrastructure development. However, bureaucratic obstacles, a lack of foundational data, and limited expertise within administrative bodies complicate securing the necessary funding for expanding the cycling network. Additionally, public relations and engagement efforts are sometimes overlooked in the planning process due to their resource-intensive nature, despite their crucial role in successful project implementation. To efficiently involve stakeholders and the public, it is essential not only to prioritize strategy development and resource planning from the outset but also to standardize and professionalize participation processes. Innovative collaborative platforms and processes that facilitate engagement, cooperation among involved stakeholders, and data utilization can establish cost-effective and expedited workflows, making the planning process more open, swift, and efficient.',
+      "The objective of this master's thesis is to analyze cycling promotion processes in municipalities using the products of FixMyCity (FMC) and develop improvement suggestions for planning tools. The aim is to achieve an accelerated and optimized collaborative cycling network design while addressing the following research questions: How can citizens be best involved in the planning process, capturing diverse perspectives? How can digital tools and OpenStreetMap data (OSM data) be used to make cycling planning more collaborative and efficient? What optimization potentials exist in the planning processes within municipalities supported by FixMyCity? How can the platforms and processes of FixMyCity be expanded to facilitate and promote the involvement of various stakeholders? ",
+      "The master's thesis employs a qualitative research approach, encompassing an expert workshop, the analysis of a real public participation process, and user testing. This approach allows for a better understanding of existing processes and initial experiences with the platforms and workflows to be evaluated. Necessary adjustments are identified, and proposed solutions are developed. The study aims to enhance the current cycling network planning process at FMC, contributing to a more efficient network planning process through digital solutions. This culminates in an interface prototype that undergoes testing, evaluation, and improvement through user testing.",
+      "During the execution and evaluation of public participation, it was noted that there was a lack of diversity in perspectives. A prototype is used to enhance participation through a digital supplement. An implementable, representative participation procedure is developed to support cycling network planning, remove barriers, and enhance collaboration. This procedure includes comprehensive information dissemination about the project, the collection of origin and destination points, concerns regarding the proposed network, and additions to the network. A map is created, incorporating all participants' feedback. Different background maps with diverse data and direct feedback on entries in non-buildable areas allow participants to receive well-founded feedback immediately. This aims to prevent misunderstandings and disappointments."
     ]
   },
   {
-    id: createID(),
+    id: '2',
+    caption: 'Reflectivity - what remains after the storm',
+    curation: 'data visualisation | 2023',
+    gallery: [
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709485882/Index/reflectifity_3_Kopie_nph0kn.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709487077/Artworks/Reflectivity/reflectifity_4_hc5k3q.jpg',
+        alt: ''
+      }
+    ],
+    moreInfo: [
+      'Reflectivity: What Remains After the Storm“ explores the concept of reflectivity, bridging weather phenomena and our existence. It reflects radar technology‘s ability to gauge precipitation intensity and understand weather dynamics.    ',
+      'Reflictivity is a measure of the radar cross section, that is used to detect precipitation and hazardous weather conditions. The imagery paint a picture of the weather from the energy reflected back to the radar. From vibrant pinks and oranges representing heavy rainfall to yellows (traditionally purple) and whites symbolizing hail and very high percipitation. Originally used for military purposes, radar technology became a tool for weather forecasting. This dual nature of reflectivity highlights its role in surveillance and gaining insights into the natural world.',
+      'The installation features three mirrors with reflectivity images of floods in Germany (2021), Pakistan (2022) and Italy (2023). These mirrors urge us to reflect on the impact of escalating weather events on our lives and our own contributions to them.'
+    ]
+  },
+  {
+    id: '3',
+    caption: 'Sophie Lazari Portfolio',
+    curation: 'Web design & development | 2023',
+    gallery: [
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709501124/Artworks/Sophie%20Portfolio/Sophie_lazari_portfolio-annika-terwey4-index_neezt0.jpg',
+        alt: ''
+      },
+
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709501125/Artworks/Sophie%20Portfolio/Sophie_lazari_portfolio-annika-terwey6_vxul5v.jpg',
+        alt: ''
+      },
+
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709501128/Artworks/Sophie%20Portfolio/Sophie_lazari_portfolio-annika-terwey7_hyvblw.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709501135/Artworks/Sophie%20Portfolio/Sophie_lazari_portfolio-annika-terwey8_r7hj5t.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709501134/Artworks/Sophie%20Portfolio/Sophie_lazari_portfolio-annika-terwey5_kyfmbs.jpg',
+        alt: ''
+      },
+
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709501123/Artworks/Sophie%20Portfolio/Sophie_lazari_portfolio-annika-terwey1_tatw9e.jpg',
+        alt: ''
+      }
+    ],
+    moreInfo: [
+      'Sophie Lazari, an artist based in Berlin with international acclaim, operates within a fluid spectrum of artistic expressions. From graphics, illustration, painting, and curation of exhibitions to tattoos and performance art, Lazari explores limitless possibilities for creative expression.      ',
+      "The project aimed to translate Lazari's bold and colorful artistic style into a digital space. The challenge was to design and develop a website that not only showcases her diverse body of work but also reflects her unique artistic personality.",
+      "The final product is a dynamic and engaging website that mirrors Lazari's artistic style and essence. Visitors can immerse themselves in a digital space that captures the diversity and vibrancy of Lazari's artistic journey. Through thoughtful design and development, the website serves as a true reflection of the artist's identity."
+    ]
+  },
+
+  {
+    id: '4',
+    caption: 'Shifting horizons',
+    curation: 'data visualisation | 2023',
+    gallery: [
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709485825/Index/shifting_horizons_annika_terwey_foto-felix-vinatzer_ktnkqp.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486982/Artworks/Shifting%20horizons/shifting_horizons_annika_terwey_foto-felix-vinatzer_ezhlaw.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486981/Artworks/Shifting%20horizons/shifting_horizons_annika_terweyfoto1-felix-vinatzer_vkuvpc.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486980/Artworks/Shifting%20horizons/shifting_horizons_annika_terwey2foto-felix-vinatzer_qneorj.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486935/Artworks/Shifting%20horizons/shifting_horizons_annika_terwey3_foto-felix-vinatzer_auqcdm.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486936/Artworks/Shifting%20horizons/shifting_horizons_annika_terwey4-foto-felix-vinatzer_myvmhu.jpg',
+        alt: ''
+      }
+    ],
+    moreInfo: [
+      '„Shifting Horizons“ consists of three square paintings stand as extensions of the larger „Datadust“ project. These paintings portray the gradual degradation of salt lakes, unveiling the narrative of water surface decline spanning from 1984 to 2019. In each painting, the canvas is divided into two distinct areas: the profound black sand embodies the diminishing water surface, while the expanding white sand poetically symbolizes the encroaching desert landscape.    ',
+      'The diminishing black sand becomes a compelling visual representation, embodying the progressive loss endured by each salt lake. Simultaneously, the expanding area of white sand serves as a stark reminder of the relentless encroachment of desertification, an outcome intricately entwined with human intervention.',
+      'Fotos: Felix Vinatzer'
+    ]
+  },
+  {
+    id: '5',
+    caption: 'Schnitzeljagd',
+    curation: 'Participatory art event | 2023',
+    gallery: [
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709487242/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas1_qsj8u9.jpg        ',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709488085/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas4_lnlodz.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709488088/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas3_dduu64.jpg        ',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709488084/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas7_tntgx1.jpg        ',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709487255/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas6_iketha.jpg        ',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709487249/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas8_gxanrr.jpg        ',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709487252/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas2_fapvu1.jpg        ',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709487251/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas11_dqhszy.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709488146/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas5_n8fxsg.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709488062/Artworks/Schnitzeljagd/schnitzeljagd_annika-terwey_foto_fanni_Fazekas9_zmdq9m.jpg        ',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709487237/Artworks/Schnitzeljagd/Rezept_Layout-rg_xctqd5.jpg',
+        alt: ''
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1709485822/Index/schnitzeljagd_Fanni-Fazekas_yhandh.jpg',
+        alt: ''
+      }
+    ],
+    moreInfo: [
+      'A Journey Beyond Internet Bubbles',
+      'Step beyond the confines of internet bubbles, "Schnitzeljagd - jagt Schnitzel" was aiming to be a unique social experiment, that trascend the ordinary. In this unique Participatory Art Event, a diverse group of individuals traversed Lana in random teams, navigating a parcour of creative exercises that engaged both participants and their surroundings.',
+      'The concept was simple yet powerful: to craft an unparalleled experience within Lanas scenic landscapes while fostering collaboration among strangers and creating bonds outside their own bubbles. Participants found themselves in spontaneous interactions, overcoming creative challenges that not only connected them with the environment but also with each other.',
+      'Schnitzeljagd - jagt Schnitzel went beyond the traditional event format; it was a dynamic experiment where the boundaries between participants and the curated experience blurred. The aim was to create an atmosphere where the essence of Lana served as the backdrop for collaborative moments, leaving a unique imprint on both the participants and the picturesque surroundings.',
+      'This past social experiment succeeded in not only providing an unconventional experience in Lana but also in creating a setting that encouraged strangers to collaborate, transforming Lana into a tapestry of shared memories and unexpected connections.',
+      'Photos: Fanni Fazekas'
+    ]
+  },
+  {
+    id: '6',
     caption: 'Dunkle Ecken Archive',
-    curation: 'Web Design | Co-Web-developement | 2021',
+    curation: 'Web Design | Co-Web-developement | 2022',
     gallery: [
       {
         link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779499/Artworks/dunkleeckenarchiv/dearchive13_lhfbmq.jpg',
@@ -77,7 +221,37 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '7',
+    caption: 'Uncomfortable Futures',
+    curation: '2021',
+    gallery: [
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable0_fepbm7.jpg',
+        alt: 'Uncomfortable futures chair covered in white synthetic snow surfaces'
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable3.2_gweaa1.jpg',
+        alt: 'Close up  of uncomfortable futures chair and the its letter cutouts '
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/video/upload/v1651779971/Artworks/uncomfortablefutures/uncomfortable2_g6odug.mov'
+      },
+      {
+        link: 'https://res.cloudinary.com/dojsjcecs/image/upload/v1651779954/Artworks/uncomfortablefutures/uncomfortable4_anqyd6.jpg',
+        alt: 'All chairs for the Chaircity projects by Südtiroler Künstlerbund'
+      }
+    ],
+    moreInfo: [
+      '(Un)comfortable Future - an Alpine perspective for „Chair©ity“ a project by Südtiroler Künstlerbund & BZ Heartbeat.',
+      'The glacier area in South Tyrol alone has decreased by 19.7% between 1983 and 1997 as a result of warming. The discernible trends point to a further decline in overall snow cover and its duration.',
+      'Snow farming and synthetic snow surfaces are one attempt to prepare against the uncertain weather conditions in winter sports. How the Alpine outlook and landscape will develop is unclear. However, according to current climate studies and weather trends, the outlook for the future does not look very comfortable.',
+      'Alpine Chair covered in synthetic snow surface on ski pole plates',
+      'Animation: Imagening (un)comfortable alpine future (somewhere in the Ötztal Alps)',
+      'Photo of the chair: Hannes Ochsenreiter'
+    ]
+  },
+  {
+    id: '8',
     caption: 'Knedl AR',
     curation: 'AR Filter | 2021',
     gallery: [
@@ -104,7 +278,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '9',
     caption: 'Zueinander - trovarsi',
     curation: 'Concept | Web design and co-development | Product design | 2021',
     gallery: [
@@ -148,7 +322,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '10',
     caption: 'Between Pain',
     curation: 'Short film still | 2021',
     gallery: [
@@ -173,7 +347,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '11',
     caption: 'Sundew',
     curation: 'Music video | 2021',
     gallery: [
@@ -197,7 +371,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '12',
     caption: '(Im)perceptible',
     curation: 'Design research | Prototyping | 2020',
     gallery: [
@@ -252,7 +426,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '13',
     caption: 'forecast',
     curation: 'Shader | Video sculpture | 2019',
     gallery: [
@@ -278,7 +452,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '14',
     caption: 'Wos geat',
     curation: 'AR Filter | 2020',
     gallery: [
@@ -297,7 +471,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '15',
     caption: 'bodynamics',
     curation: 'Photography | 2020',
     gallery: [
@@ -348,7 +522,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '16',
     caption: 'Shades of grey',
     curation: 'Photography | since 2019',
     gallery: [
@@ -418,7 +592,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '17',
     caption: 'MTRX',
     curation: 'Animation | Shader | 2019',
     gallery: [
@@ -432,7 +606,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '18',
     caption: 'datadust 2',
     curation: 'Physical data visualisation | 2019',
     gallery: [
@@ -484,7 +658,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '19',
     caption: 'datadust 1',
     curation: 'Physical data visualisation | 2019',
     gallery: [
@@ -503,7 +677,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '20',
     caption: 'Pattern App',
     curation: 'Data visualisation | 2019',
     gallery: [
@@ -538,7 +712,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '21',
     caption: 'Industrial scars',
     curation: 'Photography | 2018',
     gallery: [
@@ -609,7 +783,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '22',
     caption: 'naOAc',
     curation: 'Research | Video | 2018',
     gallery: [
@@ -631,7 +805,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '23',
     caption: 'cornserve',
     curation: 'Video | Hologram | 2017',
     gallery: [
@@ -665,7 +839,7 @@ export const artworkDetailsItems = [
     ]
   },
   {
-    id: createID(),
+    id: '24',
     caption: 'Mirage',
     curation: 'Hologram | 3D Animation | 2017',
     gallery: [
@@ -708,6 +882,8 @@ export const artworkDetailsItems = [
   }
 ];
 
-export const getArtworkDetails = caption => {
-  return artworkDetailsItems.find(item => item.caption === caption);
+export const getArtworkDetails = id => {
+  console.log({ id, artworkDetailsItems });
+
+  return artworkDetailsItems.find(item => item.id === id);
 };

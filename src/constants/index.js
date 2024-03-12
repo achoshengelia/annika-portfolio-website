@@ -3,18 +3,74 @@ import { v4 as createID } from 'uuid';
 export const indexItems = [
   {
     id: createID(),
+    caption: 'Geodata-based collaboration tools for cycle network planning',
+    tags: 'UX Design & Research',
+    organisation: 'FixMyCity & FH Potsdam',
+    projectlink: 'https://www.fixmycity.de/',
+    year: '2023',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486256/Index/geodatenbasierte_kollaborationstools_in_der_radnetzplanung_annika_terwey_xfmno9.jpg',
+    alt: ''
+  },
+  {
+    id: createID(),
+    caption: 'Portfolio Website',
+    tags: 'Web Design & Development',
+    organisation: 'Sophie Lazari',
+    projectlink: 'https://www.sophielazari.com/',
+    year: '2023',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1709486115/Index/sophie-lazari-website_xui4db.jpg',
+    alt: ''
+  },
+  {
+    id: createID(),
+    caption: 'Reflectivity - what remains after the storm',
+    tags: 'Data Visualisation',
+    organisation: '',
+    projectlink: '',
+    year: '2023',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1709485882/Index/reflectifity_3_Kopie_nph0kn.jpg',
+    alt: ''
+  },
+  {
+    id: createID(),
+    caption: 'Shifting horizons',
+    tags: 'Data Visualisation',
+    organisation: '',
+    projectlink: '',
+    year: '2023',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1709485825/Index/shifting_horizons_annika_terwey_foto-felix-vinatzer_ktnkqp.jpg',
+    alt: ''
+  },
+
+  {
+    id: createID(),
+    caption: 'Schnitzeljagd',
+    tags: 'Participatory Art Event',
+    organisation: 'LanaLive',
+    projectlink: 'https://lanalive.it/',
+    year: '2023',
+    image:
+      'https://res.cloudinary.com/dojsjcecs/image/upload/v1709485822/Index/schnitzeljagd_Fanni-Fazekas_yhandh.jpg',
+    alt: 'Schnitzel'
+  },
+  {
+    id: createID(),
     caption: 'Dunkle Ecken Archive',
     tags: 'Webdesign | Co-Webdevelopment',
     organisation: 'LanaLive',
     projectlink: 'https://www.dunkleecken.com',
-    year: '2021',
+    year: '2022',
     image:
       'https://res.cloudinary.com/dojsjcecs/image/upload/v1653079768/Index/index_0011_Ebene_11_bpm5mc.jpg',
     alt: 'Laptop infront of neon yellow background showing the website Dark Corners'
   },
   {
     id: createID(),
-    caption: 'Uncomfortable futures',
+    caption: 'Uncomfortable Futures',
     tags: 'Artwork',
     organisation: 'Südtiroler Künstlerbund',
     projectlink:
@@ -62,7 +118,7 @@ export const indexItems = [
   {
     id: createID(),
     caption: 'Between Pain',
-    tags: 'Short film still',
+    tags: 'Short Film Still',
     organisation: 'Südtiroler Kultur Verein - Lana live ',
     projectlink:
       'https://franzmagazine.com/2021/04/16/kulturelle-nahversorgung-gegen-lokale-einsamkeit/?fbclid=IwAR1G4AuksqcKfKUJ9cqQVBzGlVb6wg23iLVjdrt7mtL49pDL4PywOoglAbI',
@@ -142,7 +198,7 @@ export const indexItems = [
   },
   {
     id: createID(),
-    caption: 'Shades of grey',
+    caption: 'Shades of Grey',
     tags: 'Photography',
     organisation: '',
     // projectlink: '',

@@ -33,10 +33,11 @@ const ItemDetailsFooter = ({ itemDetails, isCurationPage }) => {
           }
         }}
         draggable="false"
+        hasCuration={itemDetails?.curation}
       >
         <CenterWrapperStyled>
           <Text isUppercase as="p">
-            <Link to={isCurationPage ? '/curation' : '/design-artworks'}>
+            <Link to={isCurationPage ? '/curation' : '/projects'}>
               ← {itemDetails?.caption}
             </Link>
           </Text>

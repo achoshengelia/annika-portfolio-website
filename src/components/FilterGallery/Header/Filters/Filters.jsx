@@ -6,8 +6,7 @@ import {
 } from '../../../../constants/artworks';
 import { curationFilterItems } from '../../../../constants/curations';
 import useWindowDimensions from '../../../../hooks/useWindowDimensions';
-import { CloseIcon } from '../../../global/icons';
-import { CenterWrapperStyled, LineBreakStyled } from '../../../global/utils';
+import { CenterWrapperStyled } from '../../../global/utils';
 import {
   ContainerStyled,
   FilterItemStyled,
@@ -68,7 +67,6 @@ const Filters = props => {
 
   return (
     <ContainerStyled isCurationsPage={isCurationsPage}>
-      <LineBreakStyled />
       <CenterWrapperStyled as="ul">
         {renderItems.map((item, i) => (
           <Fragment key={item}>
@@ -82,14 +80,10 @@ const Filters = props => {
               onClick={() => handleSetFilter(item)}
             >
               {item}
-              {width > 600 && isActive.includes(item) && item !== 'all' ? (
-                <CloseIcon size="1.3rem" />
-              ) : null}
             </FilterItemStyled>
           </Fragment>
         ))}
       </CenterWrapperStyled>
-      <LineBreakStyled />
     </ContainerStyled>
   );
 };

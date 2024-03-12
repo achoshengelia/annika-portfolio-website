@@ -29,6 +29,8 @@ const ItemDetails = ({ isCurationPage }) => {
     setIsMaxHeight(true);
     setShowFooter(true);
 
+    console.log({ sa: getArtworkDetails(id) });
+
     setItemDetails(
       isCurationPage ? getCurationDetails(id) : getArtworkDetails(id)
     );

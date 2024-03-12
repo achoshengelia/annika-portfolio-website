@@ -1,4 +1,10 @@
-import { createContext, useCallback, useEffect, useState } from 'react';
+import {
+  createContext,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState
+} from 'react';
 import { useLocation } from 'react-router-dom';
 
 export const GlobalContext = createContext({
@@ -21,10 +27,13 @@ export const GlobalContextProvider = ({ children }) => {
   const [isCurationsPage, setIsCurationsPage] = useState(false);
   const [isMaxHeight, setIsMaxHeight] = useState(false);
 
-  const handleToggleShowMenu = () => setShowMenu(prevState => !prevState);
+  const handleToggleShowMenu = useCallback(
+    () => setShowMenu(prevState => !prevState),
+    []
+  );
   const pageNeedsFooter = useCallback(() => {
     if (
-      (pathname.toLowerCase().split('/').includes('design-artworks') &&
+      (pathname.toLowerCase().split('/').includes('projects') &&
         pathname.toLowerCase().split('/').length <= 2) ||
       (pathname.toLowerCase().split('/').includes('curation') &&
         pathname.toLowerCase().split('/').length <= 2) ||
@@ -48,17 +57,30 @@ export const GlobalContextProvider = ({ children }) => {
     }
   }, [pathname, pageNeedsFooter]);
 
-  const contextValue = {
-    showMenu,
-    showFooter,
-    isCurationsPage,
-    isShufflePage,
-    isMaxHeight,
-    handleToggleShowMenu,
-    setIsShufflePage,
-    setIsCurationsPage,
-    setIsMaxHeight
-  };
+  const contextValue = useMemo(
+    () => ({
+      showMenu,
+      showFooter,
+      isCurationsPage,
+      isShufflePage,
+      isMaxHeight,
+      handleToggleShowMenu,
+      setIsShufflePage,
+      setIsCurationsPage,
+      setIsMaxHeight
+    }),
+    [
+      showMenu,
+      showFooter,
+      isCurationsPage,
+      isShufflePage,
+      isMaxHeight,
+      handleToggleShowMenu,
+      setIsShufflePage,
+      setIsCurationsPage,
+      setIsMaxHeight
+    ]
+  );
 
   return (
     <GlobalContext.Provider value={contextValue}>

@@ -32,7 +32,7 @@ const Swiper = ({ gallery }) => {
     spaceBetween: 30,
     effect: 'fade',
     loop: true,
-    navigation: isSmallDevice,
+    navigation: false,
     modules: [EffectFade, Navigation],
     fadeEffect: { crossFade: true },
     speed: 500

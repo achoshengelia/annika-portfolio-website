@@ -1,4 +1,10 @@
-import React, { useEffect, useState, useContext, useCallback } from 'react';
+import React, {
+  useEffect,
+  useState,
+  useContext,
+  useCallback,
+  useMemo
+} from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { GlobalContext } from '../../../context/globalContext';
 import { artworkItems, searchParam } from '../../../constants/artworks';
@@ -58,10 +64,6 @@ const Items = () => {
   const { isCurationsPage } = useContext(GlobalContext);
 
   const items = isCurationsPage ? curationItems : artworkItems;
-
-  const [renderItems, setRenderItems] = useState(items);
-  const [pageIsLoaded, setPageIsLoaded] = useState(false);
-  const [searchParams] = useSearchParams();
   const getFilteredItems = useCallback(
     filters => {
       const filteredItems = items.filter(item => {
@@ -75,6 +77,16 @@ const Items = () => {
     },
     [items]
   );
+  const initialItems = useMemo(
+    () => getFilteredItems(['all']),
+    [getFilteredItems]
+  );
+
+  const [renderItems, setRenderItems] = useState(initialItems);
+  const [pageIsLoaded, setPageIsLoaded] = useState(false);
+  const [searchParams] = useSearchParams();
+
+  console.log({ renderItems });
 
   useEffect(() => {
     setTimeout(() => {
@@ -86,10 +98,11 @@ const Items = () => {
     const selectedFilters = searchParams.getAll(searchParam);
 
     if (selectedFilters.length) {
-      return setRenderItems(getFilteredItems(selectedFilters));
+      setRenderItems(getFilteredItems(selectedFilters));
+    } else {
+      setRenderItems(initialItems);
     }
-    setRenderItems(items);
-  }, [items, searchParams, getFilteredItems]);
+  }, [items, searchParams, initialItems, getFilteredItems]);
 
   return !renderItems.length ? (
     <ContainerStyled>
@@ -104,7 +117,7 @@ const Items = () => {
       isGrid
     >
       {renderItems.map(item => (
-        <Link to={`${item.caption}`} key={item.id}>
+        <Link to={`${item.id}`} key={item.id}>
           <Item item={item} pageIsLoaded={pageIsLoaded} />
         </Link>
       ))}

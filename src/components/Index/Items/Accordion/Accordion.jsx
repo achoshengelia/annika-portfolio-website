@@ -13,7 +13,17 @@ const Accordion = ({ item }) => {
     <ContainerStyled isOpen={isOpen}>
       <LineBreakStyled />
       <HeaderStyled onClick={() => setIsOpen(prevState => !prevState)}>
-        <Text>{caption}</Text>
+        <Text
+          style={{
+            whiteSpace: isOpen ? undefined : 'nowrap',
+            overflow: 'hidden',
+            maxWidth: isOpen ? undefined : '80%',
+            textOverflow: 'ellipsis',
+            transition: 'all 0.3s ease'
+          }}
+        >
+          {caption}
+        </Text>
         {width > 755 ? <Text>{tags}</Text> : null}
         {width > 1112 ? (
           <Text>

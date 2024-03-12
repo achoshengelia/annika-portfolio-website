@@ -3,8 +3,8 @@ import { v4 as createID } from 'uuid';
 export const menuItems = [
   {
     id: createID(),
-    value: 'design & artworks',
-    link: '/design-artworks'
+    value: 'projects',
+    link: '/projects'
   },
   {
     id: createID(),

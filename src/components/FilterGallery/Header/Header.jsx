@@ -27,7 +27,7 @@ const Header = () => {
       }}
     >
       <Heading as="h1" isUppercase>
-        {isCurationsPage ? 'curation' : 'design & artworks'}
+        {isCurationsPage ? 'curation' : 'projects'}
       </Heading>
       <Filters isCurationsPage={isCurationsPage} />
     </ContainerStyled>

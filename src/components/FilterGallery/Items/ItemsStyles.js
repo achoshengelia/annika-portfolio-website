@@ -74,6 +74,7 @@ export const CardStyled = styled(motion.figure)`
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.08);
 `;
 
 export const ContainerStyled = styled.section`

@@ -53,8 +53,9 @@ export const HeaderStyled = styled.header`
 export const ContainerStyled = styled.li`
   overflow: hidden;
   max-height: ${({ isOpen }) => (isOpen ? '60rem' : '7rem')};
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   margin-bottom: ${({ isOpen }) => (isOpen ? '4rem' : '0')};
+  white-space: ${({ isOpen }) => (isOpen ? '' : 'nowrap')};
 
   ${ImageStyled} {
     margin: 0 auto;

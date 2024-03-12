@@ -4,7 +4,7 @@ import { ContainerStyled } from './ArtworksPageStyles';
 
 const ArtworksPage = () => {
   useEffect(() => {
-    document.title = 'Annika Terwey | Design & Artworks';
+    document.title = 'Annika Terwey | Projects';
   }, []);
 
   return (

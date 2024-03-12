@@ -23,8 +23,8 @@ const LandingText = () => {
       }}
     >
       Welcome to my Portfolio Website! <Link to="/about">I am</Link> a
-      German-Italian <Link to="/design-artworks">designer</Link>,{' '}
-      <Link to="/design-artworks">multimedia artist</Link> and a{' '}
+      German-Italian <Link to="/projects">designer</Link>,{' '}
+      <Link to="/projects">multimedia artist</Link> and a{' '}
       <Link to="/curation">curator</Link>.
     </ContainerStyled>
   );

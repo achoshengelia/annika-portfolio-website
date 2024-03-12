@@ -6,7 +6,7 @@ const ItemNotFound = ({ isCurationPage }) => {
   return (
     <ContainerStyled>
       Work not found!
-      <Link to={isCurationPage ? '/curation' : '/design-artworks'}>
+      <Link to={isCurationPage ? '/curation' : '/projects'}>
         Go back to gallery
       </Link>
     </ContainerStyled>

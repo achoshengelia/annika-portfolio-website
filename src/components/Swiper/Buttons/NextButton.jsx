@@ -12,6 +12,7 @@ const NextButton = ({ isSmallDevice }) => {
       onClick={() => (!isSmallDevice ? swiper.slideNext() : null)}
     >
       {isSmallDevice ? (
+        // <i onClick={() => swiper.slideNext()} alt="arrow" />
         <img src={Next} onClick={() => swiper.slideNext()} alt="arrow" />
       ) : null}
     </ContainerStyled>

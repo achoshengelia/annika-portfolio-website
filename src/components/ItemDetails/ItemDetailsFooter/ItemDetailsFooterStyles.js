@@ -36,15 +36,19 @@ export const ContainerStyled = styled(motion.footer)`
   ${CenterWrapperStyled} {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     margin-top: auto;
     width: 100%;
     z-index: 100;
     border-top: 1px solid ${props => props.theme.colors.secondary.main};
     border-bottom: 1px solid ${props => props.theme.colors.secondary.main};
-    padding: 1.4rem 2.5rem;
+    padding: 1.4rem 1rem;
     background-color: ${props => props.theme.colors.primary.main};
+
+    @media only screen and (min-width: ${pxToEm(950)}) {
+      justify-content: ${props => (props.hasCuration ? 'center' : '')};
+    }
 
     & > * {
       &:nth-child(2) {
@@ -53,9 +57,11 @@ export const ContainerStyled = styled(motion.footer)`
         }
       }
 
-      &:first-child,
-      :last-child {
-        position: absolute;
+      @media only screen and (min-width: ${pxToEm(950)}) {
+        &:first-child,
+        :last-child {
+          position: ${props => (props.hasCuration ? 'absolute' : '')};
+        }
       }
 
       &:first-child {

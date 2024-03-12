@@ -1,18 +1,16 @@
-import { v4 as createID } from 'uuid';
-
 export const footerItems = [
   {
-    id: createID(),
+    id: '1',
     value: 'Twitter',
     link: 'https://twitter.com/AnnikaTerwey'
   },
   {
-    id: createID(),
+    id: '2',
     value: 'Vimeo',
     link: 'https://vimeo.com/annikaterwey'
   },
   {
-    id: createID(),
+    id: '3',
     value: 'Instagram',
     link: 'https://www.instagram.com/dunkleecken/'
   }

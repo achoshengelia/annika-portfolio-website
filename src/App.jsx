@@ -32,11 +32,8 @@ const App = () => {
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
             <Route index element={<LandingPage />} />
-            <Route path="design-artworks" element={<ArtworksPage />} />
-            <Route
-              path="design-artworks/:id"
-              element={<ArtworkDetailsPage />}
-            />
+            <Route path="projects" element={<ArtworksPage />} />
+            <Route path="projects/:id" element={<ArtworkDetailsPage />} />
             <Route path="curation" element={<CurationsPage />} />
             <Route path="curation/:id" element={<CurationDetailsPage />} />
             <Route path="index" element={<IndexPage />} />
